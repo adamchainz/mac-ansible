@@ -71,3 +71,9 @@ homebrew_cask_packages:
   - vagrant
   - virtualbox
   - vlc
+
+dotfiles:
+  - gitconfig
+  - gitignore_global
+  - python_startup
+  - ssh/config

@@ -1,0 +1,8 @@
+import os
+try:
+    from IPython.terminal.ipapp import launch_new_instance
+except ImportError:
+    from IPython.frontend.terminal.ipapp import launch_new_instance
+os.environ['PYTHONSTARTUP'] = ''  # Prevent running this again
+launch_new_instance()
+raise SystemExit

@@ -1,0 +1,4 @@
+- file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/dotfiles/{{ item }}
+        path=~/.{{ item }}
+        state=link
+  with_items: dotfiles

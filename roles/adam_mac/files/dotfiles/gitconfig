@@ -1,0 +1,48 @@
+[user]
+	name = Adam Chainz
+	email = adam@adamj.eu
+
+[credential]
+    helper = cache --timeout=3600
+
+[interactive]
+    singlekey = true
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[alias]
+    d = diff
+    s = status
+    st = stash
+    co = checkout
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ign = ls-files -o -i --exclude-standard
+    edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; /Applications/Sublime\\ Text\\ 2.app/Contents/SharedSupport/bin/subl `f`"
+    add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
+    forkdiff = !bash -c 'git diff $(git merge-base "$1" "$2") "$2" "${@: 3}" ' -
+    new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+
+[push]
+	default = simple
+[merge]
+	conflictstyle = diff3
+[core]
+	excludesfile = ~/.gitignore_global
