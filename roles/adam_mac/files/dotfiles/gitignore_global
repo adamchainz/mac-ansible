@@ -18,3 +18,9 @@ Thumbs.db
 *.pyc
 .pycache
 .tox
+
+
+# Sublime stuff #
+#################
+*.sublime-project
+*.sublime-workspace
