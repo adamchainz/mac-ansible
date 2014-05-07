@@ -8,3 +8,5 @@ which has let me keep them in sync.
 To run:
 
     ansible-playbook -i local.inventory playbook.yml
+
+Optionally add `-e skip_brew=1` to skip the slow brew stuff
