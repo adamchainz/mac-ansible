@@ -15,3 +15,7 @@
 - name: Sublime Text 3 settings
   git: repo=git@github.com:adamchainz/sublime_text_3_settings.git
        dest=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+
+- name: Dock settings
+  command: defaults write com.apple.dock autohide-time-modifier -int 1
+  notify: kill dock
