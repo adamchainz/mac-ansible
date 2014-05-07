@@ -1,6 +1,16 @@
+- file: path=~/.{{ item }} state=directory
+  with_items:
+    - innotop
+    - ssh
+
 - file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/dotfiles/{{ item }}
         path=~/.{{ item }}
         state=link
-  with_items: dotfiles
+  with_items:
+    - gitconfig
+    - gitignore_global
+    - python_startup
+    - ssh/config
+    - innotop/innotop.conf
 
 - command: chflags nohidden ~/Library/
