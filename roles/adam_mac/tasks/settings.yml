@@ -17,5 +17,14 @@
        dest=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 - name: Dock settings
-  command: defaults write com.apple.dock autohide-time-modifier -int 1
+  command: defaults write com.apple.dock {{ item }}
+  with_items:
+    - autohide-time-modifier -int 1
   notify: kill dock
+
+- name: Finder settings
+  command: defaults write com.apple.finder {{ item }}
+  with_items:
+    - NewWindowTarget -string "PfHm"
+    - NewWindowTargetPath -string "file:///Users/{{ ansible_env.USER }}/"
+  notify: kill finder
