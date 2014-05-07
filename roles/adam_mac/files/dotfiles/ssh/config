@@ -4,3 +4,6 @@ ControlMaster auto
 ControlPath /tmp/%r@%h:%p
 ControlPersist yes
 StrictHostKeyChecking no
+
+Host *.compute.amazonaws.com
+    IdentityFile ~/.ssh/adam.pem

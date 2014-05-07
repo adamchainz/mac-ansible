@@ -10,3 +10,6 @@
 
 - name: Link in dotfiles
   include: dotfiles.yml
+
+- name: Copy in/clone app settings
+  include: settings.yml
