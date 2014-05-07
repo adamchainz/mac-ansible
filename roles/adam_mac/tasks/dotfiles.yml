@@ -2,3 +2,5 @@
         path=~/.{{ item }}
         state=link
   with_items: dotfiles
+
+- command: chflags nohidden ~/Library/
