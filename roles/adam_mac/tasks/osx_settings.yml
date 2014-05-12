@@ -2,17 +2,29 @@
   command: defaults write NSGlobalDomain {{ item }}
   with_items:
     - AppleShowAllExtensions -bool true
+    - com.apple.swipescrolldirection -bool false  # "normal" scrolling
+    - AppleKeyboardUIMode -int 3  # tab goes through all controls on dialogs
 
 - name: Dock settings
   command: defaults write com.apple.dock {{ item }}
   with_items:
     - autohide-time-modifier -int 1
     - tilesize -int 48
+    - persistent-apps -array ""
+    - expose-animation-duration -float 0.1
   notify: kill dock
 
 - name: Finder settings
   command: defaults write com.apple.finder {{ item }}
   with_items:
     - NewWindowTarget -string "PfHm"  # Home folder
-    - NewWindowTargetPath -string "file:///Users/{{ ansible_env.USER }}/"
   notify: kill finder
+
+- name: Terminal theme
+  command: open ~/Documents/Projects/mac-ansible/roles/adam_mac/files/Chainz.terminal
+
+- name: Terminal settings
+  command: defaults write com.apple.terminal {{ item }}
+  with_items:
+    - '"Default Window Settings" -string "Chainz"'
+    - '"Startup Window Settings" -string "Chainz"'
