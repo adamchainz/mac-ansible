@@ -11,6 +11,5 @@
     - gitignore_global
     - python_startup
     - ssh/config
-    - innotop/innotop.conf
 
 - command: chflags nohidden ~/Library/
