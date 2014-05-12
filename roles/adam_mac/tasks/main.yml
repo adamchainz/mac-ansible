@@ -8,8 +8,12 @@
   with_items: homebrew_cask_packages
   when: skip_brew is not defined
 
+- name: Set Mac OS X settings
+  include: osx_settings.yml
+  when: skip_osx is not defined
+
 - name: Link in dotfiles
   include: dotfiles.yml
 
 - name: Copy in/clone app settings
-  include: settings.yml
+  include: app_settings.yml

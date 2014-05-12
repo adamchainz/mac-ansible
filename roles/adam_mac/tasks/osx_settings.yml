@@ -1,0 +1,18 @@
+- name: Global OSX settings
+  command: defaults write NSGlobalDomain {{ item }}
+  with_items:
+    - AppleShowAllExtensions -bool true
+
+- name: Dock settings
+  command: defaults write com.apple.dock {{ item }}
+  with_items:
+    - autohide-time-modifier -int 1
+    - tilesize -int 48
+  notify: kill dock
+
+- name: Finder settings
+  command: defaults write com.apple.finder {{ item }}
+  with_items:
+    - NewWindowTarget -string "PfHm"  # Home folder
+    - NewWindowTargetPath -string "file:///Users/{{ ansible_env.USER }}/"
+  notify: kill finder
