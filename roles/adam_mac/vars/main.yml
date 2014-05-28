@@ -12,6 +12,7 @@ homebrew_packages:
   - imagemagick
   - jpeg
   - jpegoptim
+  - lesspipe
   - libevent
   - libmemcached
   - libpng
