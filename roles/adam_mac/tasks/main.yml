@@ -1,5 +1,8 @@
+- name: Update homebrew
+  homebrew: name=git state=latest update_homebrew=yes
+
 - name: Install homebrew packages
-  homebrew: name={{ item }} state=latest update_homebrew=yes
+  homebrew: name={{ item }} state=latest
   with_items: homebrew_packages
   when: skip_brew is not defined
 
