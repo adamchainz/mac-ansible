@@ -12,4 +12,10 @@
     - python_startup
     - ssh/config
 
+- file: path=~/.innotop state=directory
+
+- copy: src=dotfiles/innotop/innotop.conf
+        dest=~/.innotop/innotop.conf
+        force=no  # Only if it doesn't exist
+
 - command: chflags nohidden ~/Library/
