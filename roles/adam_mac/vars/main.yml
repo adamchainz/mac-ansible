@@ -43,6 +43,7 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - alfred
+  - arq
   - bettertouchtool
   - calibre
   - ccleaner
