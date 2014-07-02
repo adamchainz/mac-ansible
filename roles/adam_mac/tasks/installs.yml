@@ -1,0 +1,17 @@
+- name: Update homebrew
+  homebrew: name=git state=latest update_homebrew=yes
+  when: skip_brew is not defined
+
+- name: Install homebrew packages
+  homebrew: name={{ item }} state=latest
+  with_items: homebrew_packages
+  when: skip_brew is not defined
+
+- name: Install homebrew cask packages
+  homebrew_cask: name={{ item }} state=installed
+  with_items: homebrew_cask_packages
+  when: skip_brew is not defined
+
+- name: Install pip packages
+  pip: name={{ item }} state=latest
+  with_items: pip_packages

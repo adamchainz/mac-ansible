@@ -74,3 +74,14 @@ homebrew_cask_packages:
   - vagrant
   - virtualbox
   - vlc
+
+pip_packages:
+  - dynamodb_utils
+  - flake8
+  - Glances
+  - ipdb
+  - ipython
+  - pep8
+  - requests
+  - six
+  - virtualenvwrapper
