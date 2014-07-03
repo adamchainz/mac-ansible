@@ -6,6 +6,7 @@ homebrew_packages:
   - brew-cask
   - cowsay
   - exiftool
+  - ffmpeg
   - freetype
   - gdbm
   - git
