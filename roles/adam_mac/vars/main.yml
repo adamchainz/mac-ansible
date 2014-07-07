@@ -26,6 +26,7 @@ homebrew_packages:
   - node
   - openssl
   - ossp-uuid
+  - percona-toolkit
   - pkg-config
   - pngcrush
   - postgresql
