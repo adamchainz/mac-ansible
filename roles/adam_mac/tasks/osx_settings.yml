@@ -15,12 +15,17 @@
     - expose-animation-duration -float 0.1
   notify: kill dock
 
+- name: Dashboard disabled
+  command: defaults write com.apple.dashboard mcx-disabled -boolean YES
+  notify: kill dock
+
 - name: Finder settings
   command: defaults write com.apple.finder {{ item }}
   with_items:
     - NewWindowTarget -string "PfHm"  # Home folder
     - FXEnableSlowAnimation -boolean false # Disable slow animations on shift
     - QLHidePanelOnDeactivate -boolean true  # quicklook hide on defocus
+    - _FXShowPosixPathInTitle -bool YES  # Full path
   notify: kill finder
 
 - name: Terminal theme
