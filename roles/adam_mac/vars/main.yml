@@ -84,7 +84,10 @@ pip_packages:
   - Glances
   - ipdb
   - ipython
+  - numpy
+  - pandas
   - pep8
   - requests
+  - scipy
   - six
   - virtualenvwrapper
