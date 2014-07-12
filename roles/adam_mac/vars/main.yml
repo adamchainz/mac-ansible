@@ -87,7 +87,9 @@ pip_packages:
   - numpy
   - pandas
   - pep8
+  - pygments
   - requests
   - scipy
   - six
+  - sphinx
   - virtualenvwrapper
