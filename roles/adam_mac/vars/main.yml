@@ -81,6 +81,7 @@ homebrew_cask_packages:
 pip_packages:
   - csvkit
   - dynamodb_utils
+  - ec2-ssh
   - flake8
   - Glances
   - ipdb

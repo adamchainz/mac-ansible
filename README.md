@@ -7,6 +7,6 @@ which has let me keep them in sync.
 
 To run:
 
-    ansible-playbook -i local.inventory playbook.yml
+    ansible-playbook playbook.yml
 
-Optionally add `-e skip_brew=1` to skip the slow brew stuff
+Optionally add `--skip-tags brew` to skip the slow brew stuff.
