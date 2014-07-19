@@ -10,6 +10,7 @@ homebrew_packages:
   - freetype
   - gdbm
   - git
+  - gpg
   - htop-osx
   - imagemagick
   - jpeg
