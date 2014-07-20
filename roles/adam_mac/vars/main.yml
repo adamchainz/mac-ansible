@@ -4,6 +4,7 @@ homebrew_packages:
   - autojump
   - automake
   - brew-cask
+  - coreutils
   - cowsay
   - exiftool
   - ffmpeg
