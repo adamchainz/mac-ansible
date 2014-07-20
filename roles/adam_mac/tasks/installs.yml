@@ -9,6 +9,11 @@
   tags:
     - brew
 
+- name: Update homebrew cask
+  command: brew cask update
+  tags:
+    - brew
+
 - name: Install homebrew cask packages
   homebrew_cask: name={{ item }} state=installed
   with_items: homebrew_cask_packages

@@ -16,11 +16,11 @@
   git: repo=git@github.com:adamchainz/sublime_text_3_settings.git
        dest=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
-- name: KeyRemap4MacBook dir
-  file: path="/Users/chainz/Library/Application Support/KeyRemap4MacBook/"
+- name: Karabiner dir
+  file: path="/Users/chainz/Library/Application Support/Karabiner/"
         state=directory
 
-- name: KeyRemap4MacBook private.xml
-  file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/KeyRemap4MacBook_private.xml
-        dest="/Users/chainz/Library/Application Support/KeyRemap4MacBook/private.xml"
+- name: Karabiner private.xml
+  file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/Karabiner_private.xml
+        dest="/Users/chainz/Library/Application Support/Karabiner/private.xml"
         state=link

@@ -58,8 +58,8 @@ homebrew_cask_packages:
   - firefox
   - flux
   - google-chrome
+  - karabiner
   - keyboard-maestro
-  - keyremap4macbook
   - kindle
   - mactex
   - makehuman
