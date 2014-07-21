@@ -94,6 +94,8 @@ pip_packages:
   - pygments
   - requests
   - scipy
+  - sh
   - six
   - sphinx
+  - Unipath
   - virtualenvwrapper
