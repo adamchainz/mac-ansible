@@ -17,10 +17,10 @@
        dest=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 - name: Karabiner dir
-  file: path="/Users/chainz/Library/Application Support/Karabiner/"
+  file: path="~/Library/Application Support/Karabiner/"
         state=directory
 
 - name: Karabiner private.xml
   file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/Karabiner_private.xml
-        dest="/Users/chainz/Library/Application Support/Karabiner/private.xml"
+        dest="~/Library/Application Support/Karabiner/private.xml"
         state=link
