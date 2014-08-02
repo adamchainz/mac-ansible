@@ -1,8 +1,16 @@
+from __future__ import print_function
 import os
+os.environ['PYTHONSTARTUP'] = ''  # Prevent running this again
+
 try:
     from IPython.terminal.ipapp import launch_new_instance
 except ImportError:
-    from IPython.frontend.terminal.ipapp import launch_new_instance
-os.environ['PYTHONSTARTUP'] = ''  # Prevent running this again
-launch_new_instance()
-raise SystemExit
+    try:
+        from IPython.frontend.terminal.ipapp import launch_new_instance
+    except ImportError:
+        launch_new_instance = None
+        print("No IPython installed!")
+
+if launch_new_instance is not None:
+    launch_new_instance()
+    raise SystemExit
