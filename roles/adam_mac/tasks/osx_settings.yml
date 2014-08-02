@@ -36,3 +36,5 @@
   with_items:
     - '"Default Window Settings" -string "Chainz"'
     - '"Startup Window Settings" -string "Chainz"'
+
+- command: chflags nohidden ~/Library/
