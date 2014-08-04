@@ -5,6 +5,7 @@
     - com.apple.swipescrolldirection -bool false  # "normal" scrolling
     - AppleKeyboardUIMode -int 3  # tab goes through all controls on dialogs
     - NSNavPanelExpandedStateForSaveMode -boolean true  # save panel expanded
+    - com.apple.keyboard.fnState -int 1  # need to hold fn to get at special keys
 
 - name: Dock settings
   command: defaults write com.apple.dock {{ item }}
@@ -36,3 +37,5 @@
   with_items:
     - '"Default Window Settings" -string "Chainz"'
     - '"Startup Window Settings" -string "Chainz"'
+
+- command: chflags nohidden ~/Library/

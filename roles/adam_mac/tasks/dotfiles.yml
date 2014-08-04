@@ -13,10 +13,20 @@
     - ssh/config
     - ansible.cfg
 
-- file: path=~/.innotop state=directory
-
 - copy: src=dotfiles/innotop/innotop.conf
         dest=~/.innotop/innotop.conf
         force=no  # Only if it doesn't exist
 
-- command: chflags nohidden ~/Library/
+- name: zsh - git repo for prezto fork
+  git: repo=git@github.com:adamchainz/prezto.git
+       dest=~/.zprezto
+
+- name: zsh - link in prezto files
+  file: state=link src=~/.zprezto/runcoms/{{ item }} path=~/.{{ item }}
+  with_items:
+    - zlogin
+    - zlogout
+    - zprofile
+    - zshenv
+    - zshrc
+    - zpreztorc
