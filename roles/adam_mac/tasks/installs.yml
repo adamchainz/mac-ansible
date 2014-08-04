@@ -23,3 +23,5 @@
 - name: Install pip packages
   pip: name={{ item }} state=latest
   with_items: pip_packages
+  tags:
+    - pip
