@@ -49,6 +49,7 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - alfred
+  - anki
   - arq
   - bettertouchtool
   - calibre
