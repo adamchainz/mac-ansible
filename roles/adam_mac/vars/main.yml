@@ -96,6 +96,5 @@ pip_packages:
   - scipy
   - sh
   - six
-  - sphinx
   - Unipath
   - virtualenvwrapper
