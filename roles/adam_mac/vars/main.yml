@@ -52,6 +52,7 @@ homebrew_cask_packages:
   - anki
   - arq
   - bettertouchtool
+  - boot2docker
   - calibre
   - ccleaner
   - charles
