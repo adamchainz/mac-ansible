@@ -90,8 +90,10 @@ pip_packages:
   - Glances
   - ipdb
   - ipython
+  - lifelogger
   - numpy
   - pandas
+  - pathlib
   - pep8
   - pygments
   - requests
