@@ -52,6 +52,7 @@ homebrew_cask_packages:
   - anki
   - arq
   - bettertouchtool
+  - boot2docker
   - calibre
   - ccleaner
   - charles
@@ -97,6 +98,5 @@ pip_packages:
   - scipy
   - sh
   - six
-  - sphinx
   - Unipath
   - virtualenvwrapper
