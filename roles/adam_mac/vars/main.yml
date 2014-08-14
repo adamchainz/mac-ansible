@@ -96,6 +96,7 @@ pip_packages:
   - pathlib
   - pep8
   - pygments
+  - pylint
   - requests
   - scipy
   - sh
