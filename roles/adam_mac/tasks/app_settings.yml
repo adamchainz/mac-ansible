@@ -10,3 +10,8 @@
   file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/Karabiner_private.xml
         dest="~/Library/Application Support/Karabiner/private.xml"
         state=link
+
+- name: Cowsay cowfile
+  file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/three-heads.cow
+        dest=/usr/local/Cellar/cowsay/3.03/share/cows/three-heads.cow
+        state=link
