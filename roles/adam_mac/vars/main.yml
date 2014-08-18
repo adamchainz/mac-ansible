@@ -103,3 +103,6 @@ pip_packages:
   - six
   - Unipath
   - virtualenvwrapper
+
+npm_packages:
+  - phonegap
