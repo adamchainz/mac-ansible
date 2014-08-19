@@ -12,6 +12,6 @@
         state=link
 
 - name: Cowsay cowfile
-  file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/three-heads.cow
-        dest=/usr/local/Cellar/cowsay/3.03/share/cows/three-heads.cow
+  file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/two-heads.cow
+        dest=/usr/local/Cellar/cowsay/3.03/share/cows/two-heads.cow
         state=link

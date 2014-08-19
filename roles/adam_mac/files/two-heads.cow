@@ -5,3 +5,13 @@ $the_cow = <<"EOC";
         (__) $tongue|(__)--w |
          $tongue    || $tongue   ||
 EOC
+
+
+
+$the_cow = <<"EOC";
+        $thoughts
+         ^__^^__^____
+         ($eyes)($eyes)    )\\/\\
+         (__)(__)---w|
+          $tongue  ||    ||
+EOC
