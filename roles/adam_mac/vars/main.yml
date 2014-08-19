@@ -96,9 +96,13 @@ pip_packages:
   - pathlib
   - pep8
   - pygments
+  - pylint
   - requests
   - scipy
   - sh
   - six
   - Unipath
   - virtualenvwrapper
+
+npm_packages:
+  - phonegap
