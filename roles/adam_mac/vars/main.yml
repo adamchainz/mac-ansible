@@ -36,6 +36,7 @@ homebrew_packages:
   - python
   - python3
   - readline
+  - rtmpdump
   - ruby
   - ruby-build
   - ruby-install
@@ -97,6 +98,7 @@ pip_packages:
   - pep8
   - pygments
   - pylint
+  - pyyaml
   - requests
   - scipy
   - sh
