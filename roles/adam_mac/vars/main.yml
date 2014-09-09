@@ -16,6 +16,7 @@ homebrew_packages:
   - imagemagick
   - jpeg
   - jpegoptim
+  - jq
   - lesspipe
   - libevent
   - libmemcached
@@ -25,6 +26,7 @@ homebrew_packages:
   - md5sha1sum
   - memcached
   - mysql
+  - ncdu
   - node
   - openssl
   - ossp-uuid
