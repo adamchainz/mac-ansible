@@ -112,3 +112,4 @@ pip_packages:
 npm_packages:
   - ember-cli
   - phonegap
+  - vtop
