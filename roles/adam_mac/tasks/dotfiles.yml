@@ -2,6 +2,9 @@
   with_items:
     - innotop
     - ssh
+    - ipython
+    - ipython/profile_default
+    - ipython/profile_default/startup
 
 - file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/dotfiles/{{ item }}
         path=~/.{{ item }}
@@ -12,6 +15,7 @@
     - python_startup
     - ssh/config
     - ansible.cfg
+    - ipython/profile_default/startup/00-imports.py
 
 - copy: src=dotfiles/innotop/innotop.conf
         dest=~/.innotop/innotop.conf
