@@ -101,6 +101,7 @@ pip_packages:
   - pep8
   - pygments
   - pylint
+  - pythonpy
   - pyyaml
   - requests
   - scipy
