@@ -9,6 +9,7 @@ homebrew_packages:
   - exiftool
   - ffmpeg
   - freetype
+  - fswatch
   - gdbm
   - git
   - gpg
@@ -92,6 +93,7 @@ pip_packages:
   - ec2-ssh
   - flake8
   - Glances
+  - 'https://bitbucket.org/adamchainz/pygments-ipython-console/get/master.zip#egg=pygments-ipython-console'
   - ipdb
   - ipython
   - lifelogger
