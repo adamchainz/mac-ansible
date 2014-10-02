@@ -88,12 +88,12 @@ homebrew_cask_packages:
   - vlc
 
 pip_packages:
+  - 'git+https://github.com/adamchainz/ec2-ssh.git@master'
+  - 'https://bitbucket.org/adamchainz/pygments-ipython-console/get/master.zip#egg=pygments-ipython-console'
   - csvkit
   - dynamodb_utils
-  - ec2-ssh
   - flake8
   - Glances
-  - 'https://bitbucket.org/adamchainz/pygments-ipython-console/get/master.zip#egg=pygments-ipython-console'
   - ipdb
   - ipython
   - lifelogger
