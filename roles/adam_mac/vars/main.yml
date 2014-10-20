@@ -69,7 +69,6 @@ homebrew_cask_packages:
   - google-chrome
   - karabiner
   - keyboard-maestro
-  - kindle
   - mactex
   - makehuman
   - pdftk
