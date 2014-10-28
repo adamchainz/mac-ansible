@@ -61,7 +61,6 @@ homebrew_cask_packages:
   - calibre
   - ccleaner
   - charles
-  - cheatsheet
   - disk-inventory-x
   - evernote
   - firefox
