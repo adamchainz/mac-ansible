@@ -6,7 +6,7 @@
     - ipython/profile_default
     - ipython/profile_default/startup
 
-- file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/dotfiles/{{ item }}
+- file: src={{ ansible_env.PWD }}/roles/adam_mac/files/dotfiles/{{ item }}
         path=~/.{{ item }}
         state=link
   with_items:

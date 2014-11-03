@@ -7,11 +7,11 @@
         state=directory
 
 - name: Karabiner private.xml
-  file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/Karabiner_private.xml
+  file: src={{ ansible_env.PWD }}/roles/adam_mac/files/Karabiner_private.xml
         dest="~/Library/Application Support/Karabiner/private.xml"
         state=link
 
 - name: Cowsay cowfile
-  file: src=~/Documents/Projects/mac-ansible/roles/adam_mac/files/two-heads.cow
+  file: src={{ ansible_env.PWD }}/roles/adam_mac/files/two-heads.cow
         dest=/usr/local/Cellar/cowsay/3.03/share/cows/two-heads.cow
         state=link

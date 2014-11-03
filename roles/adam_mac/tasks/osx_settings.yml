@@ -30,7 +30,7 @@
   notify: kill finder
 
 - name: Terminal theme
-  command: open ~/Documents/Projects/mac-ansible/roles/adam_mac/files/Chainz.terminal
+  command: open {{ ansible_env.PWD }}/roles/adam_mac/files/Chainz.terminal
 
 - name: Terminal settings
   command: defaults write com.apple.terminal {{ item }}
