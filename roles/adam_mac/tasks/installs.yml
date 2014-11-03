@@ -20,6 +20,9 @@
   tags:
     - brew
 
+- name: homebrew cask link up wtih alfred
+  command: brew cask alfred link
+
 - name: Install pip packages
   pip: name={{ item }} state=latest
   with_items: pip_packages
