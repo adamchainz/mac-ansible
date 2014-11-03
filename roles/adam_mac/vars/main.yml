@@ -59,8 +59,6 @@ homebrew_cask_packages:
   - bettertouchtool
   - boot2docker
   - calibre
-  - ccleaner
-  - charles
   - disk-inventory-x
   - evernote
   - firefox
@@ -69,7 +67,6 @@ homebrew_cask_packages:
   - karabiner
   - keyboard-maestro
   - mactex
-  - makehuman
   - pdftk
   - pgadmin3
   - rescuetime
