@@ -43,6 +43,7 @@ homebrew_packages:
   - ruby
   - ruby-build
   - ruby-install
+  - shellcheck
   - sloccount
   - sqlite
   - tree
