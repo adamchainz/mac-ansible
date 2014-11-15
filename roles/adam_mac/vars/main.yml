@@ -60,6 +60,7 @@ homebrew_cask_packages:
   - bettertouchtool
   - boot2docker
   - calibre
+  - colloquy
   - disk-inventory-x
   - evernote
   - firefox
