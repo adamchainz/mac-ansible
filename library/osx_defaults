@@ -19,10 +19,22 @@ options:
     description:
       key name to set
     required: true
-  value:
+  bool:
     description:
-      The value to set the key to
-    required: true
+      boolean value to set
+    required: false
+  int:
+    description:
+      integer value to set
+    required: false
+  float:
+    description:
+      float value to set
+    required: false
+  string:
+    description:
+      string value to set
+    required: false
 requirements: [ defaults ]
 author: Adam Johnson
 '''
@@ -31,20 +43,22 @@ EXAMPLES = '''
 - osx_defaults: domain=com.apple.dock key=autohide-time-modifier value=1
 '''
 
+TYPE_PARAMS = ['bool', 'int', 'float', 'string']
+
 
 def main():
+
     module = AnsibleModule(
         argument_spec=dict(
             domain=dict(default="NSGlobalDomain"),
             key=dict(required=True, type='str'),
             bool=dict(type='bool'),
             int=dict(type='int'),
+            float=dict(type='float'),
             string=dict(type='str'),
         ),
-        mutually_exclusive=[
-            ['bool', 'int', 'string'],
-        ],
-        required_one_of=[['bool', 'int', 'string']],
+        mutually_exclusive=[TYPE_PARAMS],
+        required_one_of=[TYPE_PARAMS],
         supports_check_mode=True
     )
 
@@ -83,26 +97,30 @@ def main():
 def load_value(params):
     return filter(
         lambda x: x is not None,
-        [
-            params['bool'],
-            params['int'],
-            params['string'],
-        ]
+        [params[name] for name in TYPE_PARAMS]
     )[0]
 
 
 def get_key(module, domain, key):
     # Ask for type and representation in two commands
-    rc, type_message, err = module.run_command(["/usr/bin/defaults", "read-type", domain, key], check_rc=True)
+    rc, type_message, err = module.run_command(
+        ["/usr/bin/defaults", "read-type", domain, key],
+        check_rc=True
+    )
     apple_type = type_message.strip()[len('Type is '):]
-    rc, value, err = module.run_command(["/usr/bin/defaults", "read", domain, key], check_rc=True)
+    rc, value, err = module.run_command(
+        ["/usr/bin/defaults", "read", domain, key],
+        check_rc=True
+    )
     value = value.strip()
 
-    # Convert into a native python object
+    # Convert into a native python object based on hint
     if apple_type == 'boolean':
         return (value == '1')
     elif apple_type == 'integer':
         return int(value)
+    elif apple_type == 'float':
+        return float(value)
     elif apple_type == 'string':
         return value
     else:
@@ -115,6 +133,8 @@ def set_key(module, domain, key, value):
         set_args = ['-bool', 'true' if value else 'false']
     elif isinstance(value, int):
         set_args = ['-integer', str(value)]
+    elif isinstance(value, float):
+        set_args = ['-float', str(value)]
     elif isinstance(value, str):
         set_args = ['-string', value]
     else:

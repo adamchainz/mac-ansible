@@ -28,9 +28,9 @@
 #     array: []
 #   notify: kill dock
 
-# - name: Dock | Quick expose
-#   osx_defaults: domain=com.apple.dock key=expose-animation-duration float=0.1
-#   notify: kill dock
+- name: Dock | Quick expose
+  osx_defaults: domain=com.apple.dock key=expose-animation-duration float=0.1
+  notify: kill dock
 
 - name: Dock | Dashboard disabled
   osx_defaults: domain=com.apple.dashboard key=mcx-disabled bool=yes
