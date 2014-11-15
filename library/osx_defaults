@@ -40,7 +40,14 @@ author: Adam Johnson
 '''
 
 EXAMPLES = '''
-- osx_defaults: domain=com.apple.dock key=autohide-time-modifier value=1
+# Make the Dock hide quickly
+- osx_defaults: domain=com.apple.dock
+                key=autohide-time-modifier
+                value=1
+
+# Use 'old fashioned' scrolling direction
+- osx_defaults: key=com.apple.swipescrolldirectiosn
+                bool=false
 '''
 
 TYPE_PARAMS = ['bool', 'int', 'float', 'string']
