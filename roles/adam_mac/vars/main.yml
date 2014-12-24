@@ -73,6 +73,7 @@ homebrew_cask_packages:
   - pgadmin3
   - rescuetime
   - sequel-pro
+  - simple-comic
   - skim
   - skype
   - soundcleod
