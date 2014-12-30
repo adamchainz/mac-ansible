@@ -1,0 +1,18 @@
+- name: cron environment
+  cron:
+    name: 'env {{ item }}'
+    job: ''
+    minute: '{{ item }}'
+    hour: ''
+    day: ''
+    weekday: ''
+    month: ''
+  with_items:
+    - 'SHELL=/bin/bash'
+    - 'HOME={{ ansible_env.HOME }}'
+
+- name: lifelogger download
+  cron:
+    minute: 0
+    name: 'lifelogger download'
+    job: '/usr/local/bin/lifelogger download && logger lifelogger downloaded'
