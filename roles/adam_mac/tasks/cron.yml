@@ -15,4 +15,4 @@
   cron:
     minute: 0
     name: 'lifelogger download'
-    job: '/usr/local/bin/lifelogger download && logger lifelogger downloaded'
+    job: '/usr/local/bin/lifelogger download && logger lifelogger downloaded >/dev/null 2>&1'
