@@ -3,6 +3,7 @@ homebrew_packages:
   - autoconf
   - autojump
   - automake
+  - bazaar
   - brew-cask
   - coreutils
   - cowsay
