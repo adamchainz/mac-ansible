@@ -70,6 +70,7 @@ homebrew_cask_packages:
   - karabiner
   - keyboard-maestro
   - mactex
+  - mysqlworkbench
   - pgadmin3
   - rescuetime
   - sequel-pro
