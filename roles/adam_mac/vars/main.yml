@@ -108,10 +108,7 @@ pip_packages:
   - scipy
   - sh
   - six
-  - Unipath
   - virtualenvwrapper
 
 npm_packages:
   - ember-cli
-  - phonegap
-  - vtop
