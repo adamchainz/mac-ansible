@@ -36,6 +36,7 @@ homebrew_packages:
   - pkg-config
   - pngcrush
   - postgresql
+  - pyenv
   - pypy
   - python
   - python3
