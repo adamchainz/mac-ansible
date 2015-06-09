@@ -34,3 +34,8 @@
   with_items: npm_packages
   tags:
     - npm
+
+- name: Install gem packages
+  gem: name={{ item }} state=latest
+  with_items: gem_packages
+  tags: [gem]
