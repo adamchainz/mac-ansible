@@ -14,7 +14,6 @@ homebrew_packages:
   - gdbm
   - git
   - gpg
-  - htop-osx
   - imagemagick
   - jpeg
   - jpegoptim
@@ -27,7 +26,6 @@ homebrew_packages:
   - libyaml
   - md5sha1sum
   - memcached
-  - mysql
   - ncdu
   - node
   - openssl
@@ -60,7 +58,6 @@ homebrew_cask_packages:
   - anki
   - arq
   - bettertouchtool
-  - boot2docker
   - calibre
   - colloquy
   - disk-inventory-x
@@ -71,11 +68,9 @@ homebrew_cask_packages:
   - karabiner
   - keyboard-maestro
   - mactex
-  - mysqlworkbench
   - pgadmin3
   - rescuetime
   - sequel-pro
-  - simple-comic
   - skim
   - skype
   - soundcleod
@@ -93,7 +88,6 @@ pip_packages:
   - csvkit
   - dynamodb_utils
   - flake8
-  - Glances
   - ipdb
   - ipython
   - lifelogger
