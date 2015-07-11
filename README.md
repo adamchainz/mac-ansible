@@ -20,3 +20,11 @@ Getting Started
    [guide](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Homebrew-and-Python.md))
 3. `pip install ansible` (better than homebrew package as it's always latest)
 4. Then `ansible-playbook playbook.yml`
+
+
+Todo
+----
+
+* My terminal theme uses Ubuntu Mono; install ubuntu fonts from
+  [homebrew-fonts](https://github.com/caskroom/homebrew-fonts) when it is
+  stable
