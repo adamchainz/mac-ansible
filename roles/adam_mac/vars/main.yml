@@ -79,6 +79,7 @@ homebrew_cask_packages:
   - soundcleod
   - steam
   - sublime-text
+  - techstoreclub-simple-comic
   - texmaker
   - utorrent
   - vagrant
