@@ -1,3 +1,7 @@
+- name: homebrew taps
+  homebrew_tap: tap={{ item }}
+  with_items: homebrew_taps
+
 - name: Update homebrew
   homebrew: name=git state=latest update_homebrew=yes
   tags:

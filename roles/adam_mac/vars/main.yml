@@ -1,4 +1,7 @@
 ---
+homebrew_taps:
+  - caskroom/cask
+
 homebrew_packages:
   - autoconf
   - autojump
