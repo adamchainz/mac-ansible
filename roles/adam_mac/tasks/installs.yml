@@ -7,6 +7,12 @@
   tags:
     - brew
 
+- name: Uninstall old homebrew packages
+  homebrew: name={{ item }} state=absent
+  with_items: homebrew_package_removals
+  tags:
+    - brew
+
 - name: Install homebrew packages
   homebrew: name={{ item }} state=latest
   with_items: homebrew_packages

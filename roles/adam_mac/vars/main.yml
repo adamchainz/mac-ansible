@@ -1,6 +1,10 @@
 ---
 homebrew_taps:
   - caskroom/cask
+  - adamchainz/tap
+
+homebrew_package_removals:
+  - python3  # Replaced with python34 for the time being
 
 homebrew_packages:
   - autoconf
@@ -37,10 +41,9 @@ homebrew_packages:
   - pkg-config
   - pngcrush
   - postgresql
-  - pyenv
   - pypy
   - python
-  - python3
+  - python34
   - readline
   - rtmpdump
   - ruby
