@@ -1,3 +1,5 @@
+Compression yes
+CompressionLevel 9
 ServerAliveInterval 20
 TCPKeepAlive yes
 ControlMaster auto
