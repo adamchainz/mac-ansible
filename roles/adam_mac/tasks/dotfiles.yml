@@ -1,7 +1,6 @@
 - file: path=~/.{{ item }} state=directory
   with_items:
     - innotop
-    - ssh
     - ipython
     - ipython/profile_default
     - ipython/profile_default/startup
