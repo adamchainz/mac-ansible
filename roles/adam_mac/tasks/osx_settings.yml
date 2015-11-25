@@ -52,7 +52,13 @@
   osx_defaults: domain=com.apple.finder key=_FXShowPosixPathInTitle bool=yes
   notify: kill finder
 
-- name: Terminal theme
+- name: Terminal | Get current settings
+  command: plutil -convert xml1 -o - ~/Library/Preferences/com.apple.Terminal.plist
+  changed_when: false
+  register: terminal_settings
+
+- name: Terminal | Theme
+  when: "'<key>Chainz</key>' not in terminal_settings.stdout"
   command: open {{ ansible_env.PWD }}/roles/adam_mac/files/Chainz.terminal
 
 - name: Terminal | My theme everywhere
