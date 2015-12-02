@@ -21,6 +21,7 @@ homebrew_packages:
   - gdbm
   - git
   - gpg
+  - hub
   - imagemagick
   - jpeg
   - jpegoptim
