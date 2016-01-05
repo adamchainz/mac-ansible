@@ -65,6 +65,7 @@ homebrew_cask_packages:
   - anki
   - arq
   - bettertouchtool
+  - bitbar
   - calibre
   - colloquy
   - disk-inventory-x
@@ -111,6 +112,7 @@ pip_packages:
   - scipy
   - sh
   - six
+  - tldr
   - virtualenvwrapper
 
 npm_packages:
