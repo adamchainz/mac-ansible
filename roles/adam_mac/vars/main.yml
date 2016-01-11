@@ -76,6 +76,7 @@ homebrew_cask_packages:
   - keyboard-maestro
   - mactex
   - pgadmin3
+  - playonmac
   - rescuetime
   - sequel-pro
   - skim
