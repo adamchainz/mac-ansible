@@ -49,3 +49,4 @@
     add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
     forkdiff = !bash -c 'git diff $(git merge-base "$1" "$2") "$2" "${@: 3}" ' -
     new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+    ffmerge = merge --ff-only
