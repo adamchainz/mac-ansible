@@ -11,6 +11,7 @@ homebrew_packages:
   - autojump
   - automake
   - bazaar
+  - cloc
   - coreutils
   - cowsay
   - exiftool
@@ -51,7 +52,6 @@ homebrew_packages:
   - ruby-build
   - ruby-install
   - shellcheck
-  - sloccount
   - sqlite
   - tree
   - watch
