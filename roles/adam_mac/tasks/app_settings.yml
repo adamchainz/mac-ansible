@@ -1,17 +1,21 @@
 - name: Sublime Text 3 settings
-  git: repo=git@github.com:adamchainz/sublime_text_3_settings.git
-       dest=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+  git:
+    repo: git@github.com:adamchainz/sublime_text_3_settings.git
+    dest: '~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
 
 - name: Karabiner dir
-  file: path="~/Library/Application Support/Karabiner/"
-        state=directory
+  file:
+    path: "~/Library/Application Support/Karabiner/"
+    state: directory
 
 - name: Karabiner private.xml
-  file: src={{ ansible_env.PWD }}/roles/adam_mac/files/Karabiner_private.xml
-        dest="~/Library/Application Support/Karabiner/private.xml"
-        state=link
+  file:
+    src: '{{ ansible_env.PWD }}/roles/adam_mac/files/Karabiner_private.xml'
+    dest: "~/Library/Application Support/Karabiner/private.xml"
+    state: link
 
 - name: Cowsay cowfile
-  file: src={{ ansible_env.PWD }}/roles/adam_mac/files/two-heads.cow
-        dest=/usr/local/Cellar/cowsay/3.03/share/cows/two-heads.cow
-        state=link
+  file:
+    src: '{{ ansible_env.PWD }}/roles/adam_mac/files/two-heads.cow'
+    dest: /usr/local/Cellar/cowsay/3.03/share/cows/two-heads.cow
+    state: link

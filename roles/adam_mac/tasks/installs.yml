@@ -1,43 +1,60 @@
 - name: homebrew taps
-  homebrew_tap: tap={{ item }}
-  with_items: homebrew_taps
+  homebrew_tap:
+    tap: '{{ item }}'
+  with_items: '{{ homebrew_taps }}'
 
 - name: Update homebrew
-  homebrew: name=git state=latest update_homebrew=yes
+  homebrew:
+    name: git
+    state: latest
+    update_homebrew: yes
   tags:
     - brew
 
 - name: Uninstall old homebrew packages
-  homebrew: name={{ item }} state=absent
-  with_items: homebrew_package_removals
+  homebrew:
+    name: '{{ item }}'
+    state: absent
+  with_items: '{{ homebrew_package_removals }}'
   tags:
     - brew
 
 - name: Install homebrew packages
-  homebrew: name={{ item }} state=latest
-  with_items: homebrew_packages
+  homebrew:
+    name: '{{ item }}'
+    state: latest
+  with_items: '{{ homebrew_packages }}'
   tags:
     - brew
 
 - name: Install homebrew cask packages
-  homebrew_cask: name={{ item }} state=installed
-  with_items: homebrew_cask_packages
+  homebrew_cask:
+    name: '{{ item }}'
+    state: installed
+  with_items: '{{ homebrew_cask_packages }}'
   tags:
     - brew
 
 - name: Install pip packages
-  pip: name={{ item }} state=latest
-  with_items: pip_packages
+  pip:
+    name: '{{ item }}'
+    state: latest
+  with_items: '{{ pip_packages }}'
   tags:
     - pip
 
 - name: Install npm packages
-  npm: name={{ item }} state=latest global=yes
-  with_items: npm_packages
+  npm:
+    name: '{{ item }}'
+    state: latest
+    global: yes
+  with_items: '{{ npm_packages }}'
   tags:
     - npm
 
 - name: Install gem packages
-  gem: name={{ item }} state=latest
-  with_items: gem_packages
+  gem:
+    name: '{{ item }}'
+    state: latest
+  with_items: '{{ gem_packages }}'
   tags: [gem]

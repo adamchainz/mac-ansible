@@ -1,11 +1,13 @@
 - name: ssh dir stat
-  stat: path=~/.ssh
+  stat:
+    path: ~/.ssh
   register: ssh_dir
 
 - name: ssh dir exists
   when: not ssh_dir.stat.exists
-  file: path=~/.ssh
-        state=directory
+  file:
+    path: ~/.ssh
+    state: directory
 
 - name: ssh known_hosts contains github.com key
   lineinfile:
