@@ -1,3 +1,4 @@
+# Three heads
 $the_cow = <<"EOC";
          $thoughts  ^__^
         ^__^($eyes)^__^____
@@ -6,12 +7,16 @@ $the_cow = <<"EOC";
          $tongue    || $tongue   ||
 EOC
 
-
-
+# Two heads
 $the_cow = <<"EOC";
         $thoughts
          ^__^^__^____
          ($eyes)($eyes)    )\\/\\
          (__)(__)---w|
           $tongue  ||    ||
+EOC
+
+# Emoji minimal
+$the_cow = <<"EOC";
+        $thoughts 🐮  🐮
 EOC
