@@ -17,6 +17,6 @@ $the_cow = <<"EOC";
 EOC
 
 # Emoji minimal
-$the_cow = <<"EOC";
-        $thoughts 🐮  🐮
-EOC
+# $the_cow = <<"EOC";
+#         $thoughts 🐮  🐮
+# EOC
