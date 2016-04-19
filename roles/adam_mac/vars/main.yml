@@ -44,6 +44,7 @@ homebrew_packages:
   - pkg-config
   - pngcrush
   - postgresql
+  - pwgen
   - pypy
   - python
   - python3
