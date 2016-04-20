@@ -261,10 +261,24 @@
 	<real>0.72197264432907104</real>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x46-0x120000</key>
+		<dict>
+			<key>Action</key>
+			<integer>23</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
 			<integer>32</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xd-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -402,7 +416,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>166 824 924 485 0 0 1200 1898 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 22 1194 1876 0 0 1200 1898 </string>
+	<string>0 0 1194 1898 0 0 1200 1898 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1088,7 +1102,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-04-18T11:11:17Z</date>
+	<date>2016-04-20T09:58:47Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
