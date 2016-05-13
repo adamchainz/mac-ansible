@@ -54,7 +54,6 @@ homebrew_packages:
   - ruby-build
   - ruby-install
   - shellcheck
-  - silverlight
   - sqlite
   - tree
   - watch
