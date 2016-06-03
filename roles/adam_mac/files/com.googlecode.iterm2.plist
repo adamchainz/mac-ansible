@@ -413,10 +413,21 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>0</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
 	<string>166 824 924 485 0 0 1200 1898 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1194 1898 0 0 1200 1898 </string>
+	<string>4 0 1194 1898 0 0 1200 1898 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1062,7 +1073,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>481022444.08192998</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>482673379.33024102</real>
+	<real>486567655.25555098</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1102,7 +1113,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-04-20T09:58:47Z</date>
+	<date>2016-06-03T14:39:23Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1133,6 +1144,10 @@
 	<true/>
 	<key>UseLionStyleFullscreen</key>
 	<true/>
+	<key>WebKitDefaultFontSize</key>
+	<integer>11</integer>
+	<key>WebKitStandardFont</key>
+	<string>.Lucida Grande UI</string>
 	<key>Window Arrangements</key>
 	<dict>
 		<key>Max</key>
