@@ -83,6 +83,7 @@ homebrew_cask_packages:
   - playonmac
   - rescuetime
   - sequel-pro
+  - slack
   - skim
   - skype
   - soundcleod
