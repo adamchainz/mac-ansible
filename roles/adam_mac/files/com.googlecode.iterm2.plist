@@ -413,6 +413,25 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSScrollViewShouldScrollUnderTitlebar</key>
+	<false/>
+	<key>NSTableView Columns KeyBingingTable</key>
+	<array>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATCG
+		</data>
+		<string>198</string>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATGG
+		</data>
+		<string>307</string>
+	</array>
+	<key>NSTableView Hidden Columns KeyBingingTable</key>
+	<array/>
+	<key>NSTableView Sort Ordering KeyBingingTable</key>
+	<array/>
 	<key>NSToolbar Configuration Terminal Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -425,9 +444,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>166 824 924 485 0 0 1200 1898 </string>
+	<string>166 940 606 456 0 0 1200 1898 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>1490 1129 620 392 1200 0 1200 1898 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 0 1194 1898 0 0 1200 1898 </string>
+	<string>4 10 1194 1888 0 0 1200 1898 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1070,6 +1091,8 @@
 			<string></string>
 		</dict>
 	</array>
+	<key>NoSyncInstallationId</key>
+	<string>7E1B8958-E254-4CA0-A45A-0173046C8040</string>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>481022444.08192998</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
@@ -1088,6 +1111,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1108,15 +1133,19 @@
 	<integer>3</integer>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
+	<key>SUFeedAlternateAppNameKey</key>
+	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=89</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-03T14:39:23Z</date>
+	<date>2016-06-21T14:30:49Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
@@ -1967,6 +1996,6 @@
 	<key>findRegex_iTerm</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>2.1.4</string>
+	<string>3.0.0</string>
 </dict>
 </plist>
