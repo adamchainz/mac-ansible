@@ -99,26 +99,18 @@ homebrew_cask_packages:
 pip_packages:
   - 'https://bitbucket.org/adamchainz/pygments-ipython-console/get/master.zip#egg=pygments-ipython-console'
   - csvkit
-  - dynamodb_utils
   - ec2-ssh-yplan
   - flake8
   - ipdb
   - ipython
   - lifelogger
-  - numpy
-  - pandas
-  - pathlib
   - pep8
   - pip-tools
   - pygments
-  - pylint
   - pythonpy
   - pyyaml
   - requests
-  - scipy
-  - sh
   - six
-  - tldr
   - virtualenvwrapper
 
 npm_packages:
