@@ -109,6 +109,7 @@ pip_packages:
   - pandas
   - pathlib
   - pep8
+  - pip-tools
   - pygments
   - pylint
   - pythonpy
