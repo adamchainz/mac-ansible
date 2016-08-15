@@ -104,8 +104,8 @@ pip_packages:
   - ipdb
   - ipython
   - lifelogger
-  - pep8
   - pip-tools
+  - pycodestyle
   - pygments
   - pythonpy
   - pyyaml
