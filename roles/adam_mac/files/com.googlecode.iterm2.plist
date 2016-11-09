@@ -6,6 +6,8 @@
 	<true/>
 	<key>AllowClipboardAccess</key>
 	<false/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -426,7 +428,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>307</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -444,11 +446,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>166 969 606 456 0 0 1200 1898 </string>
+	<string>166 1450 606 456 0 0 1200 1898 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>378 1320 400 129 0 0 1200 1898 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1490 1129 620 392 1200 0 1200 1898 </string>
+	<string>292 1129 620 392 0 0 1200 1898 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>269 122 796 473 0 0 1200 1898 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 0 1194 1898 0 0 1200 1898 </string>
+	<string>0 3 1434 874 0 0 1200 1898 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1125,6 +1131,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/adamj/Documents/Projects/mac-ansible/roles/adam_mac/files</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1133,6 +1141,8 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -1142,7 +1152,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-21T14:30:49Z</date>
+	<date>2016-11-08T10:03:33Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1998,6 +2008,8 @@
 	<key>findRegex_iTerm</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>3.0.2</string>
+	<string>3.0.10</string>
+	<key>moveToApplicationsFolderAlertSuppress</key>
+	<true/>
 </dict>
 </plist>
