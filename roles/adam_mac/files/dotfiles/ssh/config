@@ -18,3 +18,7 @@ Host default
   IdentitiesOnly yes
   LogLevel FATAL
 
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+
