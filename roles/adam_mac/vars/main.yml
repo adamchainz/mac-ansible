@@ -74,6 +74,7 @@ homebrew_cask_packages:
   - evernote
   - firefox
   - flux
+  - franz
   - google-chrome
   - iterm2
   - karabiner
