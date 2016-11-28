@@ -1,6 +1,6 @@
 [user]
     name = Adam Chainz
-    email = adam@adamj.eu
+    email = me@adamj.eu
 
 [core]
     excludesfile = ~/.gitignore_global
@@ -51,5 +51,6 @@
     forkdiff = !bash -c 'git diff $(git merge-base "$1" "$2") "$2" "${@: 3}" ' -
     new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
     ffmerge = merge --ff-only
+
 [hub]
-	protocol = ssh
+    protocol = ssh
