@@ -80,7 +80,6 @@ homebrew_cask_packages:
   - karabiner
   - keyboard-maestro
   - mactex
-  - pgadmin3
   - playonmac
   - rescuetime
   - sequel-pro
@@ -90,7 +89,6 @@ homebrew_cask_packages:
   - soundcleod
   - steam
   - sublime-text
-  - techstoreclub-simple-comic
   - texmaker
   - utorrent
   - vagrant
