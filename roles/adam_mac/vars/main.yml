@@ -23,6 +23,7 @@ homebrew_packages:
   - git
   - gpg
   - hub
+  - homebrew/dupes/srm
   - imagemagick
   - jhead
   - jpeg
