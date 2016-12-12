@@ -65,6 +65,7 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - alfred
+  - amazon-music
   - anki
   - arq
   - bettertouchtool
