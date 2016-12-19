@@ -71,6 +71,7 @@ homebrew_cask_packages:
   - bitbar
   - calibre
   - colloquy
+  - dash
   - disk-inventory-x
   - evernote
   - firefox
