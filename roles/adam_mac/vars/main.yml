@@ -101,7 +101,6 @@ pip_packages:
   - awscli
   - boto
   - boto3
-  - 'https://bitbucket.org/adamchainz/pygments-ipython-console/get/master.zip#egg=pygments-ipython-console'
   - csvkit
   - ec2-ssh-yplan
   - flake8
