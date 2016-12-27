@@ -82,20 +82,23 @@ homebrew_cask_packages:
   - karabiner
   - keyboard-maestro
   - mactex
+  - mplayerx
+  - paintbrush
   - playonmac
   - rescuetime
   - sequel-pro
-  - slack
+  - silverlight
   - skim
   - skype
   - soundcleod
+  - soundflower
   - steam
   - sublime-text
   - texmaker
   - utorrent
-  - vagrant
-  - virtualbox
   - vlc
+  - wireshark
+  - xquartz
 
 pip_packages:
   - awscli
