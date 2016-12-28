@@ -8,17 +8,17 @@
     weekday: ''
     month: ''
   with_items:
-    - 'SHELL=/bin/bash'
-    - 'HOME={{ ansible_env.HOME }}'
+    - SHELL=/bin/bash
+    - HOME={{ ansible_env.HOME }}
 
 - name: lifelogger download
   cron:
     minute: 0
-    name: 'lifelogger download'
-    job: '/usr/local/bin/lifelogger download && logger lifelogger downloaded >/dev/null 2>&1'
+    name: lifelogger download
+    job: /usr/local/bin/lifelogger download && logger lifelogger downloaded >~/tmp/cron.log 2>&1
 
 - name: clean up projects
   cron:
-    minute: 0
-    name: 'remove tox dirs older than 4 weeks'
+    minute: 21
+    name: remove tox dirs older than 4 weeks
     job: find ~/Documents/Projects -type d -iname '.tox' -ctime +4w -delete
