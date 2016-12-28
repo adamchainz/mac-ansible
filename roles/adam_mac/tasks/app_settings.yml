@@ -1,9 +1,14 @@
+- name: scripts repo
+  git:
+    repo: git@github.com:adamchainz/chainz-scripts.git
+    dest: ~/script
+    update: no
+
 - name: iTerm custom settings file
   osx_defaults:
     domain: com.googlecode.iterm2
     key: PrefsCustomFolder
     string: "{{ ansible_env.PWD }}/roles/adam_mac/files"
-  tags: [test]
 
 - name: Sublime Text 3 settings
   git:
@@ -12,13 +17,13 @@
 
 - name: Karabiner dir
   file:
-    path: "~/Library/Application Support/Karabiner/"
+    path: ~/Library/Application Support/Karabiner/
     state: directory
 
 - name: Karabiner private.xml
   file:
     src: '{{ ansible_env.PWD }}/roles/adam_mac/files/Karabiner_private.xml'
-    dest: "~/Library/Application Support/Karabiner/private.xml"
+    dest: ~/Library/Application Support/Karabiner/private.xml
     state: link
 
 - name: Cowsay cowfile
