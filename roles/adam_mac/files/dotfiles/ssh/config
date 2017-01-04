@@ -7,6 +7,9 @@ ControlPath /tmp/%r@%h:%p
 ControlPersist yes
 StrictHostKeyChecking no
 
+Host *
+  UseKeychain yes
+
 Host default
   HostName 127.0.0.1
   User vagrant
