@@ -97,7 +97,6 @@ homebrew_cask_packages:
   - steam
   - sublime-text
   - texmaker
-  - utorrent
   - vlc
   - wireshark
   - xquartz
