@@ -2,6 +2,8 @@
   homebrew_tap:
     tap: '{{ item }}'
   with_items: '{{ homebrew_taps }}'
+  tags:
+    - brew
 
 - name: Update homebrew
   homebrew:
