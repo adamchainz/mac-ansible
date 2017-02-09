@@ -1,6 +1,7 @@
 ---
 homebrew_taps:
   - caskroom/cask
+  - caskroom/fonts
   - adamchainz/tap
 
 homebrew_package_removals:
@@ -76,6 +77,7 @@ homebrew_cask_packages:
   - evernote
   - firefox
   - flux
+  - font-ubuntumono-nerd-font
   - franz
   - google-chrome
   - iterm2
