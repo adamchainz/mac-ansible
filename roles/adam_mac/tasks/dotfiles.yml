@@ -24,6 +24,11 @@
     dest: ~/.innotop/innotop.conf
     force: no  # Only if it doesn't exist
 
+- copy:
+    src: dotfiles/pypirc
+    dest: ~/.pypirc
+    force: no
+
 - name: zsh - git repo for prezto fork
   git:
     repo: git@github.com:adamchainz/prezto.git
