@@ -57,6 +57,7 @@ homebrew_packages:
   - ruby-install
   - shellcheck
   - sqlite
+  - tor
   - tree
   - watch
   - wget
