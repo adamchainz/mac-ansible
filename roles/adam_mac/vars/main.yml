@@ -62,7 +62,6 @@ homebrew_packages:
   - watch
   - wget
   - xz
-  - youtube-dl
   - zsh-completions
 
 homebrew_cask_packages:
@@ -121,6 +120,7 @@ pip_packages:
   - six
   - tox
   - virtualenvwrapper
+  - youtube-dl
 
 npm_packages:
   - ember-cli
