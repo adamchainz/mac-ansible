@@ -16,6 +16,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>BracketedPasteMode</key>
@@ -402,6 +404,8 @@
 	<integer>63247</integer>
 	<key>HotkeyCode</key>
 	<integer>111</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>8388864</integer>
 	<key>IRMemory</key>
@@ -435,7 +439,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAczGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAc7Gdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -459,9 +463,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>292 1128 620 392 0 0 1200 1897 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>55 1432 937 465 0 0 1200 1897 </string>
+	<string>55 1424 796 473 0 0 1200 1897 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 9 1194 1888 0 0 1200 1897 </string>
+	<string>4 7 1194 1890 0 0 1200 1897 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1178,7 +1182,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-19T15:17:05Z</date>
+	<date>2017-10-05T12:52:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2033,10 +2037,12 @@
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
+	<key>findMode_iTerm</key>
+	<integer>4</integer>
 	<key>findRegex_iTerm</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>3.0.15</string>
+	<string>3.1.2</string>
 	<key>moveToApplicationsFolderAlertSuppress</key>
 	<true/>
 </dict>
