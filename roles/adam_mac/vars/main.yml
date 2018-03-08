@@ -105,7 +105,7 @@ pip_packages:
 - boto
 - boto3
 - csvkit
-- ec2-ssh-yplan
+- ec2-ssh
 - flake8
 - ipdb
 - ipython
