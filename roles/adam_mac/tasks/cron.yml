@@ -8,8 +8,8 @@
     weekday: ''
     month: ''
   with_items:
-    - SHELL=/bin/bash
-    - HOME={{ ansible_env.HOME }}
+  - SHELL=/bin/bash
+  - HOME={{ ansible_env.HOME }}
 
 - name: lifelogger download
   cron:

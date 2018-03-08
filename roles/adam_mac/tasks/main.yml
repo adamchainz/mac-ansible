@@ -16,4 +16,5 @@
 
 - name: Cron settings
   include: cron.yml
-  tags: [cron]
+  tags:
+  - cron

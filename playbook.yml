@@ -1,11 +1,10 @@
----
 - hosts: 127.0.0.1
   connection: local
   tasks:
-    - debug: msg="Checking we are running in the directory of the script"
-      failed_when: not ansible_env.PWD.endswith('/mac-ansible')
+  - debug: msg="Checking we are running in the directory of the script"
+    failed_when: not ansible_env.PWD.endswith('/mac-ansible')
 
 - hosts: 127.0.0.1
   connection: local
   roles:
-    - adam_mac
+  - adam_mac

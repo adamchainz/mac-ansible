@@ -1,130 +1,129 @@
----
 homebrew_taps:
-  - caskroom/cask
-  - caskroom/fonts
-  - adamchainz/tap
+- caskroom/cask
+- caskroom/fonts
+- adamchainz/tap
 
 homebrew_package_removals:
-  - python34
+- python34
 
 homebrew_packages:
-  - autoconf
-  - autojump
-  - automake
-  - bazaar
-  - cloc
-  - coreutils
-  - cowsay
-  - exiftool
-  - fdupes
-  - ffmpeg
-  - freetype
-  - fswatch
-  - gdbm
-  - git
-  - gpg
-  - hub
-  - homebrew/dupes/srm
-  - imagemagick
-  - jhead
-  - jpeg
-  - jpegoptim
-  - jq
-  - lesspipe
-  - libevent
-  - libmemcached
-  - libpng
-  - libtool
-  - libyaml
-  - md5sha1sum
-  - memcached
-  - ncdu
-  - node
-  - openssl
-  - ossp-uuid
-  - percona-toolkit
-  - pkg-config
-  - pngcrush
-  - postgresql
-  - pwgen
-  - pypy
-  - python
-  - python3
-  - readline
-  - rtmpdump
-  - ruby
-  - ruby-build
-  - ruby-install
-  - shellcheck
-  - sqlite
-  - tor
-  - tree
-  - watch
-  - wget
-  - xz
-  - zsh-completions
+- autoconf
+- autojump
+- automake
+- bazaar
+- cloc
+- coreutils
+- cowsay
+- exiftool
+- fdupes
+- ffmpeg
+- freetype
+- fswatch
+- gdbm
+- git
+- gpg
+- hub
+- homebrew/dupes/srm
+- imagemagick
+- jhead
+- jpeg
+- jpegoptim
+- jq
+- lesspipe
+- libevent
+- libmemcached
+- libpng
+- libtool
+- libyaml
+- md5sha1sum
+- memcached
+- ncdu
+- node
+- openssl
+- ossp-uuid
+- percona-toolkit
+- pkg-config
+- pngcrush
+- postgresql
+- pwgen
+- pypy
+- python
+- python3
+- readline
+- rtmpdump
+- ruby
+- ruby-build
+- ruby-install
+- shellcheck
+- sqlite
+- tor
+- tree
+- watch
+- wget
+- xz
+- zsh-completions
 
 homebrew_cask_packages:
-  - alfred
-  - anki
-  - arq
-  - bettertouchtool
-  - bitbar
-  - calibre
-  - colloquy
-  - dash
-  - disk-inventory-x
-  - evernote
-  - firefox
-  - flux
-  - font-ubuntumono-nerd-font
-  - franz
-  - google-chrome
-  - iterm2
-  - karabiner
-  - keyboard-maestro
-  - mactex
-  - mplayerx
-  - paintbrush
-  - playonmac
-  - rescuetime
-  - sequel-pro
-  - silverlight
-  - skim
-  - skype
-  - soundcleod
-  - soundflower
-  - steam
-  - sublime-text
-  - texmaker
-  - vlc
-  - wireshark
-  - xquartz
+- alfred
+- anki
+- arq
+- bettertouchtool
+- bitbar
+- calibre
+- colloquy
+- dash
+- disk-inventory-x
+- evernote
+- firefox
+- flux
+- font-ubuntumono-nerd-font
+- franz
+- google-chrome
+- iterm2
+- karabiner
+- keyboard-maestro
+- mactex
+- mplayerx
+- paintbrush
+- playonmac
+- rescuetime
+- sequel-pro
+- silverlight
+- skim
+- skype
+- soundcleod
+- soundflower
+- steam
+- sublime-text
+- texmaker
+- vlc
+- wireshark
+- xquartz
 
 pip_packages:
-  - awscli
-  - boto
-  - boto3
-  - csvkit
-  - ec2-ssh-yplan
-  - flake8
-  - ipdb
-  - ipython
-  - lifelogger
-  - pip-tools
-  - pycodestyle
-  - pygments
-  - pythonpy
-  - pyyaml
-  - requests
-  - six
-  - tox
-  - virtualenvwrapper
-  - youtube-dl
+- awscli
+- boto
+- boto3
+- csvkit
+- ec2-ssh-yplan
+- flake8
+- ipdb
+- ipython
+- lifelogger
+- pip-tools
+- pycodestyle
+- pygments
+- pythonpy
+- pyyaml
+- requests
+- six
+- tox
+- virtualenvwrapper
+- youtube-dl
 
 npm_packages:
-  - ember-cli
+- ember-cli
 
 gem_packages:
-  - jekyll
-  - jekyll-tagging
+- jekyll
+- jekyll-tagging

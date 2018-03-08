@@ -3,15 +3,15 @@
     tap: '{{ item }}'
   with_items: '{{ homebrew_taps }}'
   tags:
-    - brew
+  - brew
 
 - name: Update homebrew
   homebrew:
     name: git
     state: latest
-    update_homebrew: yes
+    update_homebrew: true
   tags:
-    - brew
+  - brew
 
 - name: Uninstall old homebrew packages
   homebrew:
@@ -19,7 +19,7 @@
     state: absent
   with_items: '{{ homebrew_package_removals }}'
   tags:
-    - brew
+  - brew
 
 - name: Install homebrew packages
   homebrew:
@@ -27,7 +27,7 @@
     state: latest
   with_items: '{{ homebrew_packages }}'
   tags:
-    - brew
+  - brew
 
 - name: Install homebrew cask packages
   homebrew_cask:
@@ -35,7 +35,7 @@
     state: installed
   with_items: '{{ homebrew_cask_packages }}'
   tags:
-    - brew
+  - brew
 
 - name: Install pip packages
   pip:
@@ -43,20 +43,21 @@
     state: latest
   with_items: '{{ pip_packages }}'
   tags:
-    - pip
+  - pip
 
 - name: Install npm packages
   npm:
     name: '{{ item }}'
     state: latest
-    global: yes
+    global: true
   with_items: '{{ npm_packages }}'
   tags:
-    - npm
+  - npm
 
 - name: Install gem packages
   gem:
     name: '{{ item }}'
     state: latest
   with_items: '{{ gem_packages }}'
-  tags: [gem]
+  tags:
+  - gem

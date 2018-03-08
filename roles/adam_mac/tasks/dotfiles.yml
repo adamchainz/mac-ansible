@@ -2,32 +2,32 @@
     path: '~/.{{ item }}'
     state: directory
   with_items:
-    - innotop
-    - ipython
-    - ipython/profile_default
-    - ipython/profile_default/startup
+  - innotop
+  - ipython
+  - ipython/profile_default
+  - ipython/profile_default/startup
 
 - file:
     src: '{{ ansible_env.PWD }}/roles/adam_mac/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
     state: link
   with_items:
-    - gitconfig
-    - gitignore_global
-    - python_startup
-    - ssh/config
-    - ansible.cfg
-    - ipython/profile_default/startup/00-imports.py
+  - gitconfig
+  - gitignore_global
+  - python_startup
+  - ssh/config
+  - ansible.cfg
+  - ipython/profile_default/startup/00-imports.py
 
 - copy:
     src: dotfiles/innotop/innotop.conf
     dest: ~/.innotop/innotop.conf
-    force: no  # Only if it doesn't exist
+    force: false  # Only if it doesn't exist
 
 - copy:
     src: dotfiles/pypirc
     dest: ~/.pypirc
-    force: no
+    force: false
 
 - name: zsh - git repo for prezto fork
   git:
@@ -40,9 +40,9 @@
     src: '~/.zprezto/runcoms/{{ item }}'
     path: '~/.{{ item }}'
   with_items:
-    - zlogin
-    - zlogout
-    - zprofile
-    - zshenv
-    - zshrc
-    - zpreztorc
+  - zlogin
+  - zlogout
+  - zprofile
+  - zshenv
+  - zshrc
+  - zpreztorc

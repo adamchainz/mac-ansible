@@ -12,7 +12,7 @@
 - name: ssh known_hosts contains github.com key
   lineinfile:
     dest: ~/.ssh/known_hosts
-    create: yes
+    create: true
     mode: 0644
     state: present
     line: "{{ lookup('file', 'github_ssh_host_key') }}"

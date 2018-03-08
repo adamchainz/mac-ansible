@@ -2,7 +2,7 @@
   git:
     repo: git@github.com:adamchainz/chainz-scripts.git
     dest: ~/script
-    update: no
+    update: false
 
 - name: iTerm custom settings file
   osx_defaults:
