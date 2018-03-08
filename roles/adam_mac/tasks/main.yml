@@ -1,20 +1,20 @@
 - name: Basic settings
-  include: basic_settings.yml
+  import_tasks: basic_settings.yml
 
 - name: Install things
-  include: installs.yml
+  import_tasks: installs.yml
 
 - name: Set Mac OS X settings
-  include: osx_settings.yml
+  import_tasks: osx_settings.yml
   tags: osx
 
 - name: Link in dotfiles
-  include: dotfiles.yml
+  import_tasks: dotfiles.yml
 
 - name: Copy in/clone app settings
-  include: app_settings.yml
+  import_tasks: app_settings.yml
 
 - name: Cron settings
-  include: cron.yml
+  import_tasks: cron.yml
   tags:
   - cron
