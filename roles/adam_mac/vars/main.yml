@@ -48,7 +48,7 @@ homebrew_packages:
 - pwgen
 - pypy
 - python
-- python3
+- python@2
 - readline
 - rtmpdump
 - ruby
