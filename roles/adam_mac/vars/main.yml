@@ -110,6 +110,7 @@ pip_packages:
 - ipdb
 - ipython
 - lifelogger
+- multilint
 - pip-tools
 - pycodestyle
 - pygments
