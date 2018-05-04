@@ -1,5 +1,4 @@
 Compression yes
-CompressionLevel 9
 ServerAliveInterval 20
 TCPKeepAlive yes
 ControlMaster auto
@@ -24,4 +23,3 @@ Host default
 Host github.com
   Hostname ssh.github.com
   Port 443
-
