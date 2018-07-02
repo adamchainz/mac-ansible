@@ -3,8 +3,7 @@ homebrew_taps:
 - caskroom/fonts
 - adamchainz/tap
 
-homebrew_package_removals:
-- python34
+homebrew_package_removals: []
 
 homebrew_packages:
 - autoconf
