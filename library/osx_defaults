@@ -84,8 +84,8 @@ def main():
     current_value = get_key(module, domain, key)
 
     if type(value) != type(current_value):
-        print value
-        print current_value
+        print(value)
+        print(current_value)
         module.fail_json(
             msg="Current defaults database stores key as type %s, "
                 "you requested %s" %
@@ -102,10 +102,10 @@ def main():
 
 
 def load_value(params):
-    return filter(
+    return list(filter(
         lambda x: x is not None,
         [params[name] for name in TYPE_PARAMS]
-    )[0]
+    ))[0]
 
 
 def get_key(module, domain, key):
