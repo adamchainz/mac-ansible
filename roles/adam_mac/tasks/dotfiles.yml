@@ -1,4 +1,5 @@
-- file:
+- name: dotfiles dirs
+  file:
     path: '~/.{{ item }}'
     state: directory
   with_items:
