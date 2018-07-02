@@ -79,7 +79,6 @@ homebrew_cask_packages:
 - franz
 - google-chrome
 - iterm2
-- karabiner
 - keyboard-maestro
 - mactex
 - mplayerx
