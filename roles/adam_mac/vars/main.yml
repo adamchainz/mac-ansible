@@ -92,6 +92,8 @@ homebrew_cask_packages:
 - steam
 - sublime-text
 - texmaker
+- vagrant
+- virtualbox
 - vlc
 - wireshark
 - xquartz
