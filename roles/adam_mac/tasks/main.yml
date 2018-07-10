@@ -10,6 +10,8 @@
 
 - name: Link in dotfiles
   import_tasks: dotfiles.yml
+  tags:
+  - dotfiles
 
 - name: Copy in/clone app settings
   import_tasks: app_settings.yml

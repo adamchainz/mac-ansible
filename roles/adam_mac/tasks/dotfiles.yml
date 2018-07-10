@@ -23,12 +23,14 @@
   - ansible.cfg
   - ipython/profile_default/startup/00-imports.py
 
-- copy:
+- name: innotop.conf
+  copy:
     src: dotfiles/innotop/innotop.conf
     dest: ~/.innotop/innotop.conf
     force: false  # Only if it doesn't exist
 
-- copy:
+- name: pypirc
+  copy:
     src: dotfiles/pypirc
     dest: ~/.pypirc
     force: false
