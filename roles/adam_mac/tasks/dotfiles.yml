@@ -2,7 +2,7 @@
   file:
     path: '~/.{{ item }}'
     state: directory
-  with_items:
+  loop:
   - innotop
   - ipython
   - ipython/profile_default
@@ -12,7 +12,7 @@
     src: '{{ ansible_env.PWD }}/roles/adam_mac/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
     state: link
-  with_items:
+  loop:
   - gitconfig
   - gitignore_global
   - python_startup
@@ -40,7 +40,7 @@
     state: link
     src: '~/.zprezto/runcoms/{{ item }}'
     path: '~/.{{ item }}'
-  with_items:
+  loop:
   - zlogin
   - zlogout
   - zprofile

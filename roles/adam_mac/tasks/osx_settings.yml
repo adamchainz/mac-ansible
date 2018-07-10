@@ -100,7 +100,7 @@
     domain: com.apple.terminal
     key: "{{ item }}"
     string: "Chainz"
-  with_items:
+  loop:
   - Default Window Settings
   - Startup Window Settings
 

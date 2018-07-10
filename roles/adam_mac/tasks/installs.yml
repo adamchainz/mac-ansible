@@ -1,7 +1,7 @@
 - name: homebrew taps
   homebrew_tap:
     tap: '{{ item }}'
-  with_items: '{{ homebrew_taps }}'
+  loop: '{{ homebrew_taps }}'
   tags:
   - brew
 
@@ -25,7 +25,7 @@
   homebrew:
     name: '{{ item }}'
     state: latest
-  with_items: '{{ homebrew_packages }}'
+  loop: '{{ homebrew_packages }}'
   tags:
   - brew
 
@@ -33,15 +33,14 @@
   homebrew_cask:
     name: '{{ item }}'
     state: installed
-  with_items: '{{ homebrew_cask_packages }}'
+  loop: '{{ homebrew_cask_packages }}'
   tags:
   - brew
 
 - name: Install pip packages
   pip:
-    name: '{{ item }}'
+    name: '{{ pip_packages }}'
     state: latest
-  with_items: '{{ pip_packages }}'
   tags:
   - pip
 
@@ -49,6 +48,6 @@
   gem:
     name: '{{ item }}'
     state: latest
-  with_items: '{{ gem_packages }}'
+  loop: '{{ gem_packages }}'
   tags:
   - gem
