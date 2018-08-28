@@ -48,6 +48,7 @@ homebrew_packages:
 - python
 - python@2
 - readline
+- rsync
 - rtmpdump
 - ruby
 - ruby-build
