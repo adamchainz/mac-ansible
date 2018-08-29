@@ -1,7 +1,5 @@
 - name: homebrew taps
-  homebrew_tap:
-    tap: '{{ item }}'
-  loop: '{{ homebrew_taps }}'
+  command: brew tap {{ item }}
   tags:
   - brew
 
