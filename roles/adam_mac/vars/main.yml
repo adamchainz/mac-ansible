@@ -112,7 +112,6 @@ pip_packages:
 - lifelogger
 - multilint
 - pip-tools
-- pycodestyle
 - pygments
 - pythonpy
 - pyyaml
