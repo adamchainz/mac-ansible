@@ -38,6 +38,7 @@ homebrew_packages:
 - node
 - openssl
 - ossp-uuid
+- pandoc
 - percona-toolkit
 - pkg-config
 - pngcrush
