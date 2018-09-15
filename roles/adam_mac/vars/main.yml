@@ -55,11 +55,13 @@ homebrew_packages:
 - ruby-install
 - shellcheck
 - sqlite
+- swig
 - tor
 - tree
 - watch
 - wget
 - xz
+- yubikey-personalization
 - zsh-completions
 
 homebrew_cask_packages:
