@@ -79,6 +79,7 @@ homebrew_cask_packages:
 - font-ubuntumono-nerd-font
 - franz
 - google-chrome
+- inkscape
 - iterm2
 - karabiner-elements
 - keyboard-maestro
