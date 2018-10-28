@@ -121,6 +121,7 @@ pip_packages:
 - requests
 - six
 - tox
+- twine
 - virtualenvwrapper
 - youtube-dl
 
