@@ -9,6 +9,7 @@
     domain: com.googlecode.iterm2
     key: PrefsCustomFolder
     string: "{{ ansible_env.PWD }}/roles/adam_mac/files"
+    force: true
 
 - name: Sublime Text 3 settings
   git:

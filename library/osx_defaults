@@ -7,9 +7,7 @@ module: osx_defaults
 version_added: "1.8"
 short_description: Set OS X 'defaults' key/value pairs
 description:
-   - Bla
-notes:
-   -
+- Set an OS X "defaults" key/value
 options:
   domain:
     description:
@@ -35,19 +33,27 @@ options:
     description:
       string value to set
     required: false
-requirements: [ defaults ]
+  force:
+    description:
+      If true, set even if the key doesn't already exist
+    required: false
+    default: false
+requirements:
+- /usr/bin/defaults
 author: Adam Johnson
 '''
 
 EXAMPLES = '''
 # Make the Dock hide quickly
-- osx_defaults: domain=com.apple.dock
-                key=autohide-time-modifier
-                value=1
+- osx_defaults:
+    domain: com.apple.dock
+    key: autohide-time-modifier
+    value: 1
 
 # Use 'old fashioned' scrolling direction
-- osx_defaults: key=com.apple.swipescrolldirectiosn
-                bool=false
+- osx_defaults:
+    key: com.apple.swipescrolldirectiosn
+    bool: false
 '''
 
 TYPE_PARAMS = ['bool', 'int', 'float', 'string']
@@ -63,6 +69,7 @@ def main():
             int=dict(type='int'),
             float=dict(type='float'),
             string=dict(type='str'),
+            force=dict(type='bool', default=False),
         ),
         mutually_exclusive=[TYPE_PARAMS],
         required_one_of=[TYPE_PARAMS],
@@ -75,6 +82,7 @@ def main():
 
     domain = module.params['domain']
     key = module.params['key']
+    force = module.params['force']
 
     try:
         value = load_value(module.params)
@@ -82,14 +90,20 @@ def main():
         module.fail_json(msg="Value '%s' looks invalid: %s" % (value, e))
 
     current_value = get_key(module, domain, key)
-
-    if type(value) != type(current_value):
-        print(value)
-        print(current_value)
+    if current_value is None:
+        if not force:
+            module.fail_json(
+                msg=(
+                    'Value is not stored in current defaults database and '
+                    + '"force" is not True, refusing to add',
+                )
+            )
+    elif type(value) != type(current_value):
         module.fail_json(
-            msg="Current defaults database stores key as type %s, "
-                "you requested %s" %
-                (type(value).__name__, type(current_value).__name__)
+            msg=(
+                'Current defaults database stores key as type %s, you '
+                + 'requested %s'
+            ) % (type(value).__name__, type(current_value).__name__)
         )
 
     changed = (current_value != value)
@@ -110,10 +124,11 @@ def load_value(params):
 
 def get_key(module, domain, key):
     # Ask for type and representation in two commands
-    rc, type_message, err = module.run_command(
-        ["/usr/bin/defaults", "read-type", domain, key],
-        check_rc=True
-    )
+    rc, type_message, err = module.run_command(["/usr/bin/defaults", "read-type", domain, key])
+    if rc == 1:
+        return None
+    elif rc > 1:
+        raise ValueError('Unknown return code %s from "defaults read-type"' % rc)
     apple_type = type_message.strip()[len('Type is '):]
     rc, value, err = module.run_command(
         ["/usr/bin/defaults", "read", domain, key],
