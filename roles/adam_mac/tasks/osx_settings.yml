@@ -1,107 +1,104 @@
 - name: OS X Global | Show all extensions
   osx_defaults:
     key: AppleShowAllExtensions
-    bool: true
+    type: bool
+    value: true
 
 - name: OS X Global | Normal scrolling
   osx_defaults:
     key: com.apple.swipescrolldirection
-    bool: false
+    type: bool
+    value: false
 
 - name: OS X Global | Save panel expanded
   osx_defaults:
     key: NSNavPanelExpandedStateForSaveMode
-    bool: true
+    type: bool
+    value: true
 
 - name: OS X Global | Use function key to get at special meanings of keys
   osx_defaults:
     key: com.apple.keyboard.fnState
-    bool: true
+    type: bool
+    value: true
 
 - name: OS X Global | Tab goes through all controls on dialogs
   osx_defaults:
     key: AppleKeyboardUIMode
-    int: 3
+    type: int
+    value: 3
 
 - name: Dock | Quick autohide
   osx_defaults:
     domain: com.apple.dock
     key: autohide-time-modifier
-    int: 1
+    type: int
+    value: 1
   notify: kill dock
 
 - name: Dock | Size
   osx_defaults:
     domain: com.apple.dock
     key: tilesize
-    int: 48
+    type: int
+    value: 48
   notify: kill dock
 
 # - name: Dock | No persistent apps
 #   osx_defaults:
 #     domain: com.apple.dock
 #     key: persistent-apps
-#     array: []
+#     type: array
+#     value: []
 #   notify: kill dock
 
 - name: Dock | Quick expose
   osx_defaults:
     domain: com.apple.dock
     key: expose-animation-duration
-    float: 0.1
+    type: float
+    value: 0.1
   notify: kill dock
 
 - name: Dock | Dashboard disabled
   osx_defaults:
     domain: com.apple.dashboard
     key: mcx-disabled
-    bool: true
+    type: bool
+    value: true
   notify: kill dock
 
 - name: Finder | Home folder on new windows
   osx_defaults:
     domain: com.apple.finder
     key: NewWindowTarget
-    string: PfHm
+    type: string
+    value: PfHm
   notify: kill finder
 
 - name: Finder | Disable slow animations on shift
   osx_defaults:
     domain: com.apple.finder
     key: FXEnableSlowAnimation
-    bool: false
+    type: bool
+    value: false
   notify: kill finder
 
 - name: Finder | Quicklook hide on defocus
   osx_defaults:
     domain: com.apple.finder
     key: QLHidePanelOnDeactivate
-    bool: true
+    type: bool
+    value: true
   notify: kill finder
 
 - name: Finder | Full paths in title
   osx_defaults:
     domain: com.apple.finder
     key: _FXShowPosixPathInTitle
-    bool: true
+    type: bool
+    value: true
   notify: kill finder
 
-- name: Terminal | Get current settings
-  command: plutil -convert xml1 -o - ~/Library/Preferences/com.apple.Terminal.plist
-  changed_when: false
-  register: terminal_settings
-
-- name: Terminal | Theme
-  when: "'<key>Chainz</key>' not in terminal_settings.stdout"
-  command: open {{ ansible_env.PWD }}/roles/adam_mac/files/Chainz.terminal
-
-- name: Terminal | My theme everywhere
-  osx_defaults:
-    domain: com.apple.terminal
-    key: "{{ item }}"
-    string: "Chainz"
-  loop:
-  - Default Window Settings
-  - Startup Window Settings
-
-- command: chflags nohidden ~/Library/
+- name: Finder | Unhide ~/Library
+  command: chflags nohidden ~/Library/

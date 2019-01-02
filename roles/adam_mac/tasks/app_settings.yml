@@ -8,7 +8,10 @@
   osx_defaults:
     domain: com.googlecode.iterm2
     key: PrefsCustomFolder
-    string: "{{ ansible_env.PWD }}/roles/adam_mac/files"
+    type: string
+    value: "{{ ansible_env.PWD }}/roles/adam_mac/files"
+  tags:
+  - testing
 
 - name: Sublime Text 3 settings
   git:
