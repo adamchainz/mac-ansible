@@ -10,8 +10,6 @@
     key: PrefsCustomFolder
     type: string
     value: "{{ ansible_env.PWD }}/roles/adam_mac/files"
-  tags:
-  - testing
 
 - name: Sublime Text 3 settings
   git:
