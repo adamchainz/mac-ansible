@@ -9,6 +9,7 @@
   - ipython/profile_default/startup
   - config
   - config/karabiner
+  - config/yamllint
 
 - file:
     src: '{{ ansible_env.PWD }}/roles/adam_mac/files/dotfiles/{{ item }}'
@@ -16,6 +17,7 @@
     state: link
   loop:
   - config/karabiner/karabiner.json
+  - config/yamllint/config
   - gitconfig
   - gitignore_global
   - python_startup
