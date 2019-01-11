@@ -4,3 +4,8 @@ index-servers = pypi
 [pypi]
 username:adamchainz
 password:hunter2
+
+[testpypi]
+repository:https://test.pypi.org/legacy/
+username:adamchainz
+password:hunter2
