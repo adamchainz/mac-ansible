@@ -75,7 +75,6 @@ homebrew_cask_packages:
 - disk-inventory-x
 - evernote
 - firefox
-- flux
 - font-ubuntumono-nerd-font
 - franz
 - google-chrome
