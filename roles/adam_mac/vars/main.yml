@@ -20,6 +20,7 @@ homebrew_packages:
 - gdbm
 - git
 - gpg
+- graphicsmagick
 - hub
 - imagemagick
 - jhead
