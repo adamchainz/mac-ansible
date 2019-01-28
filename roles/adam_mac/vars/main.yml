@@ -33,7 +33,6 @@ homebrew_packages:
 - libpng
 - libtool
 - libyaml
-- md5sha1sum
 - memcached
 - ncdu
 - node
