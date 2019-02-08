@@ -47,6 +47,7 @@ homebrew_packages:
 - pypy
 - python
 - python@2
+- qpdf
 - readline
 - rsync
 - rtmpdump
