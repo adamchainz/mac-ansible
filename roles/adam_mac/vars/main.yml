@@ -1,6 +1,4 @@
-homebrew_taps:
-- caskroom/cask
-- caskroom/fonts
+homebrew_taps: []
 
 homebrew_package_removals: []
 
