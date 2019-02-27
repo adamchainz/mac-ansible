@@ -21,6 +21,7 @@ homebrew_packages:
 - graphicsmagick
 - hub
 - imagemagick
+- java
 - jhead
 - jpeg
 - jpegoptim
