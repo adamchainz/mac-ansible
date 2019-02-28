@@ -21,7 +21,6 @@ homebrew_packages:
 - graphicsmagick
 - hub
 - imagemagick
-- java
 - jhead
 - jpeg
 - jpegoptim
@@ -81,6 +80,7 @@ homebrew_cask_packages:
 - google-chrome
 - inkscape
 - iterm2
+- java
 - karabiner-elements
 - keyboard-maestro
 - mactex
