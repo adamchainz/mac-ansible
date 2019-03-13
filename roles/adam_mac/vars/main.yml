@@ -115,6 +115,7 @@ pip_packages:
 - lifelogger
 - multilint
 - pip-tools
+- pipenv
 - pygments
 - pythonpy
 - pyyaml
