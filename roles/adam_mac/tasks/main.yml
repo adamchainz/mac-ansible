@@ -4,10 +4,6 @@
 - name: Install things
   import_tasks: installs.yml
 
-# - name: Set Mac OS X settings
-#   import_tasks: osx_settings.yml
-#   tags: osx
-
 - name: Link in dotfiles
   import_tasks: dotfiles.yml
   tags:
