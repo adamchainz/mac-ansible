@@ -1,12 +1,12 @@
 #!/usr/bin/env ansible-playbook
-- hosts: 127.0.0.1
+- hosts: localhost
   connection: local
   tasks:
   - debug:
       msg: Check we are running in the directory of the script
     failed_when: not ansible_env.PWD.endswith('/mac-ansible')
 
-- hosts: 127.0.0.1
+- hosts: localhost
   connection: local
   roles:
   - adam_mac
