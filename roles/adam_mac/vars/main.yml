@@ -73,6 +73,7 @@ homebrew_cask_packages:
 - colloquy
 - dash
 - disk-inventory-x
+- docker
 - evernote
 - firefox
 - font-ubuntumono-nerd-font
