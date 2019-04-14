@@ -17,6 +17,7 @@ Thumbs.db
 ################
 *.pyc
 .pycache
+.python-version
 .tox
 
 
