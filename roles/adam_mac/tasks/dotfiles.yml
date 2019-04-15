@@ -21,7 +21,6 @@
   - config/yamllint/config
   - gitconfig
   - gitignore_global
-  - python_startup
   - ssh/config
   - ansible.cfg
   - ipython/profile_default/startup/00-imports.py
