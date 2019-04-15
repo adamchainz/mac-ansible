@@ -42,9 +42,9 @@ homebrew_packages:
 - pngcrush
 - postgresql
 - pwgen
+- pyenv
 - pypy
 - python
-- python@2
 - qpdf
 - readline
 - rsync
@@ -105,6 +105,13 @@ homebrew_cask_packages:
 - wireshark
 - xquartz
 
+pyenv_python_versions:
+# In precedence order
+- 3.7.3
+- 3.6.8
+- 3.5.7
+- 2.7.16
+
 pip_packages:
 - awscli
 - boto
@@ -115,7 +122,6 @@ pip_packages:
 - ipdb
 - ipython
 - lifelogger
-- multilint
 - pip-tools
 - pipenv
 - pygments

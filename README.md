@@ -9,10 +9,11 @@ Getting Started
 ---------------
 
 1. Install [homebrew](http://brew.sh/) with the command from the site
-2. `brew install python` (It's better than system python, see
-   [guide](https://github.com/Homebrew/brew/blob/master/docs/Homebrew-and-Python.md))
-3. `pip install ansible` (better than homebrew package as it's always latest)
-4. Then `ansible-playbook playbook.yml`
+2. `brew install pyenv`
+3. `pyenv install <latest_python_version>` (Check playbook up to date)
+4. Make sure pyenv's python on path (it will be after my shell settings are in place from playbook)
+5. `pip install ansible` (always the best way to install Ansible)
+6. Then `ansible-playbook playbook.yml`
 
 Fork! Copy! Adapt!
 ------------------

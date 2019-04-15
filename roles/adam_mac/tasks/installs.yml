@@ -36,11 +36,43 @@
   tags:
   - brew
 
+# If pyenv fails, check https://github.com/pyenv/pyenv/wiki/Common-build-problems#build-failed-error-the-python-zlib-extension-was-not-compiled-missing-the-zlib
+
+- name: python versions
+  command: pyenv install {{ item }}
+  register: pyenv_install_result
+  failed_when: >
+    pyenv_install_result.rc != 0 and
+    pyenv_install_result.stderr_lines != ["pyenv: /Users/chainz/.pyenv/versions/" + item + " already exists"]
+  loop: '{{ pyenv_python_versions }}'
+  tags:
+  - python
+  - pyenv
+
+- name: python versions active
+  command: pyenv global {{ pyenv_python_versions|join(" ") }}
+  tags:
+  - python
+  - pyenv
+
+- name: python versions latest pip
+  pip:
+    name: pip
+    state: latest
+    executable: '~/.pyenv/versions/{{ item }}/bin/pip'
+  loop: '{{ pyenv_python_versions }}'
+  tags:
+  - python
+  - pip
+  - pyenv
+
 - name: Install pip packages
   pip:
     name: '{{ pip_packages }}'
     state: latest
+    executable: '~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/pip'
   tags:
+  - python
   - pip
 
 - name: Install gem packages
