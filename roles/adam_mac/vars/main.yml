@@ -119,6 +119,7 @@ pip_packages:
 - csvkit
 - ec2-ssh
 - flake8
+- httpie
 - ipdb
 - ipython
 - lifelogger
