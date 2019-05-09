@@ -71,7 +71,6 @@ homebrew_cask_packages:
 - arq
 - bitbar
 - calibre
-- colloquy
 - dash
 - disk-inventory-x
 - docker
