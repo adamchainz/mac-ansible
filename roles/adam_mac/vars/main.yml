@@ -76,6 +76,7 @@ homebrew_cask_packages:
 - docker
 - evernote
 - firefox
+- font-roboto-mono
 - font-ubuntumono-nerd-font
 - franz
 - google-chrome
