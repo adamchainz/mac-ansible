@@ -36,6 +36,9 @@
   tags:
   - brew
 
+- name: homebrew cleanup
+  command: brew cleanup
+
 # If pyenv fails, check https://github.com/pyenv/pyenv/wiki/Common-build-problems#build-failed-error-the-python-zlib-extension-was-not-compiled-missing-the-zlib
 
 - name: python versions
