@@ -58,6 +58,10 @@
   - python
   - pyenv
 
+- name: python versions shims rehashed
+  # Needs running after every update of pyenv, at least, to fix the pyenv shims
+  command: pyenv rehash
+
 - name: python versions latest pip
   pip:
     name: pip
