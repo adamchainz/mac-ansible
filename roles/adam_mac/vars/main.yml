@@ -112,6 +112,8 @@ pyenv_python_versions:
 - 3.6.8
 - 3.5.7
 - 2.7.16
+- pypy3.6-7.1.1
+- pypy2.7-7.1.1
 
 pip_packages:
 - awscli

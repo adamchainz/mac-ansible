@@ -66,7 +66,7 @@
   pip:
     name: pip
     state: latest
-    executable: '~/.pyenv/versions/{{ item }}/bin/pip'
+    executable: '~/.pyenv/versions/{{ item }}/bin/pip{% if "pypy3" in item %}3{% endif %}'
   loop: '{{ pyenv_python_versions }}'
   tags:
   - python
