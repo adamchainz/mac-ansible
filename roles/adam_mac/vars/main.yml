@@ -132,6 +132,7 @@ pip_packages:
 - pythonpy
 - pyyaml
 - requests
+- s3cmd
 - six
 - tox
 - twine
