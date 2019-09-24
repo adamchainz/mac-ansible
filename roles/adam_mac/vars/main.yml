@@ -67,7 +67,7 @@ homebrew_packages:
 - zsh-completions
 
 homebrew_cask_packages:
-- 0xed
+- '0xed'
 - alfred
 - anki
 - arq
