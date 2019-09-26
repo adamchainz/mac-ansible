@@ -39,6 +39,7 @@ homebrew_packages:
 - openssl
 - ossp-uuid
 - pandoc
+- parallel
 - percona-toolkit
 - pkg-config
 - pngcrush
