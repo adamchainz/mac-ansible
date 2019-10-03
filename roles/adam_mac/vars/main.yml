@@ -130,7 +130,6 @@ pip_packages:
 - ipdb
 - ipython
 - lifelogger
-- pip-tools
 - pipenv
 - pygments
 - pythonpy
