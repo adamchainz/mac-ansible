@@ -54,3 +54,5 @@
 
 [hub]
     protocol = ssh
+[diff]
+	noprefix = true
