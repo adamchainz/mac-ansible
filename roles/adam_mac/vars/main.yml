@@ -45,7 +45,6 @@ homebrew_packages:
 - pngcrush
 - postgresql
 - pwgen
-- pyenv
 - pypy
 - python
 - qpdf
@@ -115,9 +114,9 @@ pyenv_python_versions:
 - 3.6.9
 - 3.5.7
 - 2.7.16
+- 3.8.0rc1
 - pypy3.6-7.1.1
 - pypy2.7-7.1.1
-- 3.8-dev
 
 pip_packages:
 - awscli
