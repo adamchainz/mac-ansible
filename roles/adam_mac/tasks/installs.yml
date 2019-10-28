@@ -40,14 +40,6 @@
   command: brew cleanup
 
 # If pyenv fails, check https://github.com/pyenv/pyenv/wiki/Common-build-problems#build-failed-error-the-python-zlib-extension-was-not-compiled-missing-the-zlib
-- name: install HEAD pyenv
-  homebrew:
-    name: pyenv
-    install_options: '--HEAD'
-  tags:
-  - python
-  - pyenv
-
 - name: python versions
   command: pyenv install {{ item }}
   register: pyenv_install_result

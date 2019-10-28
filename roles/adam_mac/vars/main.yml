@@ -45,6 +45,7 @@ homebrew_packages:
 - pngcrush
 - postgresql
 - pwgen
+- pyenv
 - pypy
 - python
 - qpdf
