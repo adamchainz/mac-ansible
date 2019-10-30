@@ -1,3 +1,6 @@
+# Taken from https://github.com/batmat/devbox/blob/master/roles/clamav/tasks/main.yml
+#
+
 - name: Create ClamAV reports directory
   file:
     path: "{{ ansible_env.HOME }}/.clamav"
@@ -5,3 +8,63 @@
   tags:
     - fast
     - clamav
+
+- name: Update ClamAV database
+  cron:
+    name: Update ClamAV database
+    special_time: "daily"
+    job: freshclam -v
+  tags:
+    - fast
+    - clamav
+    - cron
+
+- name: ClamAV scan for /home
+  cron:
+    name: ClamAV scan for /home
+    special_time: "daily"
+    # TODO: add --rm when confirmed to work
+    # TODO: likely, add CPU constraints too soon
+    job: >
+      clamscan
+      --exclude-dir={{ ansible_env.HOME }}/Pictures
+      -r --bell -i
+      {{ ansible_env.HOME }}
+      > {{ ansible_env.HOME }}/.clamav/REPORT-HOME.$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+  tags:
+    - fast
+    - clamav
+    - cron
+
+- name: ClamAV scan for pictures
+  cron:
+    name: ClamAV scan for pictures
+    special_time: "weekly"
+    # TODO: add --rm when confirmed to work
+    # TODO: likely, add CPU constraints too soon
+    job: >
+      clamscan
+      -r --bell -i
+      {{ ansible_env.HOME }}/Pictures
+      > {{ ansible_env.HOME }}/.clamav/REPORT-PICTURES.$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+  tags:
+    - fast
+    - clamav
+    - cron
+
+- name: ClamAV scan for /
+  cron:
+    name: ClamAV scan for /
+    special_time: "weekly"
+    # TODO: add --rm when confirmed to work
+    # TODO: likely, add CPU constraints too soon
+    job: >
+      clamscan
+      --exclude-dir={{ ansible_env.HOME }}
+      -r --bell -i
+      /
+      > {{ ansible_env.HOME }}/.clamav/REPORT-ROOT.$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+  tags:
+    - fast
+    - clamav
+    - cron
