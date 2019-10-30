@@ -1,0 +1,7 @@
+- name: Create ClamAV reports directory
+  file:
+    path: "{{ ansible_env.HOME }}/.clamav"
+    state: directory
+  tags:
+    - fast
+    - clamav

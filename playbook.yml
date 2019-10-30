@@ -9,4 +9,5 @@
 - hosts: localhost
   connection: local
   roles:
-  - adam_mac
+  - homebrew
+  - clamav

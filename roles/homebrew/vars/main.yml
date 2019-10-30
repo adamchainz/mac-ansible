@@ -1,0 +1,22 @@
+homebrew_taps:
+- homebrew/cask-fonts
+
+homebrew_package_removals: []
+
+homebrew_packages:
+- pyenv
+- pypy
+- zsh-completions
+- youtube-dl
+
+homebrew_cask_packages:
+- docker
+- vlc
+- font-fira-code
+
+pyenv_python_versions:
+# In precedence order
+- 3.7.4
+- 3.5.0
+
+pip_packages: []

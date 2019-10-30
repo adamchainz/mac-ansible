@@ -1,0 +1,40 @@
+- name: homebrew taps
+  command: brew tap {{ item }}
+  loop: '{{ homebrew_taps }}'
+  tags:
+  - brew
+
+- name: Update homebrew
+  homebrew:
+    name: git
+    state: latest
+    update_homebrew: true
+  tags:
+  - brew
+
+- name: Uninstall old homebrew packages
+  homebrew:
+    name: '{{ item }}'
+    state: absent
+  with_items: '{{ homebrew_package_removals }}'
+  tags:
+  - brew
+
+- name: Install homebrew packages
+  homebrew:
+    name: '{{ item }}'
+    state: latest
+  loop: '{{ homebrew_packages }}'
+  tags:
+  - brew
+
+- name: Install homebrew cask packages
+  homebrew_cask:
+    name: '{{ item }}'
+    state: installed
+  loop: '{{ homebrew_cask_packages }}'
+  tags:
+  - brew
+
+- name: homebrew cleanup
+  command: brew cleanup
