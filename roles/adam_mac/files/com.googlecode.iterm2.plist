@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Actions</key>
+	<array/>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
@@ -476,7 +478,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>267 356 918 514 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1027 0 0 1680 1027 </string>
+	<string>0 1 1674 1026 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1132,17 +1134,28 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.2</string>
-		<string>3.2.9</string>
+		<string>3.3.6</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
+		<string>3.3.3</string>
+		<string>3.3.5</string>
 		<string>3.3.0</string>
+		<string>3.2.9</string>
+		<string>3.3.2</string>
 	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {1680, 1050}}</string>
+		<key>topLeft</key>
+		<string>{537, 899}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{518, 823}</string>
+		<string>{173, 953}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1153,7 +1166,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>2A02ED39-F217-45E1-832C-6F93DCC7F37C</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>7</integer>
+	<integer>17</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586865940.94789898</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -1655,9 +1668,25 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
 				<string>tmuxWindowTitle</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1875,16 +1904,16 @@
 	</array>
 	<key>NoSyncSearchHistory2</key>
 	<array>
-		<string>pretty</string>
-		<string>pg_prett</string>
-		<string>clear temporary git</string>
-		<string>create worktree]</string>
-		<string>create worketr</string>
-		<string>copy over worktree]</string>
-		<string>copy over worke</string>
-		<string> worketree</string>
-		<string>prune</string>
-		<string>ddtrace</string>
+		<string>exec</string>
+		<string>pip==</string>
+		<string>black</string>
+		<string>urllib</string>
+		<string>back</string>
+		<string>guys</string>
+		<string>monkey</string>
+		<string>function</string>
+		<string>test_asgi_</string>
+		<string>test_asi</string>
 	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>568994216.04846394</real>
@@ -1943,7 +1972,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-03T17:13:35Z</date>
+	<date>2019-11-07T08:40:40Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -1953,7 +1982,7 @@
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -1972,6 +2001,15 @@
 	<false/>
 	<key>TmuxDashboardLimit</key>
 	<integer>10</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Captured Output</string>
+		<string>Command History</string>
+		<string>Jobs</string>
+		<string>Notes</string>
+		<string>Paste History</string>
+		<string>Recent Directories</string>
+	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>URLHandlersByGuid</key>
@@ -2809,6 +2847,6 @@
 	<key>findRegex_iTerm</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>3.3.2</string>
+	<string>3.3.6</string>
 </dict>
 </plist>
