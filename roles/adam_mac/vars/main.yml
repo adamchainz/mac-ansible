@@ -72,7 +72,6 @@ homebrew_cask_packages:
 - alfred
 - anki
 - arq
-- bitbar
 - calibre
 - dash
 - disk-inventory-x
@@ -91,13 +90,11 @@ homebrew_cask_packages:
 - mactex
 - mplayerx
 - paintbrush
-- playonmac
 - rescuetime
 - sequel-pro
 - silverlight
 - skim
 - skype
-- soundcleod
 - soundflower
 - steam
 - sublime-text
@@ -106,7 +103,6 @@ homebrew_cask_packages:
 - vagrant
 - virtualbox
 - vlc
-- wireshark
 - xquartz
 
 pyenv_python_versions:
