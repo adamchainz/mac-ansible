@@ -1,0 +1,57 @@
+
+[Documents/Projects/apig-wsgi]
+checkout = git clone 'git@github.com:adamchainz/apig-wsgi.git' 'apig-wsgi'
+
+[Documents/Projects/django-cors-headers]
+checkout = git clone 'git@github.com:adamchainz/django-cors-headers.git' 'django-cors-headers'
+
+[Documents/Projects/django-feature-policy]
+checkout = git clone 'git@github.com:adamchainz/django-feature-policy.git' 'django-feature-policy'
+
+[Documents/Projects/django-mysql]
+checkout = git clone 'git@github.com:adamchainz/django-mysql.git' 'django-mysql'
+
+[Documents/Projects/django-perf-rec]
+checkout = git clone 'git@github.com:adamchainz/django-perf-rec.git' 'django-perf-rec'
+
+[Documents/Projects/django-settings-file]
+checkout = git clone 'git@github.com:adamchainz/django-settings-file.git' 'django-settings-file'
+
+[Documents/Projects/ec2-metadata]
+checkout = git clone 'git@github.com:adamchainz/ec2-metadata.git' 'ec2-metadata'
+
+[Documents/Projects/flake8-comprehensions]
+checkout = git clone 'git@github.com:adamchainz/flake8-comprehensions.git' 'flake8-comprehensions'
+
+[Documents/Projects/flake8-no-types]
+checkout = git clone 'git@github.com:adamchainz/flake8-no-types.git' 'flake8-no-types'
+
+[Documents/Projects/flake8-tidy-imports]
+checkout = git clone 'git@github.com:adamchainz/flake8-tidy-imports.git' 'flake8-tidy-imports'
+
+[Documents/Projects/mariadb-dyncol]
+checkout = git clone 'git@github.com:adamchainz/mariadb-dyncol.git' 'mariadb-dyncol'
+
+[Documents/Projects/multilint]
+checkout = git clone 'git@github.com:adamchainz/multilint.git' 'multilint'
+
+[Documents/Projects/patchy]
+checkout = git clone 'git@github.com:adamchainz/patchy.git' 'patchy'
+
+[Documents/Projects/pip-lock]
+checkout = git clone 'git@github.com:adamchainz/pip-lock.git' 'pip-lock'
+
+[Documents/Projects/pytest-flake8dir]
+checkout = git clone 'git@github.com:adamchainz/pytest-flake8dir.git' 'pytest-flake8dir'
+
+[Documents/Projects/pytest-restrict]
+checkout = git clone 'git@github.com:adamchainz/pytest-restrict.git' 'pytest-restrict'
+
+[Documents/Projects/pytest-super-check]
+checkout = git clone 'git@github.com:adamchainz/pytest-super-check.git' 'pytest-super-check'
+
+[Documents/Projects/treepoem]
+checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
+
+[Documents/Projects/pytest-randomly]
+checkout = git clone 'git@github.com:pytest-dev/pytest-randomly.git' 'pytest-randomly'

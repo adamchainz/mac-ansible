@@ -34,6 +34,7 @@ homebrew_packages:
 - libtool
 - libyaml
 - memcached
+- myrepos
 - ncdu
 - nvm
 - openssl
