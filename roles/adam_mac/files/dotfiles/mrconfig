@@ -1,3 +1,5 @@
+[DEFAULT]
+jobs = 8
 
 [Documents/Projects/apig-wsgi]
 checkout = git clone 'git@github.com:adamchainz/apig-wsgi.git' 'apig-wsgi'
