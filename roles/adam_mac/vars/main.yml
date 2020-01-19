@@ -131,6 +131,7 @@ pip_packages:
 - pipenv
 - pygments
 - pythonpy
+- python-language-server
 - pyyaml
 - requests
 - s3cmd
