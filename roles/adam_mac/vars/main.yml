@@ -140,6 +140,7 @@ pip_packages:
 - twine
 - virtualenvwrapper
 - youtube-dl
+- wheel
 
 gem_packages:
 - jekyll
