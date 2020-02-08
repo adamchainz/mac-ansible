@@ -14,6 +14,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -1136,13 +1138,14 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.4</string>
+		<string>3.3.8</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.3.7</string>
 		<string>3.2.9</string>
-		<string>3.3.2</string>
 		<string>3.3.0</string>
+		<string>3.3.2</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -1167,7 +1170,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>2A02ED39-F217-45E1-832C-6F93DCC7F37C</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>23</integer>
+	<integer>29</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586865940.94789898</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -1890,32 +1893,6 @@
 	</dict>
 	<key>NoSyncSaveDocumentAsPathSet_saveDocumentAs:</key>
 	<true/>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>Took </string>
-		<string>... ok </string>
-		<string> ...</string>
-		<string>Gauss</string>
-		<string>pytest-randomly</string>
-		<string>__name__</string>
-		<string>action</string>
-		<string>errors</string>
-		<string>site-packages/cele</string>
-		<string>_wait_for</string>
-	</array>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>ami-</string>
-		<string>cell/util</string>
-		<string>shell</string>
-		<string>shak</string>
-		<string>formats</string>
-		<string>qualit</string>
-		<string>certifi</string>
-		<string>ResourceWarning</string>
-		<string>install </string>
-		<string>cors-head</string>
-	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>568994216.04846394</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -1973,7 +1950,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-17T11:09:46Z</date>
+	<date>2020-02-07T08:36:21Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2848,6 +2825,6 @@
 	<key>findRegex_iTerm</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.8</string>
 </dict>
 </plist>
