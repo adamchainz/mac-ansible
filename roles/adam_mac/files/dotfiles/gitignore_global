@@ -19,6 +19,7 @@ Thumbs.db
 .pycache
 .python-version
 .tox
+venv
 
 
 # Sublime stuff #
