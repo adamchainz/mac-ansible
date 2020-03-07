@@ -10,6 +10,7 @@ homebrew_packages:
 - cloc
 - coreutils
 - cowsay
+- enchant
 - exiftool
 - fdupes
 - ffmpeg
