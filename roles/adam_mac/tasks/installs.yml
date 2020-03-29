@@ -68,6 +68,8 @@
     - pip-tools
     state: latest
     executable: '~/.pyenv/versions/{{ item }}/bin/pip{% if "pypy3" in item %}3{% endif %}'
+  environment:
+    PIP_REQUIRE_VIRTUALENV: ""
   loop: '{{ pyenv_python_versions }}'
   tags:
   - python
@@ -79,6 +81,8 @@
     name: '{{ pip_packages }}'
     state: latest
     executable: '~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/pip'
+  environment:
+    PIP_REQUIRE_VIRTUALENV: ""
   tags:
   - python
   - pip
