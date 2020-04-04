@@ -57,3 +57,6 @@ checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
 
 [Documents/Projects/pytest-randomly]
 checkout = git clone 'git@github.com:pytest-dev/pytest-randomly.git' 'pytest-randomly'
+
+[Documents/Projects/pytest-reverse]
+checkout = git clone 'git@github.com:adamchainz/pytest-reverse.git' 'pytest-reverse'
