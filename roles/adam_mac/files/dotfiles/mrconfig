@@ -43,20 +43,20 @@ checkout = git clone 'git@github.com:adamchainz/patchy.git' 'patchy'
 [Documents/Projects/pip-lock]
 checkout = git clone 'git@github.com:adamchainz/pip-lock.git' 'pip-lock'
 
+[Documents/Projects/pytest-randomly]
+checkout = git clone 'git@github.com:pytest-dev/pytest-randomly.git' 'pytest-randomly'
+
 [Documents/Projects/pytest-flake8dir]
 checkout = git clone 'git@github.com:adamchainz/pytest-flake8dir.git' 'pytest-flake8dir'
 
 [Documents/Projects/pytest-restrict]
 checkout = git clone 'git@github.com:adamchainz/pytest-restrict.git' 'pytest-restrict'
 
+[Documents/Projects/pytest-reverse]
+checkout = git clone 'git@github.com:adamchainz/pytest-reverse.git' 'pytest-reverse'
+
 [Documents/Projects/pytest-super-check]
 checkout = git clone 'git@github.com:adamchainz/pytest-super-check.git' 'pytest-super-check'
 
 [Documents/Projects/treepoem]
 checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
-
-[Documents/Projects/pytest-randomly]
-checkout = git clone 'git@github.com:pytest-dev/pytest-randomly.git' 'pytest-randomly'
-
-[Documents/Projects/pytest-reverse]
-checkout = git clone 'git@github.com:adamchainz/pytest-reverse.git' 'pytest-reverse'
