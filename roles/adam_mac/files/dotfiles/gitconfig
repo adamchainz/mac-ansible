@@ -31,7 +31,6 @@
     untracked = cyan
 
 [push]
-    default = upstream
     followTags = true
 
 [merge]
