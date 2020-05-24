@@ -61,5 +61,8 @@ checkout = git clone 'git@github.com:adamchainz/pytest-reverse.git' 'pytest-reve
 [Documents/Projects/pytest-super-check]
 checkout = git clone 'git@github.com:adamchainz/pytest-super-check.git' 'pytest-super-check'
 
+[Documents/Projects/time-machine]
+checkout = git clone 'git@github.com:adamchainz/time-machine.git' 'time-machine'
+
 [Documents/Projects/treepoem]
 checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
