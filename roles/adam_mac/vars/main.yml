@@ -12,6 +12,7 @@ homebrew_packages:
 - cowsay
 - enchant
 - exiftool
+- fd
 - fdupes
 - ffmpeg
 - freetype
@@ -59,6 +60,7 @@ homebrew_packages:
 - ruby
 - ruby-build
 - ruby-install
+- sd
 - shellcheck
 - sqlite
 - swig
