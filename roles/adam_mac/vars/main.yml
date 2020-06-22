@@ -79,7 +79,6 @@ homebrew_cask_packages:
 - anki
 - arq
 - calibre
-- dash
 - discord
 - disk-inventory-x
 - docker
