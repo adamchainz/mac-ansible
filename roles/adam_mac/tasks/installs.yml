@@ -87,6 +87,7 @@
   tags:
   - python
   - pip
+  - wheel
 
 - name: Install gem packages
   gem:
