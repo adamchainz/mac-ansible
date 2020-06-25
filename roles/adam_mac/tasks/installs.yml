@@ -42,6 +42,8 @@
 # If pyenv fails, check https://github.com/pyenv/pyenv/wiki/Common-build-problems#build-failed-error-the-python-zlib-extension-was-not-compiled-missing-the-zlib
 - name: python versions
   command: pyenv install {{ item }}
+  environment:
+    CONFIGURE_OPTS: --enable-optimizations
   register: pyenv_install_result
   failed_when: >
     pyenv_install_result.rc != 0 and
