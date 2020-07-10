@@ -53,7 +53,5 @@
 
 [hub]
     protocol = ssh
-[diff]
-	noprefix = true
 [pull]
 	rebase = false
