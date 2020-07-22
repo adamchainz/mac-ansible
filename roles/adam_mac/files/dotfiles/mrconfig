@@ -37,9 +37,6 @@ checkout = git clone 'git@github.com:adamchainz/flake8-tidy-imports.git' 'flake8
 [Documents/Projects/mariadb-dyncol]
 checkout = git clone 'git@github.com:adamchainz/mariadb-dyncol.git' 'mariadb-dyncol'
 
-[Documents/Projects/multilint]
-checkout = git clone 'git@github.com:adamchainz/multilint.git' 'multilint'
-
 [Documents/Projects/patchy]
 checkout = git clone 'git@github.com:adamchainz/patchy.git' 'patchy'
 
