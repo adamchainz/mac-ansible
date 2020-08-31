@@ -423,6 +423,30 @@
                     "to": {
                         "key_code": "left_control"
                     }
+                },
+                {
+                    "from": {
+                        "key_code": "print_screen"
+                    },
+                    "to": {
+                        "consumer_key_code": "play_or_pause"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "scroll_lock"
+                    },
+                    "to": {
+                        "consumer_key_code": "volume_decrement"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "pause"
+                    },
+                    "to": {
+                        "consumer_key_code": "volume_increment"
+                    }
                 }
             ],
             "virtual_hid_keyboard": {
