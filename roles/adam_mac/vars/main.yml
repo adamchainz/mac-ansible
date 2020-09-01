@@ -77,7 +77,6 @@ homebrew_cask_packages:
 - '0xed'
 - alfred
 - anki
-- arq
 - calibre
 - discord
 - disk-inventory-x
