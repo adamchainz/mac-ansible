@@ -144,7 +144,6 @@ pip_packages:
 - six
 - tox
 - twine
-- virtualenvwrapper
 - youtube-dl
 - wheel
 
