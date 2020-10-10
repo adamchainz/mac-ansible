@@ -120,6 +120,7 @@ pyenv_python_versions:
 - 3.5.9
 - 3.4.10
 - 2.7.18
+- 3.10-dev
 - pypy3.6-7.1.1
 - pypy2.7-7.1.1
 
