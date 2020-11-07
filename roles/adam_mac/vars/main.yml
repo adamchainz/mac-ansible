@@ -24,7 +24,9 @@ homebrew_packages:
 - goaccess
 - gpg
 - graphicsmagick
+- heroku/brew/heroku
 - hub
+- hyperfine
 - inetutils
 - jhead
 - jpeg
@@ -39,6 +41,7 @@ homebrew_packages:
 - memcached
 - myrepos
 - ncdu
+- nginx
 - nvm
 - openssl
 - ossp-uuid
