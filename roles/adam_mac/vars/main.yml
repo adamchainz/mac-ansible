@@ -88,6 +88,7 @@ homebrew_cask_packages:
 - franz
 - google-chrome
 - iterm2
+- istat-menus
 - java
 - karabiner-elements
 - keyboard-maestro
