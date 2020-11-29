@@ -105,6 +105,7 @@ homebrew_cask_packages:
 - soundflower
 - steam
 - sublime-text
+- tableplus
 - texmaker
 - unshaky
 - vagrant
