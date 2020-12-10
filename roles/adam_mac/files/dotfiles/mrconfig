@@ -16,8 +16,8 @@ checkout = git clone 'git@github.com:adamchainz/django-feature-policy.git' 'djan
 [Documents/Projects/django-htmx]
 checkout = git clone 'git@github.com:adamchainz/django-htmx.git' 'django-htmx'
 
-[Documents/Projects/django-migration-conflicts]
-checkout = git clone 'git@github.com:adamchainz/django-migration-conflicts.git' 'django-migration-conflicts'
+[Documents/Projects/django-linear-migrations]
+checkout = git clone 'git@github.com:adamchainz/django-linear-migrations.git' 'django-linear-migrations'
 
 [Documents/Projects/django-mysql]
 checkout = git clone 'git@github.com:adamchainz/django-mysql.git' 'django-mysql'
