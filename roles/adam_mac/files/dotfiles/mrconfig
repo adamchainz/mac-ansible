@@ -31,6 +31,9 @@ checkout = git clone 'git@github.com:adamchainz/django-read-only.git' 'django-re
 [Documents/Projects/django-settings-file]
 checkout = git clone 'git@github.com:adamchainz/django-settings-file.git' 'django-settings-file'
 
+[Documents/Projects/django-version-checks]
+checkout = git clone 'git@github.com:adamchainz/django-version-checks.git' 'django-version-checks'
+
 [Documents/Projects/ec2-metadata]
 checkout = git clone 'git@github.com:adamchainz/ec2-metadata.git' 'ec2-metadata'
 
