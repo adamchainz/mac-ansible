@@ -1,22 +1,8 @@
-- name: homebrew taps
-  command: brew tap {{ item }}
-  loop: '{{ homebrew_taps }}'
-  tags:
-  - brew
-
 - name: Update homebrew
   homebrew:
     name: git
     state: latest
     update_homebrew: true
-  tags:
-  - brew
-
-- name: Uninstall old homebrew packages
-  homebrew:
-    name: '{{ item }}'
-    state: absent
-  with_items: '{{ homebrew_package_removals }}'
   tags:
   - brew
 
