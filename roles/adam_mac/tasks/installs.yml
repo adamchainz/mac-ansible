@@ -15,9 +15,7 @@
   - brew
 
 - name: Install homebrew cask packages
-  homebrew_cask:
-    name: '{{ item }}'
-    state: installed
+  command: brew install --cask {{ item }}
   loop: '{{ homebrew_cask_packages }}'
   tags:
   - brew
