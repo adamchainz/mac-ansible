@@ -43,6 +43,9 @@ checkout = git clone 'git@github.com:adamchainz/ec2-metadata.git' 'ec2-metadata'
 [Documents/Projects/flake8-comprehensions]
 checkout = git clone 'git@github.com:adamchainz/flake8-comprehensions.git' 'flake8-comprehensions'
 
+[Documents/Projects/flake8-no-pep420]
+checkout = git clone 'git@github.com:adamchainz/flake8-no-pep420.git' 'flake8-no-pep420'
+
 [Documents/Projects/flake8-no-types]
 checkout = git clone 'git@github.com:adamchainz/flake8-no-types.git' 'flake8-no-types'
 
