@@ -80,8 +80,7 @@ homebrew_cask_packages:
 - docker
 - evernote
 - firefox
-- font-roboto-mono
-- font-ubuntumono-nerd-font
+- homebrew/cask-fonts/font-ubuntu-mono-nerd-font
 - franz
 - google-chrome
 - iterm2
