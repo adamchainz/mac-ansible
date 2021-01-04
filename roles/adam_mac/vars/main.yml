@@ -82,7 +82,6 @@ homebrew_cask_packages:
 - firefox
 - homebrew/cask-fonts/font-ubuntu-mono-nerd-font
 - franz
-- google-chrome
 - iterm2
 - istat-menus
 - java
