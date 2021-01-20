@@ -65,6 +65,7 @@ homebrew_packages:
 - swig
 - tree
 - watch
+- watchman
 - wget
 - xz
 - zlib
