@@ -62,7 +62,6 @@
   loop: '{{ pyenv_python_versions }}'
   tags:
   - python
-  - pip
   - pyenv
 
 - name: Install pip packages
@@ -74,8 +73,12 @@
     PIP_REQUIRE_VIRTUALENV: ""
   tags:
   - python
-  - pip
-  - wheel
+
+- name: pyenv rehash
+  command: pyenv rehash
+  tags:
+  - python
+  - pyenv
 
 - name: Install gem packages
   gem:

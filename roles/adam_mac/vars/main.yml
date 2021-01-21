@@ -124,6 +124,7 @@ pyenv_python_versions:
 
 pip_packages:
 - awscli
+- black
 - boto
 - boto3
 - build
