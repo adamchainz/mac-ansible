@@ -126,6 +126,7 @@ pip_packages:
 - awscli
 - boto
 - boto3
+- build
 - csvkit
 - ec2-ssh
 - flake8

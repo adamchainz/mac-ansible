@@ -51,7 +51,6 @@
   pip:
     name:
     - Cython
-    - pep517
     - pip
     - pip-tools
     - setuptools
