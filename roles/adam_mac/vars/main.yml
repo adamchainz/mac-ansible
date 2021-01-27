@@ -62,6 +62,7 @@ homebrew_packages:
 - sd
 - shellcheck
 - sqlite
+- starship
 - swig
 - tree
 - watch

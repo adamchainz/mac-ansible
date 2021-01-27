@@ -9,6 +9,8 @@
   - ipython/profile_default/startup
   - config
   - config/yamllint
+  tags:
+  - dotfiles
 
 - name: dotfiles links
   file:
@@ -16,14 +18,17 @@
     path: '~/.{{ item }}'
     state: link
   loop:
+  - ansible.cfg
   - config/karabiner
+  - config/starship.toml
   - config/yamllint/config
   - gitconfig
   - gitignore_global
+  - ipython/profile_default/startup/00-imports.py
   - mrconfig
   - ssh/config
-  - ansible.cfg
-  - ipython/profile_default/startup/00-imports.py
+  tags:
+  - dotfiles
 
 - name: innotop.conf
   copy:
