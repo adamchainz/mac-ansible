@@ -1,8 +1,5 @@
 [character]
 format = "👾$symbol "
 
-[git_branch]
-symbol = ""
-
 [status]
 disabled = false
