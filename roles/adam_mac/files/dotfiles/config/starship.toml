@@ -1,5 +1,5 @@
 [character]
-format = "👾$symbol "
+format = "👾 $symbol "
 
 [status]
 disabled = false
