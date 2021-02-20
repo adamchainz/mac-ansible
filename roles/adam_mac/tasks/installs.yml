@@ -34,18 +34,17 @@
     pyenv_install_result.stderr_lines != ["pyenv: /Users/chainz/.pyenv/versions/" + item + " already exists"]
   loop: '{{ pyenv_python_versions }}'
   tags:
-  - python
   - pyenv
 
 - name: python versions active
   command: pyenv global {{ pyenv_python_versions|join(" ") }}
   tags:
-  - python
   - pyenv
 
-- name: python versions shims rehashed
-  # Needs running after every update of pyenv, at least, to fix the pyenv shims
+- name: pyenv rehash
   command: pyenv rehash
+  tags:
+  - pyenv
 
 - name: python versions latest build requirements
   pip:
@@ -61,7 +60,6 @@
     PIP_REQUIRE_VIRTUALENV: ""
   loop: '{{ pyenv_python_versions }}'
   tags:
-  - python
   - pyenv
 
 - name: Install pip packages
@@ -72,12 +70,11 @@
   environment:
     PIP_REQUIRE_VIRTUALENV: ""
   tags:
-  - python
+  - pyenv
 
 - name: pyenv rehash
   command: pyenv rehash
   tags:
-  - python
   - pyenv
 
 - name: Install gem packages
