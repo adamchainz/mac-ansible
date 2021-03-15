@@ -57,3 +57,5 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[feature]
+	manyFiles = 1
