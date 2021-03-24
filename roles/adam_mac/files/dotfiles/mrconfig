@@ -13,9 +13,6 @@ checkout = git clone 'git@github.com:tolomea/django-auto-prefetch.git' 'django-a
 [Documents/Projects/django-cors-headers]
 checkout = git clone 'git@github.com:adamchainz/django-cors-headers.git' 'django-cors-headers'
 
-[Documents/Projects/django-feature-policy]
-checkout = git clone 'git@github.com:adamchainz/django-feature-policy.git' 'django-feature-policy'
-
 [Documents/Projects/django-htmx]
 checkout = git clone 'git@github.com:adamchainz/django-htmx.git' 'django-htmx'
 
@@ -27,6 +24,9 @@ checkout = git clone 'git@github.com:adamchainz/django-mysql.git' 'django-mysql'
 
 [Documents/Projects/django-perf-rec]
 checkout = git clone 'git@github.com:adamchainz/django-perf-rec.git' 'django-perf-rec'
+
+[Documents/Projects/django-permissions-policy]
+checkout = git clone 'git@github.com:adamchainz/django-permissions-policy.git' 'django-permissions-policy'
 
 [Documents/Projects/django-read-only]
 checkout = git clone 'git@github.com:adamchainz/django-read-only.git' 'django-read-only'
