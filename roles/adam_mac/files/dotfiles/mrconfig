@@ -52,6 +52,9 @@ checkout = git clone 'git@github.com:adamchainz/flake8-no-types.git' 'flake8-no-
 [Documents/Projects/flake8-tidy-imports]
 checkout = git clone 'git@github.com:adamchainz/flake8-tidy-imports.git' 'flake8-tidy-imports'
 
+[Documents/Projects/heroicons]
+checkout = git clone 'git@github.com:adamchainz/heroicons.git' 'heroicons'
+
 [Documents/Projects/mariadb-dyncol]
 checkout = git clone 'git@github.com:adamchainz/mariadb-dyncol.git' 'mariadb-dyncol'
 
