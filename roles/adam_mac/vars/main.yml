@@ -16,6 +16,7 @@ homebrew_packages:
 - gdal
 - gdbm
 - git
+- git-delta
 - github/gh/gh
 - goaccess
 - gpg

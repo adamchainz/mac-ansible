@@ -4,12 +4,14 @@
 
 [core]
     excludesfile = ~/.gitignore_global
+    pager = delta
 
 [credential]
     helper = cache --timeout=3600
 
 [interactive]
     singlekey = true
+    diffFilter = delta --color-only
 
 [color]
     ui = auto
@@ -61,3 +63,16 @@
 	manyFiles = 1
 [diff]
 	algorithm = histogram
+
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+    features = line-numbers decorations
+    whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
