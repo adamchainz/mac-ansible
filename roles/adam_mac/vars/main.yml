@@ -15,6 +15,7 @@ homebrew_packages:
 - fswatch
 - gdal
 - gdbm
+- gimp
 - git
 - git-delta
 - github/gh/gh
