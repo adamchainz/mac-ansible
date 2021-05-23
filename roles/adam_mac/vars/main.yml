@@ -15,7 +15,7 @@ homebrew_packages:
 - fswatch
 - gdal
 - gdbm
-- gimp
+# - gimp  # has a weird error: "Warning: Cask 'gimp' is already installed."
 - git
 - git-delta
 - github/gh/gh
