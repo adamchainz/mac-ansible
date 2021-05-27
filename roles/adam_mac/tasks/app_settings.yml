@@ -13,8 +13,8 @@
 
 - name: Sublime Text 3 settings
   git:
-    repo: git@github.com:adamchainz/sublime_text_3_settings.git
-    dest: '~/Library/Application Support/Sublime Text 3/Packages/User'
+    repo: git@github.com:adamchainz/sublime_text_settings.git
+    dest: '~/Library/Application Support/Sublime Text/Packages/User'
 
 - name: Cowsay cowfile
   file:
