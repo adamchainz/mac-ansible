@@ -62,6 +62,13 @@
   tags:
   - pyenv
 
+- name: virtualenv update embed wheels
+  command: ~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/python -m virtualenv --upgrade-embed-wheels
+  environment:
+    PIP_REQUIRE_VIRTUALENV: ""
+  tags:
+  - pyenv
+
 - name: Install pip packages
   pip:
     name: '{{ pip_packages }}'
