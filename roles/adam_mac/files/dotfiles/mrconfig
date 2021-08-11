@@ -67,8 +67,8 @@ checkout = git clone 'git@github.com:adamchainz/pip-lock.git' 'pip-lock'
 [Documents/Projects/pytest-randomly]
 checkout = git clone 'git@github.com:pytest-dev/pytest-randomly.git' 'pytest-randomly'
 
-[Documents/Projects/pytest-flake8dir]
-checkout = git clone 'git@github.com:adamchainz/pytest-flake8dir.git' 'pytest-flake8dir'
+[Documents/Projects/pytest-flake8-path]
+checkout = git clone 'git@github.com:adamchainz/pytest-flake8-path.git' 'pytest-flake8dir'
 
 [Documents/Projects/pytest-restrict]
 checkout = git clone 'git@github.com:adamchainz/pytest-restrict.git' 'pytest-restrict'
