@@ -34,6 +34,9 @@ checkout = git clone 'git@github.com:adamchainz/django-read-only.git' 'django-re
 [Documents/Projects/django-settings-file]
 checkout = git clone 'git@github.com:adamchainz/django-settings-file.git' 'django-settings-file'
 
+[Documents/Projects/django-upgrade]
+checkout = git clone 'git@github.com:adamchainz/django-upgrade.git' 'django-upgrade'
+
 [Documents/Projects/django-version-checks]
 checkout = git clone 'git@github.com:adamchainz/django-version-checks.git' 'django-version-checks'
 
