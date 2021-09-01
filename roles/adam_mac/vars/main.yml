@@ -114,8 +114,8 @@ homebrew_cask_packages:
 
 pyenv_python_versions:
 # In precedence order
-- 3.9.6
-- 3.8.11
+- 3.9.7
+- 3.8.12
 - 3.7.11
 - 3.6.13
 - 3.10.0b3
