@@ -118,7 +118,7 @@ pyenv_python_versions:
 - 3.8.12
 - 3.7.11
 - 3.6.13
-- 3.10.0b3
+- 3.10.0rc1
 - pypy3.7-7.3.4
 
 pip_packages:
