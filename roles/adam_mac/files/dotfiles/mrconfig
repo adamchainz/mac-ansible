@@ -4,11 +4,11 @@ jobs = 8
 [Documents/Projects/apig-wsgi]
 checkout = git clone 'git@github.com:adamchainz/apig-wsgi.git' 'apig-wsgi'
 
-[Documents/Projects/django-capture-on-commit-callbacks]
-checkout = git clone 'git@github.com:adamchainz/django-capture-on-commit-callbacks.git' 'django-capture-on-commit-callbacks'
-
 [Documents/Projects/django-auto-prefetch]
 checkout = git clone 'git@github.com:tolomea/django-auto-prefetch.git' 'django-auto-prefetch'
+
+[Documents/Projects/django-capture-on-commit-callbacks]
+checkout = git clone 'git@github.com:adamchainz/django-capture-on-commit-callbacks.git' 'django-capture-on-commit-callbacks'
 
 [Documents/Projects/django-cors-headers]
 checkout = git clone 'git@github.com:adamchainz/django-cors-headers.git' 'django-cors-headers'
