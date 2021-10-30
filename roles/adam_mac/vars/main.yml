@@ -24,7 +24,6 @@ homebrew_packages:
 - gpg
 - graphicsmagick
 - heroku/brew/heroku
-- hub
 - hyperfine
 - inetutils
 - jhead

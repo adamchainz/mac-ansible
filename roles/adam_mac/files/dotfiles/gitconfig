@@ -53,8 +53,6 @@
     new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
     ffmerge = merge --ff-only
 
-[hub]
-    protocol = ssh
 [pull]
 	rebase = false
 [init]
