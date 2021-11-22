@@ -20,6 +20,9 @@
   tags:
   - brew
 
+- name: Upgrade pyenv
+  command: brew install --head --fetch-head pyenv
+
 - name: homebrew cleanup
   command: brew cleanup
 
