@@ -73,7 +73,6 @@ homebrew_cask_packages:
 - anki
 - calibre
 - discord
-- disk-inventory-x
 - docker
 - evernote
 - firefox
@@ -89,7 +88,6 @@ homebrew_cask_packages:
 - paintbrush
 - rectangle
 - rescuetime
-- silverlight
 - skim
 - skype
 - soundflower
@@ -100,7 +98,6 @@ homebrew_cask_packages:
 - vagrant
 - virtualbox
 - vlc
-- xquartz
 
 pyenv_python_versions:
 # In precedence order
