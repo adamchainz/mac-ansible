@@ -70,7 +70,6 @@ homebrew_packages:
 
 homebrew_cask_packages:
 - '0xed'
-- alfred
 - anki
 - calibre
 - discord
