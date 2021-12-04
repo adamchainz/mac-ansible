@@ -22,6 +22,7 @@
   - config/karabiner
   - config/starship.toml
   - config/yamllint/config
+  - digrc
   - gitconfig
   - gitignore_global
   - ipython/profile_default/startup/00-imports.py
