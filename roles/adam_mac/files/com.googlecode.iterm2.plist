@@ -1060,7 +1060,7 @@
 					<key>partial</key>
 					<false/>
 					<key>regex</key>
-					<string>===.*in [\d.]+s</string>
+					<string>^=+ .*in [\d.]+s =+$</string>
 				</dict>
 				<dict>
 					<key>action</key>
