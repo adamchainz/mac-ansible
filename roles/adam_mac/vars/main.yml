@@ -130,7 +130,3 @@ pip_packages:
 - youtube-dl
 - virtualenv
 - wheel
-
-gem_packages:
-- jekyll
-- jekyll-tagging

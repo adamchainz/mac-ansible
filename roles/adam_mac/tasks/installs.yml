@@ -84,11 +84,3 @@
   command: pyenv rehash
   tags:
   - pyenv
-
-- name: Install gem packages
-  gem:
-    name: '{{ item }}'
-    state: latest
-  loop: '{{ gem_packages }}'
-  tags:
-  - gem
