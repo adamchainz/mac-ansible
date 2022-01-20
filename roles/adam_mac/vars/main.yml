@@ -45,7 +45,6 @@ homebrew_packages:
 - parallel
 - percona-toolkit
 - pkg-config
-- pngcrush
 - postgresql
 - pre-commit
 - pwgen
