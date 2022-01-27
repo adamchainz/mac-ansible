@@ -36,7 +36,7 @@
     followTags = true
 
 [merge]
-    conflictstyle = diff3
+    conflictstyle = zdiff3
 
 [alias]
     d = diff
