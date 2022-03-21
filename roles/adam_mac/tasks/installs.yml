@@ -19,7 +19,9 @@
   - brew
 
 - name: Upgrade pyenv
-  command: brew install --head --fetch-head pyenv
+  shell: brew unlink pyenv && brew install --head --fetch-head pyenv && brew link pyenv
+  tags:
+  - pyenv
 
 - name: homebrew cleanup
   command: brew cleanup
