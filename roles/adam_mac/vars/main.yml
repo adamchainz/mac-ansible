@@ -99,12 +99,12 @@ homebrew_cask_packages:
 
 pyenv_python_versions:
 # In precedence order
-- 3.10.3
-- 3.9.10
+- 3.10.4
+- 3.9.12
 - 3.8.12
-- 3.7.11
-- 3.11.0a6
-- pypy3.7-7.3.4
+- 3.7.13
+- 3.11.0a7
+- pypy3.9-7.3.9
 
 pip_packages:
 - black
