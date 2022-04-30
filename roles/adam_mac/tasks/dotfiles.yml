@@ -8,6 +8,7 @@
   - ipython/profile_default
   - ipython/profile_default/startup
   - config
+  - config/pip
   - config/yamllint
   tags:
   - dotfiles
@@ -21,6 +22,7 @@
   - ansible.cfg
   - config/karabiner
   - config/starship.toml
+  - config/pip/pip.conf
   - config/yamllint/config
   - digrc
   - gitconfig
