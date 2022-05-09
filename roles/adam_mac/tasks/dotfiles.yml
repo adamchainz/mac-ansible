@@ -27,6 +27,7 @@
   - digrc
   - gitconfig
   - gitignore_global
+  - inputrc
   - ipython/profile_default/startup/00-imports.py
   - mrconfig
   - ssh/config
