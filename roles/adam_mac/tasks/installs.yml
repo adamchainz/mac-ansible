@@ -60,7 +60,7 @@
     state: latest
     executable: '~/.pyenv/versions/{{ item }}/bin/pip{% if "pypy3" in item %}3{% endif %}'
   environment:
-    PIP_REQUIRE_VIRTUALENV: ""
+    PIP_REQUIRE_VIRTUALENV: "0"
   loop: '{{ pyenv_python_versions }}'
   tags:
   - pyenv
@@ -68,7 +68,7 @@
 - name: virtualenv update embed wheels
   command: ~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/python -m virtualenv --upgrade-embed-wheels
   environment:
-    PIP_REQUIRE_VIRTUALENV: ""
+    PIP_REQUIRE_VIRTUALENV: "0"
   tags:
   - pyenv
 
@@ -78,7 +78,7 @@
     state: latest
     executable: '~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/pip'
   environment:
-    PIP_REQUIRE_VIRTUALENV: ""
+    PIP_REQUIRE_VIRTUALENV: "0"
   tags:
   - pyenv
 
