@@ -76,3 +76,6 @@
     file-decoration-style = none
 [help]
 	autocorrect = 1
+[rebase]
+    autoStash = true
+    rescheduleFailedExec = true
