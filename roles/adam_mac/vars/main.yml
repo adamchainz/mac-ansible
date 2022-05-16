@@ -117,6 +117,7 @@ pip_packages:
 - ipdb
 - ipython
 - lifelogger
+- poetry
 - pygments
 - pythonpy
 - python-language-server
