@@ -68,7 +68,6 @@ homebrew_packages:
 - zsh-completions
 
 homebrew_cask_packages:
-- '0xed'
 - anki
 - calibre
 - discord
