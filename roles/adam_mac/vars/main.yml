@@ -87,13 +87,11 @@ homebrew_cask_packages:
 - rectangle
 - skim
 - skype
-- soundflower
 - steam
 - sublime-text
 - tableplus
 - unshaky
 - vagrant
-- virtualbox
 - vlc
 
 pyenv_python_versions:
