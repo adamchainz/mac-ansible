@@ -14,7 +14,7 @@
   - brew
 
 - name: Install homebrew cask packages
-  homebrew: brew install --cask {{ homebrew_cask_packages|join(" ") }}
+  command: brew install {{ homebrew_cask_packages|join(" ") }}
   tags:
   - brew
 
