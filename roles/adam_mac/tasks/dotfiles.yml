@@ -9,7 +9,6 @@
   - ipython/profile_default/startup
   - config
   - config/pip
-  - config/yamllint
   tags:
   - dotfiles
 
@@ -23,7 +22,6 @@
   - config/karabiner
   - config/starship.toml
   - config/pip/pip.conf
-  - config/yamllint/config
   - digrc
   - gitconfig
   - gitignore_global
