@@ -19,7 +19,7 @@
   - brew
 
 - name: Upgrade pyenv
-  shell: brew unlink pyenv && brew install --head --fetch-head pyenv && brew link pyenv
+  shell: brew unlink pyenv && brew install --head --fetch-head pyenv
   tags:
   - pyenv
 
