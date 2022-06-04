@@ -114,6 +114,7 @@ pip_packages:
 - ipython
 - lifelogger
 - poetry
+- pre-commit
 - pygments
 - pythonpy
 - python-language-server
