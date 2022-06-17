@@ -60,6 +60,7 @@ homebrew_packages:
 - sqlite
 - starship
 - swig
+- tmux
 - tree
 - watch
 - watchman
