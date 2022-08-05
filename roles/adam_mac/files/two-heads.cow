@@ -1,8 +1,0 @@
-# Two heads
-$the_cow = <<"EOC";
-        $thoughts
-         ^__^^__^____
-         ($eyes)($eyes)    )\\/\\
-         (__)(__)---w|
-          $tongue  ||    ||
-EOC

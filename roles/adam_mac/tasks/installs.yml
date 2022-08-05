@@ -1,11 +1,3 @@
-- name: Update homebrew
-  homebrew:
-    name: git
-    state: latest
-    update_homebrew: true
-  tags:
-  - brew
-
 - name: Install homebrew packages
   homebrew:
     name: '{{ homebrew_packages }}'
@@ -18,65 +10,13 @@
   tags:
   - brew
 
-- name: Upgrade pyenv
-  shell: brew unlink pyenv && brew install --head --fetch-head pyenv && brew link pyenv --head
-  tags:
-  - pyenv
-
 - name: homebrew cleanup
   command: brew cleanup
-
-# If pyenv fails, check https://github.com/pyenv/pyenv/wiki/Common-build-problems#build-failed-error-the-python-zlib-extension-was-not-compiled-missing-the-zlib
-- name: python versions
-  command: pyenv install {{ item }}
-  environment:
-    CONFIGURE_OPTS: --enable-optimizations
-  register: pyenv_install_result
-  failed_when: >
-    pyenv_install_result.rc != 0 and
-    pyenv_install_result.stderr_lines != ["pyenv: /Users/chainz/.pyenv/versions/" + item + " already exists"]
-  loop: '{{ pyenv_python_versions }}'
-  tags:
-  - pyenv
-
-- name: python versions active
-  command: pyenv global {{ pyenv_python_versions|join(" ") }}
-  tags:
-  - pyenv
-
-- name: pyenv rehash
-  command: pyenv rehash
-  tags:
-  - pyenv
-
-- name: python versions latest build requirements
-  pip:
-    name:
-    - Cython
-    - pip
-    - pip-tools
-    - setuptools
-    - virtualenv
-    state: latest
-    executable: '~/.pyenv/versions/{{ item }}/bin/pip{% if "pypy3" in item %}3{% endif %}'
-  environment:
-    PIP_REQUIRE_VIRTUALENV: "0"
-  loop: '{{ pyenv_python_versions }}'
-  tags:
-  - pyenv
-
-- name: virtualenv update embed wheels
-  command: ~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/python -m virtualenv --upgrade-embed-wheels
-  environment:
-    PIP_REQUIRE_VIRTUALENV: "0"
-  tags:
-  - pyenv
 
 - name: Install pip packages
   pip:
     name: '{{ pip_packages }}'
     state: latest
-    executable: '~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/pip'
   environment:
     PIP_REQUIRE_VIRTUALENV: "0"
   tags:
