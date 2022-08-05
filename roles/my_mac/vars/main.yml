@@ -19,3 +19,11 @@ pip_packages:
 - boto3
 - pyyaml
 - requests
+- ansible
+# Data tools
+- numpy
+- jupyter
+- matplotlib
+# Random tools
+- Pillow
+- locust
