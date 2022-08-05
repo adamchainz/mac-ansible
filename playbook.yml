@@ -9,4 +9,4 @@
 - hosts: localhost
   connection: local
   roles:
-  - adam_mac
+  - my_mac
