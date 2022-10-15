@@ -58,13 +58,16 @@
     ffmerge = merge --ff-only
 
 [pull]
-	rebase = false
+    rebase = false
+
 [init]
-	defaultBranch = main
+    defaultBranch = main
+
 [feature]
-	manyFiles = 1
+    manyFiles = 1
+
 [diff]
-	algorithm = histogram
+    algorithm = histogram
 
 [delta]
     plus-style = "syntax #012800"
@@ -78,8 +81,11 @@
     commit-decoration-style = bold yellow box ul
     file-style = bold yellow ul
     file-decoration-style = none
+
 [help]
-	autocorrect = 1
+    autocorrect = 1
+
 [rebase]
     autoStash = true
     rescheduleFailedExec = true
+    updateRefs = true
