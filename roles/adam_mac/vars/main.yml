@@ -101,7 +101,7 @@ pyenv_python_versions:
 - 3.9.15
 - 3.8.15
 - 3.7.15
-- 3.11.0rc1
+- 3.11.0
 - pypy3.9-7.3.9
 
 pip_packages:
