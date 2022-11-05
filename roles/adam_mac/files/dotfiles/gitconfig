@@ -13,9 +13,6 @@
     singlekey = true
     diffFilter = delta --color-only
 
-[color]
-    ui = auto
-
 [color "branch"]
     current = yellow reverse
     local = yellow
