@@ -35,6 +35,7 @@
 
 [merge]
     conflictstyle = zdiff3
+    autoStash = true
 
 [alias]
     d = diff
