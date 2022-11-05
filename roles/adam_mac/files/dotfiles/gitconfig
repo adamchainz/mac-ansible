@@ -87,3 +87,6 @@
     autoStash = true
     rescheduleFailedExec = true
     updateRefs = true
+
+[commit]
+    verbose = true
