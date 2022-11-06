@@ -3,7 +3,6 @@
     email = me@adamj.eu
 
 [core]
-    excludesfile = ~/.gitignore_global
     pager = delta
 
 [credential]

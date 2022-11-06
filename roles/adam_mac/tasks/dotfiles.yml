@@ -8,6 +8,7 @@
   - ipython/profile_default
   - ipython/profile_default/startup
   - config
+  - config/git
   - config/pip
   tags:
   - dotfiles
@@ -21,10 +22,10 @@
   - ansible.cfg
   - config/karabiner
   - config/starship.toml
+  - config/git/ignore
   - config/pip/pip.conf
   - digrc
   - gitconfig
-  - gitignore_global
   - inputrc
   - ipython/profile_default/startup/00-imports.py
   - mrconfig
