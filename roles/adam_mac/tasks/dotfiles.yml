@@ -22,10 +22,10 @@
   - ansible.cfg
   - config/karabiner
   - config/starship.toml
+  - config/git/config
   - config/git/ignore
   - config/pip/pip.conf
   - digrc
-  - gitconfig
   - inputrc
   - ipython/profile_default/startup/00-imports.py
   - mrconfig
