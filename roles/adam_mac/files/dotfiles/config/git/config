@@ -53,6 +53,7 @@
     alias-master-as-main = !git symbolic-ref refs/heads/main refs/heads/master && git symbolic-ref refs/remotes/origin/main refs/remotes/origin/master && git switch main
     rm-merged = !git branch --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" { print $1 }' | xargs -r git branch -D
     sync = !git switch main && git pull --prune && git rm-merged
+    prebase = rebase -x 'pre-commit run --from-ref HEAD~ --to-ref HEAD'
 
 [pull]
     rebase = false
