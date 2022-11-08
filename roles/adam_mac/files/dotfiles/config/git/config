@@ -1,16 +1,48 @@
-[user]
-    name = Adam Johnson
-    email = me@adamj.eu
+[advice]
+    # https://adamj.eu/tech/2022/11/08/git-disable-status-advice/
+    statusHints = false
+
+[alias]
+    # Shortenings
+    d = diff
+    s = status
+    st = stash
+    sw = switch
+
+    # https://adamj.eu/tech/2022/11/08/git-aliases-speed-up-fixing-merge-conflicts/
+    add-unmerged = !git diff --name-only --diff-filter U | xargs -r git add
+    edit-unmerged = !git diff --name-only --diff-filter U | xargs -r $(git var GIT_EDITOR)
+
+    # https://adamj.eu/tech/2022/10/27/git-how-to-alias-master-as-main/
+    alias-master-as-main = !git symbolic-ref refs/heads/main refs/heads/master && git symbolic-ref refs/remotes/origin/main refs/remotes/origin/master && git switch main
+
+    # https://adamj.eu/tech/2022/10/30/git-how-to-clean-up-squash-merged-branches/
+    rm-merged = !git branch --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" { print $1 }' | xargs -r git branch -D
+    sync = !git switch main && git pull --prune && git rm-merged
+
+    # https://adamj.eu/tech/2022/11/07/pre-commit-run-hooks-rebase/
+    prebase = rebase -x 'pre-commit run --from-ref HEAD~ --to-ref HEAD'
 
 [core]
     pager = delta
 
-[credential]
-    helper = cache --timeout=3600
+[delta]
+    # https://dandavison.github.io/delta/configuration.html
+    hyperlinks = true
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+    features = line-numbers decorations
+    whitespace-error-style = 22 reverse
 
-[interactive]
-    singlekey = true
-    diffFilter = delta --color-only
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
+
+[diff]
+    algorithm = histogram
 
 [color "branch"]
     current = yellow reverse
@@ -28,66 +60,47 @@
     changed = green
     untracked = cyan
 
-[push]
-    followTags = true
-    autoSetupRemote = true
+[commit]
+    verbose = true
 
-[merge]
-    conflictstyle = zdiff3
-    autoStash = true
-
-[alias]
-    d = diff
-    s = status
-    st = stash
-    co = checkout
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    ign = ls-files -o -i --exclude-standard
-    edit-staged = "!f() { git diff --name-status --staged | cut -f2 ; }; /Applications/Sublime\\ Text.app/Contents/SharedSupport/bin/subl `f`"
-    edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; /Applications/Sublime\\ Text.app/Contents/SharedSupport/bin/subl `f`"
-    add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
-    forkdiff = !bash -c 'git diff $(git merge-base "$1" "$2") "$2" "${@: 3}" ' -
-    new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
-    ffmerge = merge --ff-only
-    alias-master-as-main = !git symbolic-ref refs/heads/main refs/heads/master && git symbolic-ref refs/remotes/origin/main refs/remotes/origin/master && git switch main
-    rm-merged = !git branch --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" { print $1 }' | xargs -r git branch -D
-    sync = !git switch main && git pull --prune && git rm-merged
-    prebase = rebase -x 'pre-commit run --from-ref HEAD~ --to-ref HEAD'
-
-[pull]
-    rebase = false
-
-[init]
-    defaultBranch = main
+[credential]
+    helper = cache --timeout=3600
 
 [feature]
     manyFiles = 1
 
-[diff]
-    algorithm = histogram
-
-[delta]
-    hyperlinks = true
-    plus-style = "syntax #012800"
-    minus-style = "syntax #340001"
-    syntax-theme = Monokai Extended
-    navigate = true
-    features = line-numbers decorations
-    whitespace-error-style = 22 reverse
-
-[delta "decorations"]
-    commit-decoration-style = bold yellow box ul
-    file-style = bold yellow ul
-    file-decoration-style = none
-
 [help]
+    # https://adamj.eu/tech/2022/10/26/git-how-to-enable-autocorrect/
     autocorrect = immediate
 
-[rebase]
+[init]
+    defaultBranch = main
+
+[interactive]
+    singlekey = true
+    diffFilter = delta --color-only
+
+[merge]
+    conflictstyle = zdiff3
+    # http://localhost:8080/tech/2022/11/05/git-automatically-stash-rebase-merge/
     autoStash = true
+
+[pull]
+    rebase = false
+
+[push]
+    followTags = true
+    autoSetupRemote = true
+
+[rebase]
+    # https://adamj.eu/tech/2022/11/05/git-automatically-stash-rebase-merge/
+    autoStash = true
+
     rescheduleFailedExec = true
+
+    # https://adamj.eu/tech/2022/10/15/how-to-rebase-stacked-git-branches/
     updateRefs = true
 
-[commit]
-    verbose = true
+[user]
+    name = Adam Johnson
+    email = me@adamj.eu
