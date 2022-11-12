@@ -84,6 +84,13 @@
     conflictstyle = zdiff3
     # http://localhost:8080/tech/2022/11/05/git-automatically-stash-rebase-merge/
     autoStash = true
+    tool = sublime
+
+[mergetool]
+    keepBackup = false
+
+[mergetool "sublime"]
+    cmd = subl -w $MERGED
 
 [pull]
     rebase = false
