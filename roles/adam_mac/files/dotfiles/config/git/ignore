@@ -34,4 +34,5 @@ Temporary Items
 # Python
 *.pyc
 .tox
+.venv
 venv
