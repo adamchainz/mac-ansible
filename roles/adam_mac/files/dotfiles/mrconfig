@@ -40,9 +40,6 @@ checkout = git clone 'git@github.com:adamchainz/django-read-only.git' 'django-re
 [Documents/Projects/django-rich]
 checkout = git clone 'git@github.com:adamchainz/django-rich.git' 'django-rich'
 
-[Documents/Projects/django-settings-file]
-checkout = git clone 'git@github.com:adamchainz/django-settings-file.git' 'django-settings-file'
-
 [Documents/Projects/django-upgrade]
 checkout = git clone 'git@github.com:adamchainz/django-upgrade.git' 'django-upgrade'
 
@@ -58,17 +55,11 @@ checkout = git clone 'git@github.com:adamchainz/flake8-comprehensions.git' 'flak
 [Documents/Projects/flake8-no-pep420]
 checkout = git clone 'git@github.com:adamchainz/flake8-no-pep420.git' 'flake8-no-pep420'
 
-[Documents/Projects/flake8-no-types]
-checkout = git clone 'git@github.com:adamchainz/flake8-no-types.git' 'flake8-no-types'
-
 [Documents/Projects/flake8-tidy-imports]
 checkout = git clone 'git@github.com:adamchainz/flake8-tidy-imports.git' 'flake8-tidy-imports'
 
 [Documents/Projects/heroicons]
 checkout = git clone 'git@github.com:adamchainz/heroicons.git' 'heroicons'
-
-[Documents/Projects/mariadb-dyncol]
-checkout = git clone 'git@github.com:adamchainz/mariadb-dyncol.git' 'mariadb-dyncol'
 
 [Documents/Projects/patchy]
 checkout = git clone 'git@github.com:adamchainz/patchy.git' 'patchy'
@@ -91,14 +82,8 @@ checkout = git clone 'git@github.com:adamchainz/pytest-restrict.git' 'pytest-res
 [Documents/Projects/pytest-reverse]
 checkout = git clone 'git@github.com:adamchainz/pytest-reverse.git' 'pytest-reverse'
 
-[Documents/Projects/pytest-super-check]
-checkout = git clone 'git@github.com:adamchainz/pytest-super-check.git' 'pytest-super-check'
-
 [Documents/Projects/time-machine]
 checkout = git clone 'git@github.com:adamchainz/time-machine.git' 'time-machine'
-
-[Documents/Projects/tox-py]
-checkout = git clone 'git@github.com:adamchainz/tox-py.git' 'tox-py'
 
 [Documents/Projects/treepoem]
 checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
