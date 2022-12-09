@@ -77,7 +77,7 @@
     defaultBranch = main
 
 [interactive]
-    singlekey = true
+    singleKey = true
     diffFilter = delta --color-only
 
 [merge]
