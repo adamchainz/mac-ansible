@@ -1,0 +1,223 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+    brew
+    gh
+    git
+    macos
+    nvm
+    pre-commit
+    pyenv
+    python
+    sublime
+    you-should-use
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# History control
+export HISTIGNORE="&:ls:[bf]g:exit"
+export HISTSIZE=40000
+export HISTFILESIZE=1000000
+unsetopt share_history  # prevent sharing between running shells
+setopt inc_append_history_time
+setopt interactivecomments
+
+# zsh extras
+autoload zmv
+setopt extended_glob
+
+# Do not overwrite existing files with > and >>.
+# Use >! and >>! to bypass.
+unsetopt CLOBBER
+
+# autojump
+if (( $+commands[brew] )); then
+  file=$HOMEBREW_PREFIX/etc/profile.d/autojump.sh
+  if [[ -f "$file" ]]; then
+    source "$file"
+    found=1
+  fi
+fi
+
+# Google Cloud SDK
+if [ -f '~/bin/google-cloud-sdk/path.zsh.inc' ]; then . '~/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# gcloud autocomplete
+if [ -f '~/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '~/bin/google-cloud-sdk/completion.zsh.inc'; fi
+
+# iTerm integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Starship prompt
+eval "$(starship init zsh)"
+
+# zsh-completions
+[[ -s /opt/homebrew/share/zsh-completions ]] && fpath=(/opt/homebrew/share/zsh-completions $fpath)
+compinit -u
+
+# Functions
+
+# Run 'ls' after 'cd'
+function chpwd_ls {
+    ls
+}
+add-zsh-hook chpwd chpwd_ls
+
+# Switch to a simple $ prompt, useful for screenshots
+simple-prompt() {
+  export PROMPT="$ "
+  export RPROMPT=""
+}
+
+# Move a file to the trash
+function trash() {
+  local trash_dir="${HOME}/.Trash"
+  local temp_ifs=$IFS
+  IFS=$'\n'
+  for item in "$@"; do
+    if [[ -e "$item" ]]; then
+      item_name="$(basename $item)"
+      if [[ -e "${trash_dir}/${item_name}" ]]; then
+        mv -f "$item" "${trash_dir}/${item_name} $(date "+%H-%M-%S")"
+      else
+        mv -f "$item" "${trash_dir}/"
+      fi
+    fi
+  done
+  IFS=$temp_ifs
+}
+
+# Environment Variables
+
+# Increase watchable file count
+ulimit -n 4096
+
+# Prevent Ansible from using cowsay
+export ANSIBLE_NOCOWS=1
+
+# Set editor for SSH and local sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR=nano
+else
+  export EDITOR='subl -w'
+fi
+
+# Configure less
+export LESS='-F -i --incsearch -M -R -S -w -X -z-4'
+if (( $#commands[(i)lesspipe(|.sh)] )); then
+  export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
+fi
+
+# MySQL prompt
+export MYSQL_PS1="\u@\h [\c]> "
+
+# Allow Python multiprocessing fork mode
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# Set pager
+export PAGER=less
+
+# Extend Path
+export PATH=~/script:$PATH
+export PATH=~/bin:$PATH
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+export PATH=/Applications/Inkscape.app/Contents/MacOS:$PATH
+export PATH=~/.cargo/bin:$PATH
+export PATH=~/bin/google-cloud-sdk/bin:$PATH
+
+# Stop virtualenvs adding to prompt, as Starship already shows it:
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+# Aliases
+
+# Git
+alias gaa="g add --all && git status"
+alias gap="g add -p"
+
+alias gcm="g commit -m"
+compdef _git gcm=git-commit
+
+# alias gcom='git switch main'
+
+alias gdc="git diff --cached"
+compdef _git gdc=git-diff
+
+alias gl="git log --stat"
+compdef _git gl=git-log
+
+_git_log_medium_format='%C(bold)Commit:%C(reset) %C(green)%H%C(red)%d%n%C(bold)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B'
+alias glp='git log --topo-order --stat --patch --pretty=format:${_git_log_medium_format} --follow'
+
+unalias gm 2>/dev/null # from oh-my-zsh, overrides graphicsmagick
+
+alias grim='git rebase --interactive main'
+
+alias gs="git status -s -b"  # deliberately overrides ghostscript
+compdef _git gs=git-status
+
+alias pulp='git sync'  # historical command name
+alias pull="git pull"
+alias push="git push"
+alias pushpr="git push && gh pr create --web"
+
+# less
+export LESS_TERMCAP_mb=$'\E[01;31m'      # Begins blinking.
+export LESS_TERMCAP_md=$'\E[01;31m'      # Begins bold.
+export LESS_TERMCAP_me=$'\E[0m'          # Ends mode.
+export LESS_TERMCAP_se=$'\E[0m'          # Ends standout-mode.
+export LESS_TERMCAP_so=$'\E[00;47;30m'   # Begins standout-mode.
+export LESS_TERMCAP_ue=$'\E[0m'          # Ends underline.
+export LESS_TERMCAP_us=$'\E[01;32m'      # Begins underline.
+
+# Lifelogger
+alias l=lifelogger
+alias q="lifelogger quickadd"
+
+# macOS
+alias o=open
+alias pbp=pbpaste
+
+# POSIX
+alias c=cd
+alias e='${(z)VISUAL:-${(z)EDITOR}}'  # open default editor
+alias p='${(z)PAGER}'
+# interactive modes
+alias cp="cp -i"
+alias ln="ln -i"
+alias mv="mv -i"
+# rm
+alias rm='trash'
+alias rrm='/bin/rm -i'
+
+# Python
+alias pip="python -m pip"
+alias pipi="pip install"
+alias pipir="pip install -r requirements.txt"
+
+# extra plugins from homebrew
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # must be first
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey "^[OA" history-substring-search-up
+bindkey "^[OB" history-substring-search-down

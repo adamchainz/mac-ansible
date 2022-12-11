@@ -68,6 +68,9 @@ homebrew_packages:
 - xz
 - zlib
 - zsh-completions
+- zsh-autosuggestions
+- zsh-history-substring-search
+- zsh-syntax-highlighting
 
 homebrew_cask_packages:
 - anki

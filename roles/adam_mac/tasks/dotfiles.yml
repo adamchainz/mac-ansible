@@ -30,6 +30,8 @@
   - ipython/profile_default/startup/00-imports.py
   - mrconfig
   - ssh/config
+  - zprofile
+  - zshrc
   tags:
   - dotfiles
 
@@ -44,21 +46,3 @@
     src: dotfiles/pypirc
     dest: ~/.pypirc
     force: false
-
-- name: zsh - git repo for prezto fork
-  git:
-    repo: git@github.com:adamchainz/prezto.git
-    dest: ~/.zprezto
-
-- name: zsh - link in prezto files
-  file:
-    state: link
-    src: '~/.zprezto/runcoms/{{ item }}'
-    path: '~/.{{ item }}'
-  loop:
-  - zlogin
-  - zlogout
-  - zprofile
-  - zshenv
-  - zshrc
-  - zpreztorc
