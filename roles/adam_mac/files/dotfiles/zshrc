@@ -149,6 +149,12 @@ export PATH=~/bin/google-cloud-sdk/bin:$PATH
 # Stop virtualenvs adding to prompt, as Starship already shows it:
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+# Disable zsh-you-should-use hints for some aliases
+# https://github.com/MichaelAquilina/zsh-you-should-use#disable-hints-for-specific-aliases
+export YSU_IGNORED_ALIASES=(
+  g
+)
+
 # Aliases
 
 # Git
