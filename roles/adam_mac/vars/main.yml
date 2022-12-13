@@ -13,6 +13,7 @@ homebrew_packages:
 - ffmpeg
 - freetype
 - fswatch
+- fzf
 - gdal
 - gdbm
 - git
