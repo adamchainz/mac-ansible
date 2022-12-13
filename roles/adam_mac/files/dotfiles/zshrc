@@ -35,6 +35,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Autocorrect
+unsetopt CORRECT_ALL  # too zealous, tries to correct 'git' to '.git'
+
 # History control
 export HISTIGNORE="&:ls:[bf]g:exit"
 export HISTSIZE=40000
