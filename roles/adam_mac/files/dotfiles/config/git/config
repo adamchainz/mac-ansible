@@ -28,20 +28,13 @@
 [delta]
     # https://dandavison.github.io/delta/configuration.html
     hyperlinks = true
-    plus-style = "syntax #012800"
-    minus-style = "syntax #340001"
-    syntax-theme = Monokai Extended
+    line-numbers = true
     navigate = true
-    features = line-numbers decorations
-    whitespace-error-style = 22 reverse
-
-[delta "decorations"]
-    commit-decoration-style = bold yellow box ul
-    file-style = bold yellow ul
-    file-decoration-style = none
+    syntax-theme = Monokai Extended
 
 [diff]
     algorithm = histogram
+    colorMoved = default
 
 [color "branch"]
     current = yellow reverse
