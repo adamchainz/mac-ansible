@@ -82,8 +82,8 @@
     diffFilter = delta --color-only
 
 [merge]
-    conflictstyle = zdiff3
-    # http://localhost:8080/tech/2022/11/05/git-automatically-stash-rebase-merge/
+    conflictStyle = zdiff3
+    # https://adamj.eu/tech/2022/11/05/git-automatically-stash-rebase-merge/
     autoStash = true
     tool = sublime
 
