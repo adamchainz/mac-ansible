@@ -164,6 +164,9 @@ export YSU_IGNORED_ALIASES=(
 alias gaa="g add --all && git status"
 alias gap="g add -p"
 
+alias gcf="git commit --amend --reuse-message HEAD"
+alias gcF="git commit --verbose --amend"
+
 alias gcm="g commit -m"
 compdef _git gcm=git-commit
 
