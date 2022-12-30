@@ -127,7 +127,7 @@ else
 fi
 
 # Configure less
-export LESS='-F -i --incsearch -M -R -S -w -X -z-4'
+export LESS='--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-target=.5 --LONG-PROMPT --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --status-line --use-color --window=-4'
 if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
