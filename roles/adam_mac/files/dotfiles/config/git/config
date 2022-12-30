@@ -22,6 +22,12 @@
     # https://adamj.eu/tech/2022/11/07/pre-commit-run-hooks-rebase/
     prebase = rebase -x 'pre-commit run --from-ref HEAD~ --to-ref HEAD'
 
+    # blog post pending
+    switch-recent = !git branch --sort=-committerdate --format='%(refname:short)' | fzf --preview='git log --date=relative --color main..{}' | xargs git switch
+
+[branch]
+    sort = -committerdate
+
 [core]
     pager = delta
 
