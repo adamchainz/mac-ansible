@@ -95,6 +95,7 @@
     rebase = false
 
 [push]
+    # https://adamj.eu/tech/2022/10/31/git-how-to-automatically-create-upstream-branches/
     autoSetupRemote = true
 
 [rebase]
