@@ -95,7 +95,6 @@
     rebase = false
 
 [push]
-    followTags = true
     autoSetupRemote = true
 
 [rebase]
