@@ -91,6 +91,9 @@
 [mergetool "sublime"]
     cmd = subl -w $MERGED
 
+[pager]
+    status = true
+
 [pull]
     rebase = false
 
