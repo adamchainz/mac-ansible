@@ -68,6 +68,9 @@
 [feature]
     manyFiles = 1
 
+[fetch]
+    prune = true
+
 [help]
     # https://adamj.eu/tech/2022/10/26/git-how-to-enable-autocorrect/
     autocorrect = immediate
