@@ -64,6 +64,12 @@
 [diff]
     algorithm = histogram
     colorMoved = default
+    interHunkContext = 3
+
+[diff "exiftool"]
+    textconv = exiftool --composite -x 'Exiftool:*' -x 'File:*' -g0
+    cachetextconv = true
+    xfuncname = "^-.*$"
 
 [feature]
     manyFiles = 1

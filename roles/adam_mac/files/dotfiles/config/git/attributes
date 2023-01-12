@@ -1,0 +1,41 @@
+# Use Git’s built-in hunk header patterns for some file extensions
+# https://git-scm.com/docs/gitattributes#_defining_a_custom_hunk_header
+*.bash diff=bash
+*.c diff=cpp
+*.cpp diff=cpp
+*.cs diff=csharp
+*.css diff=css
+*.ex diff=elixir
+*.exs diff=elixir
+*.go diff=golang
+*.h diff=c
+*.htm diff=html
+*.html diff=html
+*.java diff=java
+*.kt diff=kotlin
+*.kts diff=kotlin
+*.ktm diff=kotlin
+*.md diff=markdown
+*.m diff=matlab
+*.pas diff=pascal
+*.inc diff=pascal
+*.pp diff=pascal
+*.pl diff=perl
+*.php diff=php
+*.py diff=python
+*.pyi diff=python
+*.rb diff=ruby
+*.rs diff=rust
+*.sass diff=css
+*.scss diff=css
+*.sh diff=bash
+*.tex diff=tex
+*.zsh diff=bash
+
+# Use ExifTool for diffing media files
+*.avif diff=exiftool
+*.bmp diff=exiftool
+*.jpeg diff=exiftool
+*.jpg diff=exiftool
+*.png diff=exiftool
+*.webp diff=exiftool

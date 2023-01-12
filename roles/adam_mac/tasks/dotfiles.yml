@@ -22,6 +22,7 @@
   - ansible.cfg
   - config/karabiner
   - config/starship.toml
+  - config/git/attributes
   - config/git/config
   - config/git/ignore
   - config/pip/pip.conf
