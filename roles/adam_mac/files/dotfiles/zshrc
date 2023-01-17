@@ -123,7 +123,7 @@ export ANSIBLE_NOCOWS=1
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR=nano
 else
-  export EDITOR='subl -w'
+  export EDITOR='subl --wait'
 fi
 
 # Configure less
