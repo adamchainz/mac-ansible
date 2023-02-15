@@ -1,5 +1,0 @@
-- name: kill dock
-  command: killall Dock
-
-- name: kill finder
-  command: killall Finder
