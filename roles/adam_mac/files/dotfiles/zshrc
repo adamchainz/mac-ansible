@@ -190,6 +190,8 @@ alias grim='git rebase --interactive main'
 alias gs="git status -s -b"  # deliberately overrides ghostscript
 compdef _git gs=git-status
 
+alias gswr="git switch-recent"
+
 alias pulp='git sync'  # historical command name
 alias pull="git pull"
 alias push="git push"
