@@ -91,5 +91,8 @@ checkout = git clone 'git@github.com:adamchainz/time-machine.git' 'time-machine'
 [Documents/Projects/treepoem]
 checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
 
+[Documents/Projects/unittest-parametrize]
+checkout = git clone 'git@github.com:adamchainz/unittest-parametrize.git' 'unittest-parametrize'
+
 [Documents/Projects/whitenoise]
 checkout = git clone 'git@github.com:evansd/whitenoise.git' 'whitenoise'
