@@ -70,6 +70,9 @@ checkout = git clone 'git@github.com:adamchainz/patchy.git' 'patchy'
 [Documents/Projects/pip-lock]
 checkout = git clone 'git@github.com:adamchainz/pip-lock.git' 'pip-lock'
 
+[Documents/Projects/pygments-git]
+checkout = git clone 'git@github.com:adamchainz/pygments-git.git' 'pygments-git'
+
 [Documents/Projects/pytest-randomly]
 checkout = git clone 'git@github.com:pytest-dev/pytest-randomly.git' 'pytest-randomly'
 
