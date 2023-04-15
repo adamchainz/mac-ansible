@@ -130,6 +130,6 @@ pip_packages:
 - s3cmd
 - tox
 - twine
-- youtube-dl
+- yt-dlp
 - virtualenv
 - wheel
