@@ -49,6 +49,9 @@ checkout = git clone 'git@github.com:adamchainz/django-upgrade.git' 'django-upgr
 [Documents/Projects/django-version-checks]
 checkout = git clone 'git@github.com:adamchainz/django-version-checks.git' 'django-version-checks'
 
+[Documents/Projects/django-watchfiles]
+checkout = git clone 'git@github.com:adamchainz/django-watchfiles.git' 'django-watchfiles'
+
 [Documents/Projects/ec2-metadata]
 checkout = git clone 'git@github.com:adamchainz/ec2-metadata.git' 'ec2-metadata'
 
