@@ -49,6 +49,7 @@
     untracked = cyan
 
 [commit]
+    cleanup = scissors
     verbose = true
 
 [credential]
