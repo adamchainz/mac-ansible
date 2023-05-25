@@ -39,3 +39,9 @@
 *.jpg diff=exiftool
 *.png diff=exiftool
 *.webp diff=exiftool
+
+# Use Pandoc for diffing document files
+*.docx diff=pandoc-to-markdown
+*.odt diff=pandoc-to-markdown
+*.ipynb diff=pandoc-to-markdown
+*.rtf diff=pandoc-to-markdown

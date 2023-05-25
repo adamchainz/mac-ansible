@@ -167,6 +167,11 @@ alias gcF="git commit --verbose --amend"
 alias gcm="g commit -m"
 compdef _git gcm=git-commit
 
+alias gac='git add --all && git commit'
+compdef _git gac=git-commit
+alias gacm='git add --all && git commit --message'
+compdef _git gacm=git-commit
+
 # alias gcom='git switch main'
 
 alias gdc="git diff --cached"
@@ -180,7 +185,6 @@ _git_log_medium_format='%C(bold)Commit:%C(reset) %C(green)%H%C(red)%d%n%C(bold)A
 _git_log_oneline_format='%C(green)%h%C(reset) %s%C(red)%d%C(reset)%n'
 alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
 alias gld='git log --topo-order --stat --patch --full-diff --pretty=format:"${_git_log_medium_format}"'
-alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"'
 alias glp='git log --topo-order --stat --patch --pretty=format:${_git_log_medium_format} --follow'
 
 unalias gm 2>/dev/null # from oh-my-zsh, overrides graphicsmagick
