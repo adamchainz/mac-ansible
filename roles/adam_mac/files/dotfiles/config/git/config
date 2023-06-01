@@ -123,6 +123,8 @@
     autoSetupRemote = true
 
 [rebase]
+    abbreviateCommands = true
+
     # https://adamj.eu/tech/2022/11/05/git-automatically-stash-rebase-merge/
     autoStash = true
 
@@ -130,6 +132,9 @@
 
     # https://adamj.eu/tech/2022/10/15/how-to-rebase-stacked-git-branches/
     updateRefs = true
+
+[rerere]
+    enabled = true
 
 [user]
     name = Adam Johnson
