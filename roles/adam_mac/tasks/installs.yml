@@ -56,7 +56,7 @@
     - pip-tools
     - virtualenv
     state: latest
-    executable: '~/.pyenv/versions/{{ item }}/bin/pip{% if "pypy3" in item %}3{% endif %}'
+    executable: '~/.pyenv/versions/{{ item }}/bin/pip3'
   environment:
     PIP_REQUIRE_VIRTUALENV: "0"
   loop: '{{ pyenv_python_versions }}'
