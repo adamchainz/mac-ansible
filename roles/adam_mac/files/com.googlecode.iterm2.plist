@@ -4,6 +4,8 @@
 <dict>
 	<key>Actions</key>
 	<array/>
+	<key>AddNewTabAtEndOfTabs</key>
+	<false/>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
