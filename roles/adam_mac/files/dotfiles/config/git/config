@@ -136,6 +136,9 @@
 [rerere]
     enabled = true
 
+[stash]
+    showPatch = true
+
 [user]
     name = Adam Johnson
     email = me@adamj.eu
