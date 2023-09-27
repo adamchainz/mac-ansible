@@ -196,6 +196,8 @@ alias grbim='git rebase --interactive $(git_main_branch)'
 alias gs="git status -s -b"  # deliberately overrides ghostscript
 compdef _git gs=git-status
 
+alias gstp='git stash pop --index'
+
 alias gswd="git switch --detach"
 alias gswr="git switch-recent"
 
