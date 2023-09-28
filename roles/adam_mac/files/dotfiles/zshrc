@@ -176,9 +176,6 @@ compdef _git gac=git-commit
 alias gacm='git add --all && git commit --message'
 compdef _git gacm=git-commit
 
-alias gdc="git diff --cached"
-compdef _git gdc=git-diff
-
 alias gl="git log --stat"
 compdef _git gl=git-log
 
