@@ -50,13 +50,12 @@
   - pyenv
 
 - name: python versions latest build requirements
-  pip:
-    name:
-    - pip
-    - pip-tools
-    - virtualenv
-    state: latest
-    executable: '~/.pyenv/versions/{{ item }}/bin/pip3'
+  command: >
+    ~/.pyenv/versions/{{ item }}/bin/python -m pip
+    install -U
+    pip
+    pip-tools
+    virtualenv
   environment:
     PIP_REQUIRE_VIRTUALENV: "0"
   loop: '{{ pyenv_python_versions }}'
@@ -71,10 +70,10 @@
   - pyenv
 
 - name: Install pip packages
-  pip:
-    name: '{{ pip_packages }}'
-    state: latest
-    executable: '~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/pip'
+  command: >
+    ~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/python -m pip
+    install -U
+    {{ pip_packages|join(" ") }}
   environment:
     PIP_REQUIRE_VIRTUALENV: "0"
   tags:
