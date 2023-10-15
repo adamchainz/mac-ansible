@@ -15,6 +15,8 @@
     # https://adamj.eu/tech/2022/10/27/git-how-to-alias-master-as-main/
     alias-master-as-main = !git symbolic-ref refs/heads/main refs/heads/master && git symbolic-ref refs/remotes/origin/main refs/remotes/origin/master && git switch main
 
+    git = !git
+
     # https://adamj.eu/tech/2022/10/30/git-how-to-clean-up-squash-merged-branches/
     rm-merged = !git branch --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" { print $1 }' | xargs -r git branch -D
     sync = !git switch main && git pull --prune && git rm-merged
