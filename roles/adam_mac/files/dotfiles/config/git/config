@@ -86,6 +86,12 @@
 [fetch]
     prune = true
 
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
 [help]
     # https://adamj.eu/tech/2022/10/26/git-how-to-enable-autocorrect/
     autocorrect = immediate
