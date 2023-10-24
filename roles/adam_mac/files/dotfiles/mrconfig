@@ -1,104 +1,104 @@
 [DEFAULT]
 jobs = 8
 
-[Documents/Projects/apig-wsgi]
+[Documents/Projects/_mine/_open/apig-wsgi]
 checkout = git clone 'git@github.com:adamchainz/apig-wsgi.git' 'apig-wsgi'
 
-[Documents/Projects/blacken-docs]
+[Documents/Projects/_mine/_open/blacken-docs]
 checkout = git clone 'git@github.com:adamchainz/blacken-docs.git' 'blacken-docs'
 
-[Documents/Projects/django-auto-prefetch]
+[Documents/Projects/_mine/_open/django-auto-prefetch]
 checkout = git clone 'git@github.com:tolomea/django-auto-prefetch.git' 'django-auto-prefetch'
 
-[Documents/Projects/django-browser-reload]
+[Documents/Projects/_mine/_open/django-browser-reload]
 checkout = git clone 'git@github.com:adamchainz/django-browser-reload.git' 'django-browser-reload'
 
-[Documents/Projects/django-cors-headers]
+[Documents/Projects/_mine/_open/django-cors-headers]
 checkout = git clone 'git@github.com:adamchainz/django-cors-headers.git' 'django-cors-headers'
 
-[Documents/Projects/django-htmx]
+[Documents/Projects/_mine/_open/django-htmx]
 checkout = git clone 'git@github.com:adamchainz/django-htmx.git' 'django-htmx'
 
-[Documents/Projects/django-linear-migrations]
+[Documents/Projects/_mine/_open/django-linear-migrations]
 checkout = git clone 'git@github.com:adamchainz/django-linear-migrations.git' 'django-linear-migrations'
 
-[Documents/Projects/django-minify-html]
+[Documents/Projects/_mine/_open/django-minify-html]
 checkout = git clone 'git@github.com:adamchainz/django-minify-html.git' 'django-minify-html'
 
-[Documents/Projects/django-mysql]
+[Documents/Projects/_mine/_open/django-mysql]
 checkout = git clone 'git@github.com:adamchainz/django-mysql.git' 'django-mysql'
 
-[Documents/Projects/django-perf-rec]
+[Documents/Projects/_mine/_open/django-perf-rec]
 checkout = git clone 'git@github.com:adamchainz/django-perf-rec.git' 'django-perf-rec'
 
-[Documents/Projects/django-permissions-policy]
+[Documents/Projects/_mine/_open/django-permissions-policy]
 checkout = git clone 'git@github.com:adamchainz/django-permissions-policy.git' 'django-permissions-policy'
 
-[Documents/Projects/django-read-only]
+[Documents/Projects/_mine/_open/django-read-only]
 checkout = git clone 'git@github.com:adamchainz/django-read-only.git' 'django-read-only'
 
-[Documents/Projects/django-rich]
+[Documents/Projects/_mine/_open/django-rich]
 checkout = git clone 'git@github.com:adamchainz/django-rich.git' 'django-rich'
 
-[Documents/Projects/django-upgrade]
+[Documents/Projects/_mine/_open/django-upgrade]
 checkout = git clone 'git@github.com:adamchainz/django-upgrade.git' 'django-upgrade'
 
-[Documents/Projects/django-version-checks]
+[Documents/Projects/_mine/_open/django-version-checks]
 checkout = git clone 'git@github.com:adamchainz/django-version-checks.git' 'django-version-checks'
 
-[Documents/Projects/django-watchfiles]
+[Documents/Projects/_mine/_open/django-watchfiles]
 checkout = git clone 'git@github.com:adamchainz/django-watchfiles.git' 'django-watchfiles'
 
-[Documents/Projects/ec2-metadata]
+[Documents/Projects/_mine/_open/ec2-metadata]
 checkout = git clone 'git@github.com:adamchainz/ec2-metadata.git' 'ec2-metadata'
 
-[Documents/Projects/flake8-comprehensions]
+[Documents/Projects/_mine/_open/flake8-comprehensions]
 checkout = git clone 'git@github.com:adamchainz/flake8-comprehensions.git' 'flake8-comprehensions'
 
-[Documents/Projects/flake8-logging]
+[Documents/Projects/_mine/_open/flake8-logging]
 checkout = git clone 'git@github.com:adamchainz/flake8-logging.git' 'flake8-logging'
 
-[Documents/Projects/flake8-no-pep420]
+[Documents/Projects/_mine/_open/flake8-no-pep420]
 checkout = git clone 'git@github.com:adamchainz/flake8-no-pep420.git' 'flake8-no-pep420'
 
-[Documents/Projects/flake8-tidy-imports]
+[Documents/Projects/_mine/_open/flake8-tidy-imports]
 checkout = git clone 'git@github.com:adamchainz/flake8-tidy-imports.git' 'flake8-tidy-imports'
 
-[Documents/Projects/heroicons]
+[Documents/Projects/_mine/_open/heroicons]
 checkout = git clone 'git@github.com:adamchainz/heroicons.git' 'heroicons'
 
-[Documents/Projects/patchy]
+[Documents/Projects/_mine/_open/patchy]
 checkout = git clone 'git@github.com:adamchainz/patchy.git' 'patchy'
 
-[Documents/Projects/pip-lock]
+[Documents/Projects/_mine/_open/pip-lock]
 checkout = git clone 'git@github.com:adamchainz/pip-lock.git' 'pip-lock'
 
-[Documents/Projects/pygments-git]
+[Documents/Projects/_mine/_open/pygments-git]
 checkout = git clone 'git@github.com:adamchainz/pygments-git.git' 'pygments-git'
 
-[Documents/Projects/pytest-randomly]
+[Documents/Projects/_mine/_open/pytest-randomly]
 checkout = git clone 'git@github.com:pytest-dev/pytest-randomly.git' 'pytest-randomly'
 
-[Documents/Projects/pytest-flake8-path]
+[Documents/Projects/_mine/_open/pytest-flake8-path]
 checkout = git clone 'git@github.com:adamchainz/pytest-flake8-path.git' 'pytest-flake8-path'
 
-[Documents/Projects/pytest-is-running]
+[Documents/Projects/_mine/_open/pytest-is-running]
 checkout = git clone 'git@github.com:adamchainz/pytest-is-running.git' 'pytest-is-running'
 
-[Documents/Projects/pytest-restrict]
+[Documents/Projects/_mine/_open/pytest-restrict]
 checkout = git clone 'git@github.com:adamchainz/pytest-restrict.git' 'pytest-restrict'
 
-[Documents/Projects/pytest-reverse]
+[Documents/Projects/_mine/_open/pytest-reverse]
 checkout = git clone 'git@github.com:adamchainz/pytest-reverse.git' 'pytest-reverse'
 
-[Documents/Projects/time-machine]
+[Documents/Projects/_mine/_open/time-machine]
 checkout = git clone 'git@github.com:adamchainz/time-machine.git' 'time-machine'
 
-[Documents/Projects/treepoem]
+[Documents/Projects/_mine/_open/treepoem]
 checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
 
-[Documents/Projects/unittest-parametrize]
+[Documents/Projects/_mine/_open/unittest-parametrize]
 checkout = git clone 'git@github.com:adamchainz/unittest-parametrize.git' 'unittest-parametrize'
 
-[Documents/Projects/whitenoise]
+[Documents/Projects/_mine/_open/whitenoise]
 checkout = git clone 'git@github.com:evansd/whitenoise.git' 'whitenoise'
