@@ -1,16 +1,16 @@
 [DEFAULT]
 jobs = 8
 
-[Documents/Projects/_mine/_open/adamj.eu]
+[Documents/Projects/_mine/adamj.eu]
 checkout = git clone 'git@github.com:adamchainz/adamj.eu.git' 'adamj.eu'
 
-[Documents/Projects/_mine/_open/book-boost-your-django-dx]
+[Documents/Projects/_mine/book-boost-your-django-dx]
 checkout = git clone 'git@github.com:adamchainz/book-boost-your-django-dx.git' 'book-boost-your-django-dx'
 
-[Documents/Projects/_mine/_open/book-boost-your-git-dx]
+[Documents/Projects/_mine/book-boost-your-git-dx]
 checkout = git clone 'git@github.com:adamchainz/book-boost-your-git-dx.git' 'book-boost-your-git-dx'
 
-[Documents/Projects/_mine/_open/book-speed-up-your-django-tests]
+[Documents/Projects/_mine/book-speed-up-your-django-tests]
 checkout = git clone 'git@github.com:adamchainz/book-speed-up-your-django-tests.git' 'book-speed-up-your-django-tests'
 
 [Documents/Projects/_mine/_open/apig-wsgi]
