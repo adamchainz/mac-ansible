@@ -50,6 +50,7 @@ setopt interactivecomments
 # zsh extras
 autoload zmv
 setopt extended_glob
+setopt numeric_glob_sort
 
 # Do not overwrite existing files with > and >>.
 # Use >! and >>! to bypass.
