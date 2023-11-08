@@ -16,9 +16,9 @@ homebrew_packages:
 - fzf
 - gdal
 - gdbm
+- gh
 - git
 - git-delta
-- github/gh/gh
 - goaccess
 - gpg
 - graphicsmagick
