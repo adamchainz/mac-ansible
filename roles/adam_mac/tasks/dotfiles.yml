@@ -21,6 +21,7 @@
   loop:
   - ansible.cfg
   - config/karabiner
+  - config/ripgreprc
   - config/starship.toml
   - config/git/attributes
   - config/git/config
