@@ -111,8 +111,6 @@ pyenv_python_versions:
 
 pip_packages:
 - black
-- boto
-- boto3
 - build
 - csvkit
 - flake8
@@ -128,7 +126,5 @@ pip_packages:
 - requests
 - s3cmd
 - tox
-- twine
 - yt-dlp
 - virtualenv
-- wheel
