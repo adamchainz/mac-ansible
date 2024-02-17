@@ -127,4 +127,5 @@ pip_packages:
 - s3cmd
 - tox
 - yt-dlp
+- uv
 - virtualenv
