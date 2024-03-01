@@ -126,6 +126,7 @@ pip_packages:
 - requests
 - s3cmd
 - tox
+- twine
 - yt-dlp
 - uv
 - virtualenv
