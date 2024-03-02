@@ -55,7 +55,6 @@
     install -U
     pip
     pip-tools
-    virtualenv
   environment:
     PIP_REQUIRE_VIRTUALENV: "0"
   loop: '{{ pyenv_python_versions }}'
