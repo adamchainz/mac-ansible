@@ -108,6 +108,9 @@
 [log]
     follow = true
 
+[maintenance]
+    repo = /Users/chainz/Documents/Projects/django
+
 [merge]
     conflictStyle = zdiff3
     # https://adamj.eu/tech/2022/11/05/git-automatically-stash-rebase-merge/
