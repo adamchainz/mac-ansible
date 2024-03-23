@@ -155,7 +155,7 @@ export PATH=/Applications/Inkscape.app/Contents/MacOS:$PATH
 export PATH=~/bin/google-cloud-sdk/bin:$PATH
 
 # path for cd
-export CDPATH=~/Documents/Projects:~/Documents/Projects/_mine:~/Documents/Projects/_mine/_open
+export CDPATH=~/Documents/Projects/_mine:~/Documents/Projects/_mine/_open
 
 # Disable zsh-you-should-use hints for some aliases
 # https://github.com/MichaelAquilina/zsh-you-should-use#disable-hints-for-specific-aliases
