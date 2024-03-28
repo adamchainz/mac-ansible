@@ -24,9 +24,8 @@ plugins=(
     gh
     git
     macos
-    nvm
+    mise
     pre-commit
-    pyenv
     python
     sublime
     you-should-use

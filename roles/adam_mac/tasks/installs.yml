@@ -18,67 +18,41 @@
   tags:
   - brew
 
-- name: Upgrade pyenv
-  shell: brew unlink pyenv && brew install --head --fetch-head pyenv && brew link pyenv --head
+- name: Mise install Pythons
+  command: mise latest python@{{ item }}
+  loop: '{{ mise_python_versions }}'
   tags:
-  - pyenv
+  - mise
 
-- name: homebrew cleanup
-  command: brew cleanup
-
-# If pyenv fails, check https://github.com/pyenv/pyenv/wiki/Common-build-problems#build-failed-error-the-python-zlib-extension-was-not-compiled-missing-the-zlib
-- name: python versions
-  command: pyenv install {{ item }}
-  environment:
-    CONFIGURE_OPTS: --enable-optimizations
-  register: pyenv_install_result
-  failed_when: >
-    pyenv_install_result.rc != 0 and
-    pyenv_install_result.stderr_lines != ["pyenv: /Users/chainz/.pyenv/versions/" + item + " already exists"]
-  loop: '{{ pyenv_python_versions }}'
+- name: Mise install Node
+  command: mise latest node@20
   tags:
-  - pyenv
+  - mise
 
-- name: python versions active
-  command: pyenv global {{ pyenv_python_versions|join(" ") }}
-  tags:
-  - pyenv
-
-- name: pyenv rehash
-  command: pyenv rehash
-  tags:
-  - pyenv
-
-- name: python versions latest build requirements
+- name: Mise activates
   command: >
-    ~/.pyenv/versions/{{ item }}/bin/python -m pip
-    install -U
-    pip
-    pip-tools
-  environment:
-    PIP_REQUIRE_VIRTUALENV: "0"
-  loop: '{{ pyenv_python_versions }}'
+    mise use -g
+    {% for v in mise_python_versions %}python@{{ v }} {% endfor %}
+    node@20
   tags:
-  - pyenv
-
-- name: virtualenv update embed wheels
-  command: ~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/python -m virtualenv --upgrade-embed-wheels
-  environment:
-    PIP_REQUIRE_VIRTUALENV: "0"
-  tags:
-  - pyenv
+  - mise
 
 - name: Install pip packages
   command: >
-    ~/.pyenv/versions/{{ pyenv_python_versions[0] }}/bin/python -m pip
+    mise exec python@{{ mise_python_versions[0] }} --
+    python -m pip
     install -U
     {{ pip_packages|join(" ") }}
   environment:
     PIP_REQUIRE_VIRTUALENV: "0"
   tags:
-  - pyenv
+  - mise
 
-- name: pyenv rehash
-  command: pyenv rehash
+- name: virtualenv update embed wheels
+  command: >
+    mise exec python@{{ mise_python_versions[0] }} --
+    python -m virtualenv --upgrade-embed-wheels
+  environment:
+    PIP_REQUIRE_VIRTUALENV: "0"
   tags:
-  - pyenv
+  - mise

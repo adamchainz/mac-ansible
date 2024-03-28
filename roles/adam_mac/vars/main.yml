@@ -36,10 +36,10 @@ homebrew_packages:
 - libtool
 - libyaml
 - memcached
+- mise
 - myrepos
 - ncdu
 - nginx
-- nvm
 - openssl
 - ossp-uuid
 - pandoc
@@ -49,7 +49,6 @@ homebrew_packages:
 - postgresql
 - pre-commit
 - pwgen
-- pyenv
 - python
 - qpdf
 - readline
@@ -99,16 +98,14 @@ homebrew_cask_packages:
 - vagrant
 - vlc
 
-pyenv_python_versions:
+mise_python_versions:
 # In precedence order
-- 3.12.2
-- 3.11.8
-- 3.10.13
-- 3.9.18
-- 3.8.18
-- 3.7.17
-- 3.13.0a3
-- pypy3.9-7.3.9
+- '3.12'
+- '3.11'
+- '3.10'
+- '3.9'
+- '3.8'
+- '3.13.0a5'
 
 pip_packages:
 - black
