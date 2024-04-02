@@ -115,7 +115,7 @@ pip_packages:
 - httpie
 - ipdb
 - ipython
-- poetry
+- pip-tools
 - pre-commit
 - pygments
 - pythonpy
