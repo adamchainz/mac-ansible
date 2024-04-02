@@ -76,6 +76,9 @@ if [ -f '~/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '~/bin/google-clou
 # iTerm integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# ripgrep
+export RIPGREP_CONFIG_PATH=~/.config/ripgreprc
+
 # Starship prompt
 eval "$(starship init zsh)"
 
