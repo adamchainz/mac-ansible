@@ -37,6 +37,11 @@
   tags:
   - mise
 
+- name: Mise reshim
+  command: mise reshim
+  tags:
+  - mise
+
 - name: Install pip packages
   command: >
     mise exec python@{{ mise_python_versions[0] }} --
