@@ -37,7 +37,20 @@
   tags:
   - mise
 
-- name: Install pip packages
+- name: Install pip packages for all Pythons
+  command: >
+    mise exec python@{{ item }} --
+    python -m pip
+    install -U
+    pip
+    pip-tools
+  environment:
+    PIP_REQUIRE_VIRTUALENV: "0"
+  loop: '{{ mise_python_versions }}'
+  tags:
+  - mise
+
+- name: Install pip packages for main Python
   command: >
     mise exec python@{{ mise_python_versions[0] }} --
     python -m pip
