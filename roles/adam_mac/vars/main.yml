@@ -46,7 +46,7 @@ homebrew_packages:
 - parallel
 - percona-toolkit
 - pkg-config
-- postgresql
+- postgresql@16
 - pre-commit
 - pwgen
 - python
