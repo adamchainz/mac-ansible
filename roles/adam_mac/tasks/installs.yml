@@ -29,11 +29,17 @@
   tags:
   - mise
 
+- name: Mise install Ruby
+  command: mise latest ruby@3.3
+  tags:
+  - mise
+
 - name: Mise activates
   command: >
     mise use -g
     {% for v in mise_python_versions %}python@{{ v }} {% endfor %}
     node@20
+    ruby@3.3
   tags:
   - mise
 
