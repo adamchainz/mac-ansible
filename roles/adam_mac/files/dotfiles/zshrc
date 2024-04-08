@@ -152,6 +152,7 @@ export PAGER=less
 export PATH=~/script:$PATH
 export PATH=~/bin:$PATH
 export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+export PATH=/opt/homebrew/opt/postgresql@16/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 export PATH=/Applications/Inkscape.app/Contents/MacOS:$PATH
 export PATH=~/bin/google-cloud-sdk/bin:$PATH
