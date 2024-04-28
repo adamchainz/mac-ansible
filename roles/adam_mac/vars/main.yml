@@ -5,7 +5,6 @@ homebrew_packages:
 - awscli
 - cloc
 - coreutils
-- cowsay
 - enchant
 - exiftool
 - fd
@@ -80,22 +79,17 @@ homebrew_cask_packages:
 - evernote
 - firefox
 - homebrew/cask-fonts/font-ubuntu-mono-nerd-font
-- franz
 - iterm2
 - istat-menus
 - java
 - karabiner-elements
 - keyboard-maestro
 - mactex
-- mplayerx
-- paintbrush
 - rectangle
-- skim
 - skype
 - steam
 - sublime-text
 - tableplus
-- vagrant
 - vlc
 
 mise_python_versions:
