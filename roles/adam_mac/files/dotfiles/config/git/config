@@ -29,6 +29,9 @@
 
     list-changed = diff --name-only --diff-filter d
 
+    # https://adamj.eu/tech/2024/04/22/git-show-first-containing-tag/
+    show-containing-tag = "!f() { git describe --contains \"$1\" | sed -E 's/[~^][0-9]*//g' ; }; f"
+
 [branch]
     sort = -committerdate
 
