@@ -142,6 +142,8 @@
 [rebase]
     abbreviateCommands = true
 
+    autoSquash = true
+
     # https://adamj.eu/tech/2022/11/05/git-automatically-stash-rebase-merge/
     autoStash = true
 
