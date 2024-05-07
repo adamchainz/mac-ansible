@@ -28,6 +28,9 @@ checkout = git clone 'git@github.com:adamchainz/django-browser-reload.git' 'djan
 [Documents/Projects/_mine/_open/django-cors-headers]
 checkout = git clone 'git@github.com:adamchainz/django-cors-headers.git' 'django-cors-headers'
 
+[Documents/Projects/_mine/_open/django-harlequin]
+checkout = git clone 'git@github.com:adamchainz/django-harlequin.git' 'django-harlequin'
+
 [Documents/Projects/_mine/_open/django-htmx]
 checkout = git clone 'git@github.com:adamchainz/django-htmx.git' 'django-htmx'
 
