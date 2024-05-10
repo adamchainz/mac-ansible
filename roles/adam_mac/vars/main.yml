@@ -99,7 +99,7 @@ mise_python_versions:
 - '3.10'
 - '3.9'
 - '3.8'
-- '3.13.0a5'
+- '3.13.0b1'
 
 pip_packages:
 - black
