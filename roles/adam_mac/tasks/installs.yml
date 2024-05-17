@@ -37,7 +37,7 @@
 - name: Mise activates
   command: >
     mise use -g
-    {% for v in mise_python_versions %}python@{{ v }} {% endfor %}
+    {% for v in mise_python_versions|reverse %}python@{{ v }} {% endfor %}
     node@20
     ruby@3.3
   tags:
