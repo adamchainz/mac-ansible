@@ -79,7 +79,7 @@ homebrew_cask_packages:
 - docker
 - evernote
 - firefox
-- homebrew/cask-fonts/font-ubuntu-mono-nerd-font
+- font-ubuntu-mono-nerd-font
 - iterm2
 - istat-menus
 - java
