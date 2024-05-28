@@ -27,6 +27,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Mise
+.mise.toml
+
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
