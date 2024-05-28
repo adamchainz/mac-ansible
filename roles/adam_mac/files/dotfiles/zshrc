@@ -68,7 +68,8 @@ fi
 if [ -f '~/.docker/init-zsh.sh' ]; then . '~/.docker/init-zsh.sh'; fi
 
 # Google Cloud SDK
-if [ -f '~/bin/google-cloud-sdk/path.zsh.inc' ]; then . '~/bin/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '~/Documents/Projects/google-cloud-sdk/path.zsh.inc' ]; then . '~/Documents/Projects/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '~/Documents/Projects/google-cloud-sdk/completion.zsh.inc' ]; then . '~/Documents/Projects/google-cloud-sdk/completion.zsh.inc'; fi
 
 # gcloud autocomplete
 if [ -f '~/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '~/bin/google-cloud-sdk/completion.zsh.inc'; fi
