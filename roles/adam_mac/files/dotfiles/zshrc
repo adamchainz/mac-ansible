@@ -23,6 +23,7 @@ plugins=(
     fancy-ctrl-z
     gh
     git
+    iterm2
     macos
     mise
     pre-commit
@@ -30,6 +31,8 @@ plugins=(
     sublime
     you-should-use
 )
+
+zstyle :omz:plugins:iterm2 shell-integration yes
 
 source $ZSH/oh-my-zsh.sh
 
