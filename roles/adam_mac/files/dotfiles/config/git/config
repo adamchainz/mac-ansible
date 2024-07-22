@@ -90,6 +90,7 @@
     manyFiles = 1
 
 [fetch]
+    all = true
     prune = true
 
 [filter "lfs"]
