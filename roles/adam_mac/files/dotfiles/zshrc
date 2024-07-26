@@ -171,6 +171,9 @@ export YSU_IGNORED_ALIASES=(
 
 # Aliases
 
+# Firefox
+alias ff='open -a Firefox'
+
 # Git
 alias gaa="g add --all && git status"
 alias gap="g add -p"
