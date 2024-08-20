@@ -34,12 +34,18 @@
   tags:
   - mise
 
+- name: Mise install Bun
+  command: mise latest bun@1.1
+  tags:
+  - mise
+
 - name: Mise activates
   command: >
     mise use -g
     {% for v in mise_python_versions %}python@{{ v }} {% endfor %}
     node@20
     ruby@3.3
+    bun@1.1
   tags:
   - mise
 
