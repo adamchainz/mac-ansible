@@ -80,6 +80,7 @@ homebrew_cask_packages:
 - evernote
 - firefox
 - font-ubuntu-mono-nerd-font
+- google-earth-pro
 - iterm2
 - istat-menus
 - java
