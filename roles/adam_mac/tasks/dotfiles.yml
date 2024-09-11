@@ -10,6 +10,7 @@
   - config
   - config/git
   - config/pip
+  - config/zed
   tags:
   - dotfiles
 
@@ -27,6 +28,8 @@
   - config/git/config
   - config/git/ignore
   - config/pip/pip.conf
+  - config/zed/keymap.json
+  - config/zed/settings.json
   - digrc
   - inputrc
   - ipython/profile_default/startup/00-imports.py

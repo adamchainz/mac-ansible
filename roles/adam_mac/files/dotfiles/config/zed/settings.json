@@ -1,0 +1,35 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "assistant": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "llama3.1:latest"
+    },
+    "version": "2"
+  },
+  "buffer_font_family": "UbuntuMono Nerd Font Mono",
+  "theme": "One Dark",
+  "base_keymap": "SublimeText",
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "features": {
+    "inline_completion_provider": "copilot"
+  },
+  "languages": {
+    "Python": {
+      "formatter": {
+        "external": {
+          "command": "/opt/homebrew/bin/uvx",
+          "arguments": ["black", "-"]
+        }
+      }
+    }
+  }
+}
