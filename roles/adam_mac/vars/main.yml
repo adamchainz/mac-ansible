@@ -62,6 +62,7 @@ homebrew_packages:
 - swig
 - tmux
 - tree
+- uv
 - watch
 - watchman
 - wget
@@ -123,5 +124,4 @@ pip_packages:
 - tox-uv
 - twine
 - yt-dlp
-- uv
 - virtualenv
