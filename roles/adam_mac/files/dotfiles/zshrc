@@ -153,6 +153,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export PAGER=less
 
 # Extend Path
+export PATH=~/.local/bin:$PATH
 export PATH=~/script:$PATH
 export PATH=~/bin:$PATH
 export PATH=/opt/homebrew/opt/postgresql@16/bin:$PATH

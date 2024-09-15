@@ -18,12 +18,6 @@
   tags:
   - brew
 
-- name: Mise install Pythons
-  command: mise latest python@{{ item }}
-  loop: '{{ mise_python_versions }}'
-  tags:
-  - mise
-
 - name: Mise install Node
   command: mise latest node@20
   tags:
@@ -42,43 +36,9 @@
 - name: Mise activates
   command: >
     mise use -g
-    {% for v in mise_python_versions %}python@{{ v }} {% endfor %}
     node@20
     ruby@3.3
     bun@1.1
-  tags:
-  - mise
-
-- name: Install pip packages for all Pythons
-  command: >
-    mise exec python@{{ item }} --
-    python -m pip
-    install -U
-    pip
-    pip-tools
-  environment:
-    PIP_REQUIRE_VIRTUALENV: "0"
-  loop: '{{ mise_python_versions }}'
-  tags:
-  - mise
-
-- name: Install pip packages for main Python
-  command: >
-    mise exec python@{{ mise_python_versions[0] }} --
-    python -m pip
-    install -U
-    {{ pip_packages|join(" ") }}
-  environment:
-    PIP_REQUIRE_VIRTUALENV: "0"
-  tags:
-  - mise
-
-- name: virtualenv update embed wheels
-  command: >
-    mise exec python@{{ mise_python_versions[0] }} --
-    python -m virtualenv --upgrade-embed-wheels
-  environment:
-    PIP_REQUIRE_VIRTUALENV: "0"
   tags:
   - mise
 
@@ -86,3 +46,35 @@
   command: mise reshim
   tags:
   - mise
+
+- name: uv install latest Pythons
+  command: uv python install {{ uv_python_versions|join(" ") }}
+  tags:
+  - uv
+
+- name: uv install tools
+  command: >
+    uv tool install
+    {{ item.name }}
+    {% if item.with is defined %}
+    {% for w in item.with %}--with {{ w }}{% endfor %}
+    {% endif %}
+  loop: '{{ uv_tools }}'
+  tags:
+  - uv
+
+- name: uv upgrade tools
+  command: >
+    uv tool upgrade
+    {{ item.name }}
+    {% if item.with is defined %}
+    {% for w in item.with %}--upgrade-package {{ w }}{% endfor %}
+    {% endif %}
+  loop: '{{ uv_tools }}'
+  tags:
+  - uv
+
+- name: virtualenv update embed wheels
+  command: uv tool run virtualenv --upgrade-embed-wheels
+  tags:
+  - uv

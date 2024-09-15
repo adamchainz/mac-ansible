@@ -95,33 +95,26 @@ homebrew_cask_packages:
 - tableplus
 - vlc
 
-mise_python_versions:
-# In precedence order
-- '3.12'
-- '3.11'
-- '3.10'
-- '3.9'
-- '3.8'
-- '3.13.0b1'
+uv_python_versions:
+- "3.8"
+- "3.9"
+- "3.10"
+- "3.11"
+- "3.12"
+- "3.13"
 
-pip_packages:
-- black
-- build
-- csvkit
-- flake8
-- httpie
-- ipdb
-- ipython
-- pip-tools
-- pre-commit
-- pygments
-- pythonpy
-- python-language-server
-- pyyaml
-- requests
-- s3cmd
-- tox
-- tox-uv
-- twine
-- yt-dlp
-- virtualenv
+uv_tools:
+- name: black
+- name: build
+- name: flake8
+- name: httpie
+- name: ipython
+- name: pre-commit
+  with:
+  - pre-commit-uv
+- name: tox
+  with:
+  - tox-uv
+- name: twine
+- name: virtualenv
+- name: yt-dlp
