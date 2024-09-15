@@ -55,6 +55,7 @@
 - name: uv install tools
   command: >
     uv tool install
+    --python 3.12
     {{ item.name }}
     {% if item.with is defined %}
     {% for w in item.with %}--with {{ w }}{% endfor %}

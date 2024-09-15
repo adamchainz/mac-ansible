@@ -36,6 +36,10 @@ zstyle :omz:plugins:iterm2 shell-integration yes
 
 source $ZSH/oh-my-zsh.sh
 
+# drop faulty ipython alias
+# https://github.com/ohmyzsh/ohmyzsh/issues/12676
+unalias ipython
+
 # User configuration
 
 # Autocorrect
@@ -156,6 +160,7 @@ export PAGER=less
 export PATH=~/.local/bin:$PATH
 export PATH=~/script:$PATH
 export PATH=~/bin:$PATH
+export PATH=$(dirname "$(uv python find 3.12)"):$PATH
 export PATH=/opt/homebrew/opt/postgresql@16/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 export PATH=/Applications/Inkscape.app/Contents/MacOS:$PATH
