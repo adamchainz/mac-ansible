@@ -75,6 +75,11 @@
   tags:
   - uv
 
+- name: uv prune cache
+  command: uv cache prune
+  tags:
+  - uv
+
 - name: virtualenv update embed wheels
   command: uv tool run virtualenv --upgrade-embed-wheels
   tags:
