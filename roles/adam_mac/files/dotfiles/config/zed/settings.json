@@ -22,6 +22,9 @@
   "features": {
     "inline_completion_provider": "copilot"
   },
+  "search": {
+    "regex": true
+  },
   "languages": {
     "Python": {
       "formatter": {
