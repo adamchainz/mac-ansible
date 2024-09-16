@@ -48,7 +48,14 @@
   - mise
 
 - name: uv install latest Pythons
-  command: uv python install {{ uv_python_versions|join(" ") }}
+  command: >
+    uv python install
+    3.8
+    3.9
+    3.10
+    3.11
+    3.12
+    3.13
   tags:
   - uv
 
