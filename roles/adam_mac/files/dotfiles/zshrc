@@ -36,10 +36,6 @@ zstyle :omz:plugins:iterm2 shell-integration yes
 
 source $ZSH/oh-my-zsh.sh
 
-# drop faulty ipython alias
-# https://github.com/ohmyzsh/ohmyzsh/issues/12676
-unalias ipython
-
 # User configuration
 
 # Autocorrect
