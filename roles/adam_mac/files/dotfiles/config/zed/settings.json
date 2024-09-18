@@ -25,6 +25,7 @@
   "search": {
     "regex": true
   },
+  "wrap_guides": [79],
   "languages": {
     "Python": {
       "formatter": {
