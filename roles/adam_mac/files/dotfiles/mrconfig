@@ -19,6 +19,9 @@ checkout = git clone 'git@github.com:adamchainz/apig-wsgi.git' 'apig-wsgi'
 [Documents/Projects/_mine/_open/blacken-docs]
 checkout = git clone 'git@github.com:adamchainz/blacken-docs.git' 'blacken-docs'
 
+[Documents/Projects/_mine/_open/djade]
+checkout = git clone 'git@github.com:adamchainz/djade.git' 'djade'
+
 [Documents/Projects/_mine/_open/django-auto-prefetch]
 checkout = git clone 'git@github.com:tolomea/django-auto-prefetch.git' 'django-auto-prefetch'
 
