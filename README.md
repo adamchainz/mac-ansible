@@ -11,7 +11,7 @@ Getting Started
 1. Install [homebrew](http://brew.sh/) with the command from the site.
 2. `brew install uv` to install [uv](https://docs.astral.sh/uv/).
 3. `uv venv --python 3.12`
-6. `source venv/bin/activate`
+6. `source .venv/bin/activate`
 5. `uv pip install ansible`
 6. `./playbook.yml`
 
