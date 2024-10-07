@@ -25,9 +25,15 @@
   "search": {
     "regex": true
   },
+  "tabs": {
+    "file_icons": true
+  },
   "use_autoclose": false,
   "wrap_guides": [79],
   "languages": {
+    "HTML": {
+      "formatter": []
+    },
     "Python": {
       "formatter": {
         "external": {
