@@ -28,7 +28,6 @@ plugins=(
     mise
     pre-commit
     python
-    sublime
     you-should-use
 )
 
@@ -248,6 +247,9 @@ alias rrm='/bin/rm -i'
 alias pip="python -m pip"
 alias pipi="pip install"
 alias pipir="pip install -r requirements.txt"
+
+# Zed
+alias st=zed  # Historical Sublime Text alias that I still type a lot
 
 # extra plugins from homebrew
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # must be first
