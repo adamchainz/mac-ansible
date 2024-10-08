@@ -56,6 +56,8 @@
     3.11
     3.12
     3.13
+  register: uv_python_install
+  changed_when: "'All requested versions already installed' not in uv_python_install.stderr"
   tags:
   - uv
 
@@ -68,6 +70,8 @@
     {% for w in item.with %}--with {{ w }}{% endfor %}
     {% endif %}
   loop: '{{ uv_tools }}'
+  register: uv_tool_install
+  changed_when: "'already installed' not in uv_tool_install.stderr"
   tags:
   - uv
 
@@ -79,11 +83,15 @@
     {% for w in item.with %}--upgrade-package {{ w }}{% endfor %}
     {% endif %}
   loop: '{{ uv_tools }}'
+  register: uv_upgrade
+  changed_when: "'Nothing to upgrade' not in uv_upgrade.stderr"
   tags:
   - uv
 
 - name: uv prune cache
   command: uv cache prune
+  register: uv_prune
+  changed_when: "'Removed' in uv_prune.stderr"
   tags:
   - uv
 
