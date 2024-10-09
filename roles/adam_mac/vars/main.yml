@@ -47,9 +47,7 @@ homebrew_packages:
 - percona-toolkit
 - pkg-config
 - postgresql@16
-- pre-commit
 - pwgen
-- python
 - qpdf
 - readline
 - rg
