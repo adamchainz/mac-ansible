@@ -4,10 +4,7 @@
     state: directory
   loop:
   - innotop
-  - ipython
-  - ipython/profile_default
   - ipython/profile_default/startup
-  - config
   - config/git
   - config/pip
   - config/zed
