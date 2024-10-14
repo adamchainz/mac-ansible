@@ -1,6 +1,7 @@
 #!/usr/bin/env ansible-playbook
 - hosts: localhost
   connection: local
+  tags: always
   tasks:
   - debug:
       msg: Check we are running in the directory of the script
