@@ -106,5 +106,4 @@ uv_tools:
   with:
   - tox-uv
 - name: twine
-- name: virtualenv
 - name: yt-dlp
