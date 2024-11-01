@@ -43,6 +43,12 @@
     "JavaScript": {
       "formatter": []
     },
+    "JSON": {
+      "formatter": []
+    },
+    "JSONC": {
+      "formatter": []
+    },
     "Python": {
       "formatter": {
         "external": {
