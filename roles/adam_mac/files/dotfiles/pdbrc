@@ -1,0 +1,13 @@
+# Copied from Boost Your Django DX
+
+# Shorten the interact command to 'i'
+alias i interact
+
+# pretty-print local variables
+alias ppl pp locals()
+
+# pretty-print an object’s __dict__
+alias ppd pp %1.__dict__
+
+# pretty-print self.__dict__
+alias pps ppd self
