@@ -22,6 +22,10 @@
   "features": {
     "inline_completion_provider": "copilot"
   },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
   "search": {
     "regex": true
   },
