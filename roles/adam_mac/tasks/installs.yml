@@ -47,6 +47,13 @@
   tags:
   - mise
 
+- name: Update UV
+  ansible.builtin.command: uv self update
+  register: uv_update
+  changed_when: "'latest version of uv' not in uv_update.stderr"
+  tags:
+    - uv
+
 - name: uv install latest Pythons
   command: >
     uv python install
