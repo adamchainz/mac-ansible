@@ -86,7 +86,6 @@ homebrew_cask_packages:
 - karabiner-elements
 - keyboard-maestro
 - mactex
-- rectangle
 - skype
 - steam
 - sublime-text
