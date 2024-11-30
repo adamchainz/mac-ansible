@@ -7,6 +7,12 @@
 // from the command palette.
 [
   {
+    "bindings": {
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePrevItem"
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       "alt-shift-n": "editor::GoToHunk",
