@@ -236,7 +236,6 @@ alias o=open
 alias pbp=pbpaste
 
 # POSIX
-alias c=cd
 alias e='${(z)VISUAL:-${(z)EDITOR}}'  # open default editor
 alias p='${(z)PAGER}'
 # interactive modes
