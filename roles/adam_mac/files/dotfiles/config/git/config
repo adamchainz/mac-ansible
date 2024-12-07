@@ -108,6 +108,11 @@
 
     format = web
 
+[include]
+	# maintenance.repo options, kept separate to avoid publicizing repository
+	# names that I work on
+	path = config-maintenance
+
 [init]
     defaultBranch = main
 
@@ -117,9 +122,6 @@
 
 [log]
     follow = true
-
-[maintenance]
-    repo = /Users/chainz/Documents/Projects/django
 
 [merge]
     conflictStyle = zdiff3
