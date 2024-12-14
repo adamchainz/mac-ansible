@@ -3,12 +3,6 @@
     statusHints = false
 
 [alias]
-    # Shortenings
-    d = diff
-    s = status
-    st = stash
-    sw = switch
-
     # https://adamj.eu/tech/2022/11/08/git-aliases-speed-up-fixing-merge-conflicts/
     ls-unmerged = diff --name-only --diff-filter U
     edit-unmerged = !git diff --name-only --diff-filter U | xargs -r $EDITOR
