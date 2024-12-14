@@ -880,7 +880,7 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>UbuntuMonoNFM 17</string>
+			<string>UbuntuMonoNF 17</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -1092,6 +1092,8 @@
 			<false/>
 			<key>Use Italic Font</key>
 			<true/>
+			<key>Use Non-ASCII Font</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -1364,6 +1366,10 @@
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Advanced</string>
+			<key>Custom Tab Title</key>
+			<string></string>
+			<key>Custom Window Title</key>
+			<string></string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -1396,7 +1402,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string></string>
+			<string>disable_you_should_use\n</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -1604,7 +1610,7 @@
 			<key>Name</key>
 			<string>Book Screenshots</string>
 			<key>Non Ascii Font</key>
-			<string>Menlo-Regular 11</string>
+			<string>UbuntuMonoNFM 17 {"featureSettings":[{"CTFeatureSelectorIdentifier":2,"CTFeatureTypeIdentifier":35},{"CTFeatureSelectorIdentifier":4,"CTFeatureTypeIdentifier":35}]}</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -1816,8 +1822,14 @@
 			<true/>
 			<key>Use Canonical Parser</key>
 			<false/>
+			<key>Use Custom Tab Title</key>
+			<true/>
+			<key>Use Custom Window Title</key>
+			<true/>
 			<key>Use Italic Font</key>
 			<true/>
+			<key>Use Non-ASCII Font</key>
+			<false/>
 			<key>Use Underline Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
