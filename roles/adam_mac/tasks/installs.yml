@@ -50,6 +50,7 @@
 - name: uv install latest Pythons
   command: >
     uv python install
+    --reinstall
     3.8
     3.9
     3.10
