@@ -168,6 +168,7 @@ export PAGER=less
 export PATH=~/.local/bin:$PATH
 export PATH=~/script:$PATH
 export PATH=~/bin:$PATH
+export PATH=$(dirname "$(uv python find --directory / -q 3.13)"):$PATH
 export PATH=/opt/homebrew/opt/postgresql@16/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 export PATH=/Applications/Inkscape.app/Contents/MacOS:$PATH
