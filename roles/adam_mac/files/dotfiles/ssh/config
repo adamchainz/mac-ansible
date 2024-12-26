@@ -8,6 +8,8 @@ StrictHostKeyChecking no
 
 Host *
   UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
 
 Host default
   HostName 127.0.0.1
