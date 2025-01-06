@@ -129,6 +129,10 @@ ulimit -n 4096
 # Prevent Ansible from using cowsay
 export ANSIBLE_NOCOWS=1
 
+# C compiler use Homebrew-installed headers and libraries
+export CPPFLAGS="-I/opt/homebrew/include"
+export LDFLAGS="-L/opt/homebrew/lib"
+
 # Set editor for SSH and local sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR=nano
