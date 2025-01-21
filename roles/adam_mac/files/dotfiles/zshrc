@@ -28,6 +28,7 @@ plugins=(
     mise
     pre-commit
     python
+    uv
     you-should-use
 )
 
