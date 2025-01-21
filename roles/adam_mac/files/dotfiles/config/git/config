@@ -103,8 +103,7 @@
     format = web
 
 [include]
-	# maintenance.repo options, kept separate to avoid publicizing repository
-	# names that I work on
+	# maintenance.repo options, separate to avoid publicizing repository paths
 	path = config-maintenance
 
 [init]
