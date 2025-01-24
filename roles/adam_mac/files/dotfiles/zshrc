@@ -261,6 +261,7 @@ alias pipir="pip install -r requirements.txt"
 alias v="source .venv/bin/activate"
 
 # uv
+export UV_COMPILE_BYTECODE=1
 alias python3.9='uv run --python 3.9 python'
 alias python3.10='uv run --python 3.10 python'
 alias python3.11='uv run --python 3.11 python'
