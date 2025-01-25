@@ -72,7 +72,8 @@
 [diff]
     algorithm = histogram
     colorMoved = default
-    noprefix = true
+    srcPrefix = ./
+    dstPrefix = ./
     interHunkContext = 3
 
 [diff "exiftool"]
