@@ -60,7 +60,14 @@
     verbose = true
 
 [credential]
-    helper = cache --timeout=3600
+    helper =
+    helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://codeberg.org"]
+    provider = generic
+
+[credential "https://dev.azure.com"]
+    useHttpPath = true
 
 [delta]
     # https://dandavison.github.io/delta/configuration.html
