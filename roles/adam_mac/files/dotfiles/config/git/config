@@ -164,6 +164,7 @@
     autoUpdate = true
 
 [stash]
+    showIncludeUntracked = true
     showPatch = true
 
 [user]
