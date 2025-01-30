@@ -24,5 +24,11 @@
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
+  },
+  {
+    "context": "Editor && mode == full && inline_completion",
+    "bindings": {
+      "cmd-right": "editor::AcceptPartialInlineCompletion",
+    }
   }
 ]
