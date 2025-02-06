@@ -19,7 +19,7 @@
   "theme": "One Dark",
   "base_keymap": "SublimeText",
   "ui_font_size": 15,
-  "buffer_font_size": 15,
+  "buffer_font_size": 15.0,
   "features": {
     "inline_completion_provider": "copilot"
   },
