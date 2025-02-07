@@ -18,6 +18,11 @@
   tags:
   - brew
 
+- name: Mise disable Python
+  command: mise settings set disable_tools python
+  tags:
+  - mise
+
 - name: Mise install Node
   command: mise latest node@20
   tags:
