@@ -24,6 +24,7 @@
     # Boost Your Git DX section "Sort by recency and switch with fzf (fuzzy finder)"
     switch-recent = !git branch --sort=-committerdate --format='%(refname:short)' | fzf --preview='git log --stat --date=relative --color main..{}' --bind 'enter:become:git switch {}'
 
+    # Boost Your Git DX section "List changed files with `git diff --name-only`"
     list-changed = diff --name-only --diff-filter d
 
     # https://adamj.eu/tech/2024/04/22/git-show-first-containing-tag/
