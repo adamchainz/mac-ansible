@@ -39,3 +39,6 @@ Temporary Items
 .tox
 .venv
 venv
+
+# Zed
+.zed/
