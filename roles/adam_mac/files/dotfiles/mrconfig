@@ -10,8 +10,14 @@ checkout = git clone 'git@github.com:adamchainz/book-boost-your-django-dx.git' '
 [Documents/Projects/_mine/book-boost-your-git-dx]
 checkout = git clone 'git@github.com:adamchainz/book-boost-your-git-dx.git' 'book-boost-your-git-dx'
 
+[Documents/Projects/_mine/book-boost-your-github-dx]
+checkout = git clone 'git@github.com:adamchainz/book-boost-your-github-dx.git' 'book-boost-your-github-dx'
+
 [Documents/Projects/_mine/book-speed-up-your-django-tests]
 checkout = git clone 'git@github.com:adamchainz/book-speed-up-your-django-tests.git' 'book-speed-up-your-django-tests'
+
+[Documents/Projects/_mine/book-tools]
+checkout = git clone 'git@github.com:adamchainz/book-tools.git' 'book-tools'
 
 [Documents/Projects/_mine/readback]
 checkout = git clone 'git@github.com:adamchainz/readback.git' 'readback'
