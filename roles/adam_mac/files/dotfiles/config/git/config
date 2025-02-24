@@ -64,6 +64,8 @@
     verbose = true
 
 [credential]
+    # Use GCM as default credential helper
+    # https://github.com/git-ecosystem/git-credential-manager
     helper =
     helper = /usr/local/share/gcm-core/git-credential-manager
 
@@ -72,6 +74,16 @@
 
 [credential "https://dev.azure.com"]
     useHttpPath = true
+
+[credential "https://github.com"]
+    # Use GitHub CLI, gh, as GitHub credential manager
+    # https://github.com/cli/cli
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
 
 [delta]
     # https://dandavison.github.io/delta/configuration.html
