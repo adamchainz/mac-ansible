@@ -233,6 +233,10 @@ alias pull="git pull"
 alias push="git push"
 alias pushpr="git push && gh pr create --web"
 
+
+# gh, the GitHub CLI
+alias ghb='gh browse'
+
 # less
 export LESS_TERMCAP_mb=$'\E[01;31m'      # Begins blinking.
 export LESS_TERMCAP_md=$'\E[01;31m'      # Begins bold.
