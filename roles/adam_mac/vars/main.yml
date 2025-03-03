@@ -21,9 +21,9 @@ homebrew_packages:
 - git-delta
 - goaccess
 - gpg
-- graphicsmagick
 - heroku/brew/heroku
 - hyperfine
+- imagemagick
 - inetutils
 - jhead
 - jpeg
