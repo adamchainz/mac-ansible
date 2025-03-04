@@ -101,6 +101,7 @@ uv_tools:
 - name: pre-commit
   with:
   - pre-commit-uv
+- name: ruff
 - name: tox
   with:
   - tox-uv
