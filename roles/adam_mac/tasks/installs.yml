@@ -24,7 +24,7 @@
   - mise
 
 - name: Mise install Node
-  command: mise latest node@20
+  command: mise latest node@22
   tags:
   - mise
 
@@ -41,7 +41,7 @@
 - name: Mise activates
   command: >
     mise use -g
-    node@20
+    node@22
     ruby@3.3
     bun@1.1
   tags:
