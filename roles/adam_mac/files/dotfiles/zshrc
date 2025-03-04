@@ -187,6 +187,9 @@ export YSU_IGNORED_ALIASES=(
 
 # Aliases
 
+# Docker
+alias dco='docker compose'
+
 # Firefox
 alias ff='open -a Firefox'
 
