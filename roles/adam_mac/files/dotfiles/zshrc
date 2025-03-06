@@ -278,7 +278,7 @@ alias python3.13='uv run --python 3.13 python'
 alias python3.13t='uv run --python 3.13t python'
 
 # Zed
-alias st=zed  # Historical Sublime Text alias that I still type a lot
+alias z=zed
 
 # extra plugins from homebrew
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # must be first
