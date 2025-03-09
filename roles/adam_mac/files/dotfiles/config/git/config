@@ -78,12 +78,15 @@
 [credential "https://github.com"]
     # Use GitHub CLI, gh, as GitHub credential manager
     # https://github.com/cli/cli
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+    helper =
+    helper = !/opt/homebrew/bin/gh auth git-credential
+
+[credential "https://git.heroku.com"]
+    provider = generic
 
 [credential "https://gist.github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+    helper =
+    helper = !/opt/homebrew/bin/gh auth git-credential
 
 [delta]
     # https://dandavison.github.io/delta/configuration.html
