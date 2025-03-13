@@ -60,6 +60,7 @@ homebrew_packages:
 - swig
 - tmux
 - tree
+- typos-cli
 - uv
 - watch
 - watchman
