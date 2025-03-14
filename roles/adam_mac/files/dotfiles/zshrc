@@ -58,6 +58,9 @@ setopt numeric_glob_sort
 # Use >! and >>! to bypass.
 unsetopt CLOBBER
 
+# Atuin history management
+eval "$(atuin init zsh)"
+
 # autojump
 if (( $+commands[brew] )); then
   file=$HOMEBREW_PREFIX/etc/profile.d/autojump.sh
@@ -284,5 +287,3 @@ alias z=zed
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # must be first
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-bindkey "^[OA" history-substring-search-up
-bindkey "^[OB" history-substring-search-down

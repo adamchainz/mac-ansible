@@ -1,4 +1,5 @@
 homebrew_packages:
+- atuin
 - autoconf
 - autojump
 - automake
