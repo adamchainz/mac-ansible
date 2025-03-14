@@ -9,14 +9,14 @@
   {
     "bindings": {
       "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-shift-tab": "pane::ActivatePrevItem"
+      "ctrl-shift-tab": "pane::ActivatePreviousItem"
     }
   },
   {
     "context": "Workspace",
     "bindings": {
       "alt-shift-n": "editor::GoToHunk",
-      "alt-shift-e": "editor::GoToPrevHunk"
+      "alt-shift-e": "editor::GoToPreviousHunk"
     }
   },
   {
@@ -26,9 +26,9 @@
     }
   },
   {
-    "context": "Editor && mode == full && inline_completion",
+    "context": "Editor && mode == full && edit_prediction",
     "bindings": {
-      "cmd-right": "editor::AcceptPartialInlineCompletion",
+      "cmd-right": "editor::AcceptPartialCopilotSuggestion",
     }
   }
 ]
