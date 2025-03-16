@@ -21,6 +21,7 @@
   - config/karabiner
   - config/ripgreprc
   - config/starship.toml
+  - config/atuin/config.toml
   - config/git/attributes
   - config/git/config
   - config/git/ignore

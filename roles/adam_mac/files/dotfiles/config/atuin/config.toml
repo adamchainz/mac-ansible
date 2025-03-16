@@ -1,0 +1,4 @@
+inline_height = 10
+
+[search]
+filters = ["workspace", "session", "global"]
