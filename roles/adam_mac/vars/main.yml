@@ -82,6 +82,7 @@ homebrew_cask_packages:
 - firefox
 - font-ubuntu-mono-nerd-font
 - google-earth-pro
+- inkscape
 - iterm2
 - istat-menus
 - java
