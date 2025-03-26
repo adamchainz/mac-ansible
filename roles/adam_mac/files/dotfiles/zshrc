@@ -234,7 +234,6 @@ alias gstp='git stash pop --index'
 alias gswd="git switch --detach"
 alias gswr="git switch-recent"
 
-alias pulp='git sync'  # historical command name
 alias pull="git pull"
 alias push="git push"
 alias pushpr="git push && gh pr create --web"
