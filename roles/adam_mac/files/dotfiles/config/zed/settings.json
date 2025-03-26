@@ -67,5 +67,14 @@
     "YAML": {
       "formatter": []
     }
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "typeCheckingMode": "off"
+        }
+      }
+    }
   }
 }
