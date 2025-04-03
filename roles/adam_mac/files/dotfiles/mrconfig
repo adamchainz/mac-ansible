@@ -115,6 +115,12 @@ checkout = git clone 'git@github.com:adamchainz/pytest-restrict.git' 'pytest-res
 [Documents/Projects/_mine/_open/pytest-reverse]
 checkout = git clone 'git@github.com:adamchainz/pytest-reverse.git' 'pytest-reverse'
 
+[Documents/Projects/_mine/_open/sql-fingerprint]
+checkout = git clone 'git@github.com:adamchainz/sql-fingerprint.git' 'sql-fingerprint'
+
+[Documents/Projects/_mine/_open/sql-impressao]
+checkout = git clone 'git@github.com:adamchainz/sql-impressao.git' 'sql-impressao'
+
 [Documents/Projects/_mine/_open/time-machine]
 checkout = git clone 'git@github.com:adamchainz/time-machine.git' 'time-machine'
 
