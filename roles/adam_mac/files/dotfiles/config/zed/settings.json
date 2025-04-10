@@ -45,7 +45,8 @@
       "formatter": []
     },
     "HTML": {
-      "formatter": []
+      "formatter": [],
+      "language_servers": [],
     },
     "JavaScript": {
       "formatter": []
