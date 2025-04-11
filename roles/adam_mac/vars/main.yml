@@ -75,6 +75,7 @@ homebrew_packages:
 
 homebrew_cask_packages:
 - anki
+- audacity
 - calibre
 - discord
 - docker
