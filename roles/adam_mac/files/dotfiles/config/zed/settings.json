@@ -64,6 +64,9 @@
         }
       }
     },
+    "XML": {
+      "formatter": []
+    },
     "YAML": {
       "formatter": []
     }
