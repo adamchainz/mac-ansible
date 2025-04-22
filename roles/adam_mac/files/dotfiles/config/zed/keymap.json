@@ -20,15 +20,9 @@
     }
   },
   {
-    "context": "Editor",
-    "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
-    }
-  },
-  {
     "context": "Editor && mode == full && edit_prediction",
     "bindings": {
-      "cmd-right": "editor::AcceptPartialCopilotSuggestion",
+      "alt-tab": "editor::AcceptPartialCopilotSuggestion",
     }
   }
 ]
