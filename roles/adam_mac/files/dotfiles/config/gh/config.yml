@@ -1,0 +1,4 @@
+git_protocol: https
+version: "1"
+pager: delta
+prefer_editor_prompt: enabled

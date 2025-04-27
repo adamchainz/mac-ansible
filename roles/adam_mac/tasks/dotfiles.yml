@@ -22,6 +22,7 @@
   - config/ripgreprc
   - config/starship.toml
   - config/atuin/config.toml
+  - config/gh/config.yml
   - config/git/attributes
   - config/git/config
   - config/git/ignore
