@@ -30,6 +30,7 @@
   "search": {
     "regex": true
   },
+  "seed_search_query_from_cursor": "selection",
   "soft_wrap": "editor_width",
   "tabs": {
     "file_icons": true
