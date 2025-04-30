@@ -65,6 +65,9 @@
         }
       }
     },
+    "TOML": {
+      "formatter": []
+    },
     "XML": {
       "formatter": []
     },
