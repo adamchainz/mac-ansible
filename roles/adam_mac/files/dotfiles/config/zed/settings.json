@@ -9,6 +9,7 @@
 {
   "icon_theme": "Zed (Default)",
   "assistant": {
+    "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4o"
