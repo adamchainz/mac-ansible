@@ -180,7 +180,13 @@
                         "product_id": 6505,
                         "vendor_id": 12951
                     },
-                    "manipulate_caps_lock_led": false
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
+                        }
+                    ]
                 },
                 {
                     "identifiers": {
@@ -191,6 +197,19 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 835,
+                        "vendor_id": 1452
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "key_code": "left_control" }]
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [
@@ -218,10 +237,6 @@
             "name": "Default profile",
             "selected": true,
             "simple_modifications": [
-                {
-                    "from": { "key_code": "caps_lock" },
-                    "to": [{ "key_code": "left_control" }]
-                },
                 {
                     "from": { "key_code": "pause" },
                     "to": [{ "consumer_key_code": "volume_increment" }]
