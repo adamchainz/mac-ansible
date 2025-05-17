@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "icon_theme": "Zed (Default)",
-  "assistant": {
+  "agent": {
     "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
