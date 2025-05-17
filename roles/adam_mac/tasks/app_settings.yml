@@ -15,9 +15,3 @@
   git:
     repo: git@github.com:adamchainz/sublime_text_settings.git
     dest: '~/Library/Application Support/Sublime Text/Packages/User'
-
-- name: Cowsay cowfile
-  file:
-    src: '{{ ansible_env.PWD }}/roles/adam_mac/files/two-heads.cow'
-    dest: /opt/homebrew/Cellar/cowsay/3.04_1/share/cows/two-heads.cow
-    state: link
