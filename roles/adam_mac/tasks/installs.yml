@@ -24,7 +24,7 @@
   - mise
 
 - name: Mise install Node
-  command: mise latest node@22
+  command: mise latest node@24
   tags:
   - mise
 
@@ -41,7 +41,7 @@
 - name: Mise activates
   command: >
     mise use -g
-    node@22
+    node@24
     ruby@3.3
     bun@1.1
   tags:
@@ -51,6 +51,13 @@
   command: mise reshim
   tags:
   - mise
+
+- name: npm install tools
+  command: >
+    npm install -g
+    yarn
+  tags:
+  - node
 
 - name: uv install latest Pythons
   command: >
