@@ -91,6 +91,7 @@
 [delta]
     # https://dandavison.github.io/delta/configuration.html
     hyperlinks = true
+    hyperlinks-file-link-format = "zed://file/{path}:{line}"
     line-numbers = true
     navigate = true
     syntax-theme = Monokai Extended
