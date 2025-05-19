@@ -924,11 +924,11 @@
 			<key>Semantic History</key>
 			<dict>
 				<key>action</key>
-				<string>command</string>
+				<string>editor</string>
 				<key>editor</key>
-				<string>com.sublimetext.3</string>
+				<string>dev.zed.zed</string>
 				<key>text</key>
-				<string>/opt/homebrew/bin/zed \1:\2</string>
+				<string></string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1654,9 +1654,9 @@
 			<key>Semantic History</key>
 			<dict>
 				<key>action</key>
-				<string>best editor</string>
+				<string>editor</string>
 				<key>editor</key>
-				<string>com.sublimetext.3</string>
+				<string>dev.zed.zed</string>
 				<key>text</key>
 				<string></string>
 			</dict>
