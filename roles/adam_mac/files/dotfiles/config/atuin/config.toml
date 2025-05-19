@@ -2,4 +2,4 @@ enter_accept = true
 inline_height = 10
 
 [search]
-filters = ["session", "workspace", "global"]
+filters = ["workspace", "session", "global"]
