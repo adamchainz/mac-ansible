@@ -194,6 +194,9 @@ export YSU_IGNORED_ALIASES=(
 
 # Aliases
 
+# cd
+alias cd-next-peer='cd $(ls -1d ../* | grep -A1 "../$(basename "$PWD")$" | tail -n1)'
+
 # Docker
 alias dco='docker compose'
 
