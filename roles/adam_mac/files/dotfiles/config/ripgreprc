@@ -1,6 +1,6 @@
 # Enable file path hyperlinks
 --hyperlink-format
-default
+zed://file/{path}:{line}:{column}
 
 # Case insensitive unless pattern contains uppercase characters
 --smart-case
