@@ -264,6 +264,9 @@ alias pbc=pbcopy
 alias pbp=pbpaste
 alias toggle-dark-mode='osascript -e "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode"'
 
+# Plain Text Editor
+alias pte='open -a Plain\ Text\ Editor'
+
 # POSIX
 alias e='${(z)VISUAL:-${(z)EDITOR}}'  # open default editor
 alias p='${(z)PAGER}'
