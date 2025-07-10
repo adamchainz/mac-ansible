@@ -9,7 +9,9 @@
   {
     "bindings": {
       "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-shift-tab": "pane::ActivatePreviousItem"
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "alt-shift-l": "editor::GoToDiagnostic",
+      "alt-shift-u": "editor::GoToPreviousDiagnostic",
     }
   },
   {
