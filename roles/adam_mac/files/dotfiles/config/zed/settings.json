@@ -9,12 +9,15 @@
 {
   "icon_theme": "Zed (Default)",
   "agent": {
-    "default_profile": "ask",
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet"
+    },
+    "default_profile": "minimal",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "model": "claude-3.7-sonnet"
     },
-    "version": "2"
   },
   "buffer_font_family": "UbuntuMono Nerd Font Mono",
   "theme": "One Dark",
