@@ -285,9 +285,7 @@ alias pipir="pip install -r requirements.txt"
 alias v="source .venv/bin/activate"
 
 # ripgrep + delta
-function rgd() {
-    rg --json "$@" | delta
-}
+rgd() { rg --json "$@" | delta; }
 
 # uv
 export UV_COMPILE_BYTECODE=1
