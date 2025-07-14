@@ -284,6 +284,11 @@ alias pipi="pip install"
 alias pipir="pip install -r requirements.txt"
 alias v="source .venv/bin/activate"
 
+# ripgrep + delta
+function rgd() {
+    rg --json "$@" | delta
+}
+
 # uv
 export UV_COMPILE_BYTECODE=1
 alias python3.9='uv run --python 3.9 python'
