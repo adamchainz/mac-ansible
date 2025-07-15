@@ -30,6 +30,9 @@
     # https://adamj.eu/tech/2024/04/22/git-show-first-containing-tag/
     show-containing-tag = "!f() { git describe --contains \"$1\" | sed -E 's/[~^][0-9]*//g' ; }; f"
 
+    # Make a scratch directory ignored by Git
+    make-scratch = "!f() { mkdir -pv scratch && echo '*' > scratch/.gitignore && echo "Created scratch/" ; }; f"
+
 [branch]
     sort = -committerdate
 
