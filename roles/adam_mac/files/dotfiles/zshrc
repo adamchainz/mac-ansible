@@ -289,12 +289,6 @@ rgd() { rg --json "$@" | delta; }
 
 # uv
 export UV_COMPILE_BYTECODE=1
-alias python3.9='uv run --python 3.9 python'
-alias python3.10='uv run --python 3.10 python'
-alias python3.11='uv run --python 3.11 python'
-alias python3.12='uv run --python 3.12 python'
-alias python3.13='uv run --python 3.13 python'
-alias python3.13t='uv run --python 3.13t python'
 
 # Zed
 alias z=zed
