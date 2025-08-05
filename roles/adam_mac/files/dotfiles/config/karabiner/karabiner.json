@@ -236,20 +236,6 @@
             ],
             "name": "Default profile",
             "selected": true,
-            "simple_modifications": [
-                {
-                    "from": { "key_code": "pause" },
-                    "to": [{ "consumer_key_code": "volume_increment" }]
-                },
-                {
-                    "from": { "key_code": "print_screen" },
-                    "to": [{ "consumer_key_code": "play_or_pause" }]
-                },
-                {
-                    "from": { "key_code": "scroll_lock" },
-                    "to": [{ "consumer_key_code": "volume_decrement" }]
-                }
-            ],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "keyboard_type_v2": "ansi"
