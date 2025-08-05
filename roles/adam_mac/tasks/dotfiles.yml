@@ -5,6 +5,8 @@
   loop:
   - innotop
   - ipython/profile_default/startup
+  - config/atuin
+  - config/gh
   - config/git
   - config/pip
   - config/zed
