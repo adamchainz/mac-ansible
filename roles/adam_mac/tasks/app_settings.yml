@@ -1,6 +1,6 @@
 - name: scripts repo
   git:
-    repo: git@github.com:adamchainz/chainz-scripts.git
+    repo: https://github.com/adamchainz/chainz-scripts
     dest: ~/script
     update: false
 
