@@ -1,22 +1,39 @@
 mac-ansible
 ===========
 
-I use this project to configure my macOS the way I like it. That way I can wipe
-and re-install with less effort. See my
-[blog post](https://adamj.eu/tech/2019/03/20/how-i-provision-my-macbook-with-ansible/).
+I use this project to configure my MacBook the way I like it.
+It contains Ansible code to install software and set up configuration files through symlinks to this repository.
+That way I can set up a new MacBook quickly.
+See my [blog post](https://adamj.eu/tech/2019/03/20/how-i-provision-my-macbook-with-ansible/) for more information.
 
-Getting Started
----------------
+Read it
+-------
 
-1. Install [homebrew](http://brew.sh/) with the command from the site.
-2. `brew install uv` to install [uv](https://docs.astral.sh/uv/).
-3. `uv venv --python 3.12`
-6. `source .venv/bin/activate`
-5. `uv pip install ansible`
-6. `./playbook.yml`
+Read the code, which mostly lives in `roles/adam_mac`, to understand what it does.
+
+Run it
+------
+
+To run the playbook and install all software and configuration (potentially destructive):
+
+1. Install [homebrew](http://brew.sh/), using the command they publish.
+
+2. Install [uv](https://docs.astral.sh/uv/):
+
+   ```bash
+   brew install uv
+   ```
+
+3. Run the playbook with uv:
+
+   ```bash
+   uv run ./playbook.yml
+   ```
+
+   Ansible will start doing its thing, and you’ll get a whole bunch of stuff set up.
 
 Fork! Copy! Adapt!
 ------------------
 
-This repository is public domain, distributed under the Unlicense, so you can
-do whatever you want with it, see LICENSE.
+This repository is public domain, distributed under the Unlicense, so you can do whatever you want with it, see LICENSE.
+It’s probably most useful to you if you fork it and adapt it to your own needs.

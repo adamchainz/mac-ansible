@@ -1,0 +1,9 @@
+[project]
+name = "mac-ansible"
+version = "0"
+description = "🐄 Ansible-powered MacBook configuration"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "ansible"
+]
