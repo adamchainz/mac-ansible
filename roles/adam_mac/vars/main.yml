@@ -84,11 +84,11 @@ homebrew_cask_packages:
 - google-earth-pro
 - inkscape
 - iterm2
-- istat-menus
 - java
 - karabiner-elements
 - keyboard-maestro
 - mactex
+- stats
 - steam
 - tableplus
 - vlc
