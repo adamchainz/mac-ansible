@@ -54,6 +54,7 @@
 
 - name: npm install tools
   command: >
+    mise x --
     npm install -g
     yarn
   tags:
