@@ -87,7 +87,6 @@ homebrew_cask_packages:
 - keyboard-maestro
 - mactex
 - steam
-- sublime-text
 - tableplus
 - vlc
 

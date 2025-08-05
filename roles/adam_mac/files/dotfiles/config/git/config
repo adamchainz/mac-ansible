@@ -151,13 +151,6 @@
     conflictStyle = zdiff3
     # https://adamj.eu/tech/2022/11/05/git-automatically-stash-rebase-merge/
     autoStash = true
-    tool = sublime
-
-[mergetool]
-    keepBackup = false
-
-[mergetool "sublime"]
-    cmd = subl -w $MERGED
 
 [pager]
     status = true
