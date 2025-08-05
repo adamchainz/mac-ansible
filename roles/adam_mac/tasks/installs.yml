@@ -70,6 +70,9 @@
     3.11
     3.12
     3.13
+    3.13t
+    3.14
+    3.14t
   register: uv_python_install
   changed_when: "'All requested versions already installed' not in uv_python_install.stderr"
   tags:
