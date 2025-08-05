@@ -10,3 +10,14 @@
     key: PrefsCustomFolder
     type: string
     value: "{{ ansible_env.PWD }}/roles/adam_mac/files"
+  tags:
+  - iterm
+
+- name: iTerm use custom settings file
+  osx_defaults:
+    domain: com.googlecode.iterm2
+    key: LoadPrefsFromCustomFolder
+    type: boolean
+    value: true
+  tags:
+  - iterm
