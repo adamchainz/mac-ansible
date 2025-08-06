@@ -284,8 +284,9 @@ alias pipi="pip install"
 alias pipir="pip install -r requirements.txt"
 alias v="source .venv/bin/activate"
 
-# ripgrep + delta
+# ripgrep
 rgd() { rg --json "$@" | delta; }
+rgcountsum() { rg --count "$@" | awk -F: '{sum += $2} END {print sum}'; }
 
 # uv
 export UV_COMPILE_BYTECODE=1
