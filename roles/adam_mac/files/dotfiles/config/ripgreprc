@@ -9,3 +9,7 @@ zed://file/{path}:{line}:{column}
 --hidden
 --glob
 !.git
+
+# Automatically enable PCRE2 engine when needed
+--engine
+auto
