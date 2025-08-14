@@ -11,14 +11,15 @@
       "ctrl-tab": "pane::ActivateNextItem",
       "ctrl-shift-tab": "pane::ActivatePreviousItem",
       "alt-shift-l": "editor::GoToDiagnostic",
-      "alt-shift-u": "editor::GoToPreviousDiagnostic",
+      "alt-shift-u": "editor::GoToPreviousDiagnostic"
     }
   },
   {
     "context": "Workspace",
     "bindings": {
       "alt-shift-n": "editor::GoToHunk",
-      "alt-shift-e": "editor::GoToPreviousHunk"
+      "alt-shift-e": "editor::GoToPreviousHunk",
+      "cmd-k cmd-c": "workspace::CopyRelativePath"
     }
   },
   {
