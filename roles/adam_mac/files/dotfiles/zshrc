@@ -284,6 +284,7 @@ alias pip="python -m pip"
 alias pipi="pip install"
 alias pipir="pip install -r requirements.txt"
 alias v="source .venv/bin/activate"
+alias pt=pytest
 
 # ripgrep
 rgd() { rg --json "$@" | delta; }
