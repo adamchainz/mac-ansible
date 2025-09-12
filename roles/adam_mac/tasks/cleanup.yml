@@ -1,0 +1,2 @@
+- name: remove old rubbish
+  command: find ~/.Trash -mtime +30 -delete

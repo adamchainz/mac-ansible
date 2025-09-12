@@ -11,3 +11,8 @@
 
 - name: Copy in/clone app settings
   import_tasks: app_settings.yml
+
+- name: Cleanup
+  import_tasks: cleanup.yml
+  tags:
+  - cleanup
