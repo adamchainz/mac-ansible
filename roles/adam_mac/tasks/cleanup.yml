@@ -1,2 +1,15 @@
 - name: remove old rubbish
   command: find ~/.Trash -mtime +30 -delete
+
+- command: brew cleanup --prune 14
+
+- command: uv cache prune
+
+- command: uvx pip cache purge
+
+- name: pre-commit garbage collection
+  command: pre-commit gc
+
+- command: yarn cache clean
+
+- command: cargo cache -a
