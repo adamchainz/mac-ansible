@@ -108,3 +108,7 @@ uv_tools:
   - tox-uv
 - name: twine
 - name: yt-dlp
+
+cargo_packages:
+- cargo-cache
+- oxipng

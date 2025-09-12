@@ -111,3 +111,8 @@
   changed_when: "'Removed' in uv_prune.stderr"
   tags:
   - uv
+
+- name: cargo installs
+  command: cargo install {{ cargo_packages|join(" ") }}
+  tags:
+  - rust
