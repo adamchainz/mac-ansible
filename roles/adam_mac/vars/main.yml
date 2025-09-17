@@ -21,6 +21,7 @@ homebrew_packages:
 - git-delta
 - goaccess
 - gpg
+- graphviz
 - heroku/brew/heroku
 - hyperfine
 - imagemagick
@@ -29,6 +30,7 @@ homebrew_packages:
 - jpeg
 - jpegoptim
 - jq
+- just
 - less
 - lesspipe
 - libevent
