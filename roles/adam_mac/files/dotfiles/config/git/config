@@ -148,9 +148,10 @@
     follow = true
 
 [merge]
-    conflictStyle = zdiff3
     # https://adamj.eu/tech/2022/11/05/git-automatically-stash-rebase-merge/
     autoStash = true
+    conflictStyle = zdiff3
+    stat = compact
 
 [pager]
     status = true
