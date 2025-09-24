@@ -249,6 +249,12 @@ alias pushpr="git push && gh pr create --web"
 
 # gh, the GitHub CLI
 alias ghb='gh browse'
+alias ghid='gh issue develop --checkout'
+alias ghprc='gh pr create'
+alias ghprco='gh pr checkout'
+alias ghprv='gh pr view -w'
+alias ghprm='gh pr merge'
+alias ghrw='gh run watch'
 
 # less
 export LESS_TERMCAP_mb=$'\E[01;31m'      # Begins blinking.
