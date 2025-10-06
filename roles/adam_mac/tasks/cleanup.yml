@@ -4,6 +4,10 @@
 - command: brew cleanup --prune 14
 
 - command: uv cache prune
+  register: uv_prune
+  changed_when: "'Removed' in uv_prune.stderr"
+  tags:
+  - uv
 
 - command: uvx pip cache purge
 
