@@ -49,6 +49,9 @@ checkout = git clone 'git@github.com:adamchainz/django-harlequin.git' 'django-ha
 [Documents/Projects/_mine/_open/django-htmx]
 checkout = git clone 'git@github.com:adamchainz/django-htmx.git' 'django-htmx'
 
+[Documents/Projects/_mine/_open/django-http-compression]
+checkout = git clone 'git@github.com:adamchainz/django-http-compression.git' 'django-http-compression'
+
 [Documents/Projects/_mine/_open/django-linear-migrations]
 checkout = git clone 'git@github.com:adamchainz/django-linear-migrations.git' 'django-linear-migrations'
 
