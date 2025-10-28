@@ -1,19 +1,24 @@
 - name: remove old rubbish
   command: find ~/.Trash -mtime +30 -delete
 
-- command: brew cleanup --prune 14
+- name: brew cleanup
+  command: brew cleanup --prune 14
 
-- command: uv cache prune
+- name: uv cache prune
+  command: uv cache prune
   register: uv_prune
   changed_when: "'Removed' in uv_prune.stderr"
   tags:
   - uv
 
-- command: uvx pip cache purge
+- name: pip cache purge
+  command: uvx pip cache purge
 
 - name: pre-commit garbage collection
   command: pre-commit gc
 
-- command: yarn cache clean
+- name: yarn cache clean
+  command: yarn cache clean
 
-- command: cargo cache -a
+- name: cargo cache clean
+  command: cargo cache -a
