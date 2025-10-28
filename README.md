@@ -24,10 +24,10 @@ To run the playbook and install all software and configuration (potentially dest
    brew install uv
    ```
 
-3. Run the playbook with uv:
+3. Run the playbook:
 
    ```bash
-   uv run ./playbook.yml
+   ./playbook.yml
    ```
 
    Ansible will start doing its thing, and you’ll get a whole bunch of stuff set up.

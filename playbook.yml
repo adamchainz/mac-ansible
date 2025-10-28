@@ -1,4 +1,4 @@
-#!/usr/bin/env ansible-playbook
+#!/usr/bin/env uv run ansible-playbook
 - hosts: localhost
   connection: local
   tags: always
