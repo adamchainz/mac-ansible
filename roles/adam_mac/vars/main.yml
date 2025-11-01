@@ -38,6 +38,7 @@ homebrew_packages:
 - libpng
 - libtool
 - libyaml
+- lychee
 - maccy
 - memcached
 - mise
