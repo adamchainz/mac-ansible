@@ -5,7 +5,7 @@
   command: brew cleanup --prune 14
 
 - name: uv cache prune
-  command: uv cache prune
+  command: uv cache prune --force
   register: uv_prune
   changed_when: "'Removed' in uv_prune.stderr"
   tags:
