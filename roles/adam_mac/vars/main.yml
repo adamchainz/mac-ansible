@@ -65,7 +65,6 @@ homebrew_packages:
 - typos-cli
 - uv
 - watch
-- watchman
 - wget
 - xz
 - zed
