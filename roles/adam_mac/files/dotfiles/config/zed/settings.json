@@ -18,15 +18,12 @@
   },
   "icon_theme": "Zed (Default)",
   "agent": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
-    },
-    "default_profile": "minimal",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4.5"
     },
+    "default_profile": "write",
+    "model_parameters": []
   },
   "buffer_font_family": "UbuntuMono Nerd Font Mono",
   "theme": "One Dark",
@@ -75,10 +72,10 @@
       "language_servers": ["pyright", "ruff"],
       "formatter": [
         {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
+          "code_action": "source.organizeImports.ruff"
+        },
+        {
+          "code_action": "source.fixAll.ruff"
         },
         {
           "language_server": {
