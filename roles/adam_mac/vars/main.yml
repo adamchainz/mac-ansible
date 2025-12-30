@@ -109,7 +109,7 @@ uv_tools:
 - name: tox
   with:
   - tox-uv
-- name: twine
+- name: ty
 - name: yt-dlp
 
 cargo_packages:
