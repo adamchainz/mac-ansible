@@ -97,9 +97,6 @@ homebrew_cask_packages:
 - vlc
 
 uv_tools:
-- name: black
-- name: build
-- name: flake8
 - name: httpie
 - name: ipython
 - name: pre-commit
