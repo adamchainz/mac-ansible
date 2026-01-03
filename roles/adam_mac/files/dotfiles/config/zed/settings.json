@@ -69,7 +69,11 @@
       "formatter": []
     },
     "Python": {
-      "language_servers": ["pyright", "ruff"],
+      "language_servers": [
+        "ty",
+        "!basedpyright",
+        "ruff"
+      ],
       "formatter": [
         {
           "code_action": "source.organizeImports.ruff"
