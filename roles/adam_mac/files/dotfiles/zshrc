@@ -204,6 +204,8 @@ alias dco='docker compose'
 alias ff='open -a Firefox'
 
 # Git
+alias cd-repo-root='cd $(git rev-parse --show-toplevel)'
+
 alias gaa="g add --all && git status"
 alias gap="g add -p"
 
