@@ -10,6 +10,8 @@
     # https://adamj.eu/tech/2022/10/27/git-how-to-alias-master-as-main/
     alias-master-as-main = !git symbolic-ref refs/heads/main refs/heads/master && git symbolic-ref refs/remotes/origin/main refs/remotes/origin/master && git switch main
 
+    cd-repo-root = !cd $(git rev-parse --show-toplevel) && pwd
+
     git = !git
 
     # https://adamj.eu/tech/2022/10/30/git-how-to-clean-up-squash-merged-branches/
