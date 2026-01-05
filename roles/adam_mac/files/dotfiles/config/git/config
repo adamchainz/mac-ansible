@@ -21,6 +21,8 @@
     # https://adamj.eu/tech/2022/11/07/pre-commit-run-hooks-rebase/
     prebase = rebase -x 'pre-commit run --from-ref HEAD~ --to-ref HEAD'
 
+    show-subject = show --no-patch --format=%s
+
     stash-select = !git stash list | fzf -d : --preview='git stash show --color {1}' --bind 'enter:become:git stash pop {1}'
 
     # Boost Your Git DX section "Sort by recency and switch with fzf (fuzzy finder)"
