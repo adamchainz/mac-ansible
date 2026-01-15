@@ -100,6 +100,9 @@ checkout = git clone 'git@github.com:adamchainz/flake8-tidy-imports.git' 'flake8
 [Documents/Projects/_mine/_open/heroicons]
 checkout = git clone 'git@github.com:adamchainz/heroicons.git' 'heroicons'
 
+[Documents/Projects/_mine/_open/icu4py]
+checkout = git clone 'git@github.com:adamchainz/icu4py.git' 'icu4py'
+
 [Documents/Projects/_mine/_open/inline-snapshot-django]
 checkout = git clone 'git@github.com:adamchainz/inline-snapshot-django.git' 'inline-snapshot-django'
 
@@ -132,6 +135,9 @@ checkout = git clone 'git@github.com:adamchainz/sql-impressao.git' 'sql-impressa
 
 [Documents/Projects/_mine/_open/time-machine]
 checkout = git clone 'git@github.com:adamchainz/time-machine.git' 'time-machine'
+
+[Documents/Projects/_mine/_open/tprof]
+checkout = git clone 'git@github.com:adamchainz/tprof.git' 'tprof'
 
 [Documents/Projects/_mine/_open/treepoem]
 checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
