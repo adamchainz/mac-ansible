@@ -242,6 +242,7 @@ compdef _git gs=git-status
 alias gstsl='git stash-select'
 alias gstp='git stash pop --index'
 
+alias gsw-="git switch -"
 alias gswd="git switch --detach"
 alias gswr="git switch-recent"
 
