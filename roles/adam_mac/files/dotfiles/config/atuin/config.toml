@@ -1,5 +1,7 @@
 enter_accept = true
 inline_height = 10
+workspaces = true
+filter_mode = "workspace"
 
 [search]
 filters = ["workspace", "session", "global"]
