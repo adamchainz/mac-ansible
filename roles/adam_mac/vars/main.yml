@@ -99,6 +99,9 @@ homebrew_cask_packages:
 uv_tools:
 - name: httpie
 - name: ipython
+- name: llm
+  with:
+  - llm-ollama
 - name: pre-commit
   with:
   - pre-commit-uv
