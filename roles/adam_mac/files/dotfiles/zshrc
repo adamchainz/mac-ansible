@@ -95,11 +95,11 @@ compinit -u
 
 # Functions
 
-# Run 'ls' after 'cd'
-function chpwd_ls {
-    ls
+# Run 'pls' after 'cd'
+function chpwd_pls {
+    pls --grid true
 }
-add-zsh-hook chpwd chpwd_ls
+add-zsh-hook chpwd chpwd_pls
 
 # Switch to a simple $ prompt, useful for screenshots
 simple-prompt() {
