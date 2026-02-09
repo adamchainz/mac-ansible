@@ -51,6 +51,7 @@ homebrew_packages:
 - parallel
 - percona-toolkit
 - pkg-config
+- pls-rs/pls/pls
 - postgresql@17
 - qpdf
 - readline
