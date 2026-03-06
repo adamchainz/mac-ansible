@@ -481,6 +481,8 @@
 			<string>Recycle</string>
 			<key>Allow Title Reporting</key>
 			<true/>
+			<key>Allow modifyOtherKeys</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
