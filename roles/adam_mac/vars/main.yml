@@ -112,7 +112,7 @@ uv_tools:
   with:
   - tox-uv
 - name: ty
-- name: yt-dlp
+- name: yt-dlp[default]
 
 cargo_packages:
 - cargo-cache
