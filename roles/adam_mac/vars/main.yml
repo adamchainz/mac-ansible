@@ -8,6 +8,7 @@ homebrew_packages:
 - bettertouchtool
 - btop
 - coreutils
+- deno
 - enchant
 - exiftool
 - fd
