@@ -27,5 +27,15 @@
     "bindings": {
       "alt-tab": "editor::AcceptPartialCopilotSuggestion",
     }
+  },
+  {
+    "bindings": {
+      "cmd-k cmd-c cmd-c": "editor::CopyPermalinkToLine"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-k cmd-r": "editor::ReloadFile"
+    }
   }
 ]
