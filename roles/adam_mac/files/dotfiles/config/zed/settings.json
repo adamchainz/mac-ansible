@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "zed",
     "disabled_globs": []
   },
   "icon_theme": "Zed (Default)",
