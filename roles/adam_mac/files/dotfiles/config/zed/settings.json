@@ -48,7 +48,9 @@
   "seed_search_query_from_cursor": "selection",
   "soft_wrap": "editor_width",
   "tabs": {
-    "file_icons": true
+    "git_status": true,
+    "activate_on_close": "neighbour",
+    "file_icons": true,
   },
   "use_autoclose": false,
   "wrap_guides": [79],
@@ -110,5 +112,11 @@
         }
       }
     }
+  },
+  "preview_tabs": {
+    "enable_preview_file_from_code_navigation": false,
+    "enable_preview_from_project_panel": false,
+    "enable_preview_from_multibuffer": false,
+    "enabled": false
   }
 }
