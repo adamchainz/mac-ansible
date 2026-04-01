@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "edit_predictions": {
-    "provider": "zed",
+    "provider": "copilot",
     "disabled_globs": []
   },
   "icon_theme": "Zed (Default)",
@@ -23,11 +23,13 @@
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "claude-haiku-4.5"
+      "model": "claude-sonnet-4.6"
     },
     "default_model": {
+      "effort": "medium",
+      "enable_thinking": true,
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
+      "model": "claude-sonnet-4.6"
     },
     "default_profile": "write",
     "model_parameters": []
