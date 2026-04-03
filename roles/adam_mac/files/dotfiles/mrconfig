@@ -100,6 +100,9 @@ checkout = git clone 'git@github.com:adamchainz/flake8-tidy-imports.git' 'flake8
 [Documents/Projects/_mine/_open/heroicons]
 checkout = git clone 'git@github.com:adamchainz/heroicons.git' 'heroicons'
 
+[Documents/Projects/_mine/_open/icu4c-builds]
+checkout = git clone 'git@github.com:adamchainz/icu4c-builds.git' 'icu4c-builds'
+
 [Documents/Projects/_mine/_open/icu4py]
 checkout = git clone 'git@github.com:adamchainz/icu4py.git' 'icu4py'
 
@@ -111,6 +114,9 @@ checkout = git clone 'git@github.com:adamchainz/patchy.git' 'patchy'
 
 [Documents/Projects/_mine/_open/pip-lock]
 checkout = git clone 'git@github.com:adamchainz/pip-lock.git' 'pip-lock'
+
+[Documents/Projects/_mine/_open/profiling-explorer]
+checkout = git clone 'git@github.com:adamchainz/profiling-explorer.git' 'profiling-explorer'
 
 [Documents/Projects/_mine/_open/pygments-git]
 checkout = git clone 'git@github.com:adamchainz/pygments-git.git' 'pygments-git'
