@@ -43,6 +43,9 @@
     "enabled": true,
     "coloring": "indent_aware"
   },
+  "project_panel": {
+    "git_status": true
+  },
   "search": {
     "regex": true
   },
