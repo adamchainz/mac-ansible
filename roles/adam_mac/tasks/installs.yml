@@ -18,6 +18,11 @@
   tags:
   - brew
 
+- name: oh-my-zsh update
+  command: zsh -ic 'omz update'
+  tags:
+  - zsh
+
 - name: Mise disable Python
   command: mise settings set disable_tools python
   tags:
