@@ -1,3 +1,4 @@
 git_protocol: https
 version: "1"
 pager: delta
+telemetry: disabled
