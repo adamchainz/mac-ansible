@@ -7,12 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "edit_predictions": {
-    "provider": "copilot",
-    "disabled_globs": []
-  },
-  "icon_theme": "Zed (Default)",
   "agent": {
+    "sidebar_side": "left",
+    "dock": "left",
     "tool_permissions": {
       "tools": {
         "terminal": {
@@ -26,7 +23,7 @@
       "model": "claude-sonnet-4.6"
     },
     "default_model": {
-      "effort": "medium",
+      "effort": "high",
       "enable_thinking": false,
       "provider": "copilot_chat",
       "model": "claude-sonnet-4.6"
@@ -34,22 +31,42 @@
     "default_profile": "write",
     "model_parameters": []
   },
-  "buffer_font_family": "UbuntuMono Nerd Font Mono",
-  "theme": "One Dark",
   "base_keymap": "SublimeText",
-  "ui_font_size": 15,
+  "buffer_font_family": "UbuntuMono Nerd Font Mono",
   "buffer_font_size": 15.0,
+  "collaboration_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+    "disabled_globs": []
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "icon_theme": "Zed (Default)",
   "indent_guides": {
     "enabled": true,
     "coloring": "indent_aware"
   },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "preview_tabs": {
+    "enable_preview_file_from_code_navigation": false,
+    "enable_preview_from_project_panel": false,
+    "enable_preview_from_multibuffer": false,
+    "enabled": false
+  },
   "project_panel": {
+    "entry_spacing": "comfortable",
+    "dock": "left",
     "git_status": true
   },
   "search": {
     "regex": true
   },
-  "use_smartcase_search": true,
   "seed_search_query_from_cursor": "selection",
   "soft_wrap": "editor_width",
   "tabs": {
@@ -57,7 +74,10 @@
     "activate_on_close": "neighbour",
     "file_icons": true,
   },
+  "theme": "One Dark",
+  "ui_font_size": 15,
   "use_autoclose": false,
+  "use_smartcase_search": true,
   "wrap_guides": [79],
   "languages": {
     "CSS": {
@@ -118,10 +138,4 @@
       }
     }
   },
-  "preview_tabs": {
-    "enable_preview_file_from_code_navigation": false,
-    "enable_preview_from_project_panel": false,
-    "enable_preview_from_multibuffer": false,
-    "enabled": false
-  }
 }
