@@ -34,6 +34,7 @@
   "base_keymap": "SublimeText",
   "buffer_font_family": "UbuntuMono Nerd Font Mono",
   "buffer_font_size": 15.0,
+  "cli_default_open_behavior": "new_window",
   "collaboration_panel": {
     "button": false,
     "dock": "right"
