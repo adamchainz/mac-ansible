@@ -147,7 +147,7 @@ export DOCKER_CLI_HINTS=false
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR=nano
 else
-  export EDITOR='zed --wait'
+  export EDITOR='zed --classic --wait'
 fi
 
 # Configure less
