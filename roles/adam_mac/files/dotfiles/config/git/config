@@ -44,6 +44,7 @@
 
 [core]
     pager = delta
+    untrackedCache = true
 
 [color "branch"]
     current = yellow reverse
