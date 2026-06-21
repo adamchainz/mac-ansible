@@ -8,7 +8,6 @@
 // from the command palette or from `Zed` application menu.
 {
   "agent": {
-    "sidebar_side": "left",
     "dock": "left",
     "tool_permissions": {
       "tools": {
@@ -32,7 +31,8 @@
       "model": "claude-sonnet-4.6"
     },
     "default_profile": "write",
-    "model_parameters": []
+    "model_parameters": [],
+    "sidebar_side": "left",
   },
   "base_keymap": "SublimeText",
   "buffer_font_family": "UbuntuMono Nerd Font Mono",
@@ -42,6 +42,7 @@
     "button": false,
     "dock": "right"
   },
+  "diff_view_style": "split",
   "edit_predictions": {
     "provider": "copilot",
     "disabled_globs": []
