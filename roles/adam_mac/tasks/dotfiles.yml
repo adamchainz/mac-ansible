@@ -29,6 +29,7 @@
   - config/git/config
   - config/git/ignore
   - config/pip/pip.conf
+  - config/zed/AGENTS.md
   - config/zed/keymap.json
   - config/zed/settings.json
   - digrc
