@@ -14,6 +14,9 @@
       "tools": {
         "terminal": {
           "always_allow": [
+            {
+              "pattern": "\\b(cat|grep|head|rg|sd|sed|sort|tail|uniq|wc)\\b"
+            }
           ]
         }
       }
