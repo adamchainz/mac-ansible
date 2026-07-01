@@ -37,5 +37,10 @@
     "bindings": {
       "cmd-k cmd-r": "editor::ReloadFile"
     }
+  },
+  {
+    "bindings": {
+      "cmd-k cmd-shift-f": "text_finder::Toggle"
+    }
   }
 ]
