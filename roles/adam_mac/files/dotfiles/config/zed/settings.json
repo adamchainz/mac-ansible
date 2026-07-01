@@ -11,11 +11,23 @@
     "dock": "left",
     "tool_permissions": {
       "tools": {
+        "copy_path": {
+          "default": "allow"
+        },
+        "create_directory": {
+          "default": "allow"
+        },
+        "move_path": {
+          "default": "allow"
+        },
         "terminal": {
           "always_allow": [
             {
-              "pattern": "\\b(cat|echo|grep|head|rg|sd|sed|sort|tail|uniq|wc)\\b"
-            }
+              "pattern": "\\b(cat|echo|find|grep|head|ls|rg|sd|sed|sort|tail|touch|uniq|wc|xargs grep)\\b"
+            },
+            {
+              "pattern": "\\bgit --no-pager (diff|log|show)\\b"
+            },
           ]
         }
       }
