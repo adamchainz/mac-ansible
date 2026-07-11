@@ -54,7 +54,7 @@
     "button": false,
     "dock": "right"
   },
-  "diff_view_style": "split",
+  "diff_view_style": "unified",
   "edit_predictions": {
     "provider": "copilot",
     "disabled_globs": []
