@@ -59,6 +59,7 @@
     "provider": "copilot",
     "disabled_globs": []
   },
+  "format_on_save": "on",
   "git_panel": {
     "dock": "right"
   },
