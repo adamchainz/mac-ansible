@@ -11,3 +11,7 @@
 
 - Use `uv run python` to run Python.
 - If a project has a `tox.ini` file, use `tox` to run tests, selecting just one environment by default, like `tox -e py314-django61`.
+
+## Git
+
+- Run all Git commands with `git --no-pager`.
