@@ -64,6 +64,9 @@ checkout = git clone 'git@github.com:adamchainz/django-minify-html.git' 'django-
 [Documents/Projects/_mine/_open/django-mysql]
 checkout = git clone 'git@github.com:adamchainz/django-mysql.git' 'django-mysql'
 
+[Documents/Projects/_mine/_open/django-orjson]
+checkout = git clone 'git@github.com:adamchainz/django-orjson.git' 'django-orjson'
+
 [Documents/Projects/_mine/_open/django-perf-rec]
 checkout = git clone 'git@github.com:adamchainz/django-perf-rec.git' 'django-perf-rec'
 
