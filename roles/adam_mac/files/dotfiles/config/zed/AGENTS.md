@@ -14,4 +14,4 @@
 
 ## Git
 
-- Run all Git commands with `git --no-pager`.
+- Run all Git commands with `git --no-pager`, including `git stash pop`.
