@@ -254,6 +254,8 @@ alias gswr="git switch-recent"
 alias pull="git pull"
 alias push="git push"
 alias pushpr="git push && gh pr create --web"
+alias pushpram="git push && gh pr create --fill && sleep 1 && gh pr merge --squash --delete-branch --auto"
+alias s="git sync"
 
 # gh, the GitHub CLI
 alias ghb='gh browse'
