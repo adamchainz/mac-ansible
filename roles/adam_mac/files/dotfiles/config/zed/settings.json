@@ -26,8 +26,8 @@
               "pattern": "\\b(cat|echo|find|grep|head|ls|rg|sd|sed|sort|tail|touch|uniq|wc|xargs grep)\\b"
             },
             {
-              "pattern": "\\bgit --no-pager (diff|log|show)\\b"
-            },
+              "pattern": "\\bgit (--no-optional-locks )?(--no-pager )?(diff|log|show|status)\\b"
+            }
           ]
         }
       }
