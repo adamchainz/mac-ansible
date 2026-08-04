@@ -2,6 +2,11 @@ enter_accept = true
 inline_height = 10
 workspaces = true
 filter_mode = "workspace"
+search_mode = "daemon-fuzzy"
+
+[daemon]
+enabled = true
+autostart = true
 
 [search]
 filters = ["workspace", "session", "global"]
