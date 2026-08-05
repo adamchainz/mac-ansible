@@ -217,6 +217,7 @@ alias gap="g add -p"
 alias gcf="git commit --amend --reuse-message HEAD"
 alias gcfnow="gcf --date=now"
 alias gcF="git commit --verbose --amend"
+alias gcFra="git commit --verbose --amend --reset-author"
 alias gcFnow="git commit --verbose --amend --date=now"
 
 alias gcm="g commit -m"
