@@ -23,11 +23,11 @@
         "terminal": {
           "always_allow": [
             {
-              "pattern": "\\b(cat|echo|find|grep|head|ls|rg|sd|sed|sort|tail|touch|uniq|wc|xargs grep)\\b"
+              "pattern": "\\b(cat|echo|find|grep|head|ls|pwd|rg|sd|sed|sort|tail|touch|uniq|wc|xargs grep)\\b"
             },
             {
-              "pattern": "\\bgit (--no-optional-locks )?(--no-pager )?(diff|log|show|status)\\b"
-            }
+              "pattern": "\\bgit (--no-optional-locks )?(--no-pager )?(branch( -l)?( -vv)?$|diff|log|show|status)\\b"
+            },
           ]
         }
       }
