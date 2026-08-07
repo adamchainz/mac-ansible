@@ -265,7 +265,7 @@ alias ghprc='gh pr create'
 alias ghprco='gh pr checkout'
 alias ghprv='gh pr view -w'
 alias ghprm='gh pr merge'
-alias ghrw='gh run watch'
+alias ghrw='gh run watch --compact'
 
 # less
 export LESS_TERMCAP_mb=$'\E[01;31m'      # Begins blinking.
