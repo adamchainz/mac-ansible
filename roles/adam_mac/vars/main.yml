@@ -5,7 +5,6 @@ homebrew_packages:
 - automake
 - awscli
 - bat
-- bettertouchtool
 - btop
 - coreutils
 - deno
