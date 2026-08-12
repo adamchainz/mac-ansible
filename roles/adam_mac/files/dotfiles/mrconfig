@@ -97,6 +97,9 @@ checkout = git clone 'git@github.com:adamchainz/django-watchfiles.git' 'django-w
 [Documents/Projects/_mine/_open/ec2-metadata]
 checkout = git clone 'git@github.com:adamchainz/ec2-metadata.git' 'ec2-metadata'
 
+[Documents/Projects/_mine/_open/emojet]
+checkout = git clone 'git@github.com:adamchainz/emojet.git' 'emojet'
+
 [Documents/Projects/_mine/_open/flake8-comprehensions]
 checkout = git clone 'git@github.com:adamchainz/flake8-comprehensions.git' 'flake8-comprehensions'
 
