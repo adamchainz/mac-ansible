@@ -98,6 +98,9 @@
   "use_smartcase_search": true,
   "wrap_guides": [79],
   "languages": {
+    "C": {
+      "formatter": []
+    },
     "CSS": {
       "formatter": []
     },
@@ -115,6 +118,9 @@
       "formatter": []
     },
     "JSONC": {
+      "formatter": []
+    },
+    "Markdown": {
       "formatter": []
     },
     "Python": {
