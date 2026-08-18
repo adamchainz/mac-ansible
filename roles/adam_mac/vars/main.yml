@@ -103,6 +103,7 @@ uv_tools:
 - name: ipython
 - name: llm
   with:
+  - llm-anthropic
   - llm-ollama
 - name: pre-commit
   with:

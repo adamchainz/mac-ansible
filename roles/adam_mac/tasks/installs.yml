@@ -91,7 +91,7 @@
     --python 3.14
     {{ item.name }}
     {% if item.with is defined %}
-    {% for w in item.with %}--with {{ w }}{% endfor %}
+    {% for w in item.with %} --with {{ w }}{% endfor %}
     {% endif %}
   loop: '{{ uv_tools }}'
   register: uv_tool_install
@@ -104,7 +104,7 @@
     uv tool upgrade
     {{ item.name }}
     {% if item.with is defined %}
-    {% for w in item.with %}--upgrade-package {{ w }}{% endfor %}
+    {% for w in item.with %} --upgrade-package {{ w }}{% endfor %}
     {% endif %}
   loop: '{{ uv_tools }}'
   register: uv_upgrade
