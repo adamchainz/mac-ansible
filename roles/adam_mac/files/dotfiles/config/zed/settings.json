@@ -9,6 +9,7 @@
 {
   "agent": {
     "dock": "left",
+    "enable_feedback": false,
     "tool_permissions": {
       "tools": {
         "copy_path": {
