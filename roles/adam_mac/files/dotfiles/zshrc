@@ -205,6 +205,14 @@ alias ds='delta --side-by-side'
 # Docker
 alias dco='docker compose'
 
+# ffmpeg
+ffmpeg-convert-to-mp3-320() {
+    for file in "$@"; do
+        ffmpeg -i "$file" -ab 320k "${file:r}.mp3" || return 1
+    done
+}
+
+
 # Firefox
 alias ff='open -a Firefox'
 
