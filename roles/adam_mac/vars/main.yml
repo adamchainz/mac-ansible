@@ -87,6 +87,7 @@ homebrew_cask_packages:
 - evernote
 - firefox
 - font-ubuntu-mono-nerd-font
+- ghostty
 - google-earth-pro
 - inkscape
 - iterm2
