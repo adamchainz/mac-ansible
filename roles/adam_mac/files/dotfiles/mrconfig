@@ -61,6 +61,9 @@ checkout = git clone 'git@github.com:adamchainz/django-integrity-policy.git' 'dj
 [Documents/Projects/_mine/_open/django-linear-migrations]
 checkout = git clone 'git@github.com:adamchainz/django-linear-migrations.git' 'django-linear-migrations'
 
+[Documents/Projects/_mine/_open/django-mcpz]
+checkout = git clone 'git@github.com:adamchainz/django-mcpz.git' 'django-mcpz'
+
 [Documents/Projects/_mine/_open/django-minify-html]
 checkout = git clone 'git@github.com:adamchainz/django-minify-html.git' 'django-minify-html'
 
