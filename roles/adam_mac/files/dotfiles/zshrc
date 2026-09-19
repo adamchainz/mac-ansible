@@ -40,6 +40,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Zsh
+
 # Autocorrect
 unsetopt CORRECT_ALL  # too zealous, tries to correct 'git' to '.git'
 
@@ -59,6 +61,9 @@ setopt numeric_glob_sort
 # Do not overwrite existing files with > and >>.
 # Use >! and >>! to bypass.
 unsetopt CLOBBER
+
+# Rebind edit current command in $EDITOR because I use Ctrl+E globally in keyremappy
+bindkey '\ee' edit-command-line
 
 # Atuin history management
 eval "$(atuin init zsh)"
