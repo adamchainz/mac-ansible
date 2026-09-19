@@ -105,10 +105,14 @@ version = "0"
 source = { virtual = "." }
 dependencies = [
     { name = "ansible" },
+    { name = "mitogen" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "ansible" }]
+requires-dist = [
+    { name = "ansible" },
+    { name = "mitogen", specifier = ">=0.3.53" },
+]
 
 [[package]]
 name = "markupsafe"
@@ -136,6 +140,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/0d/80/0985960e4b89922cb5a0bac0ed39c5b96cbc1a536a99f30e8c220a996ed9/MarkupSafe-3.0.2-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:131a3c7689c85f5ad20f9f6fb1b866f402c445b220c19fe4308c0b147ccd2ad9", size = 24098, upload-time = "2024-10-18T15:21:40.813Z" },
     { url = "https://files.pythonhosted.org/packages/82/78/fedb03c7d5380df2427038ec8d973587e90561b2d90cd472ce9254cf348b/MarkupSafe-3.0.2-cp313-cp313t-win32.whl", hash = "sha256:ba8062ed2cf21c07a9e295d5b8a2a5ce678b913b45fdf68c32d95d6c1291e0b6", size = 15208, upload-time = "2024-10-18T15:21:41.814Z" },
     { url = "https://files.pythonhosted.org/packages/4f/65/6079a46068dfceaeabb5dcad6d674f5f5c61a6fa5673746f42a9f4c233b3/MarkupSafe-3.0.2-cp313-cp313t-win_amd64.whl", hash = "sha256:e444a31f8db13eb18ada366ab3cf45fd4b31e4db1236a4448f68778c1d1a5a2f", size = 15739, upload-time = "2024-10-18T15:21:42.784Z" },
+]
+
+[[package]]
+name = "mitogen"
+version = "0.3.53"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/31/ba/be0220925fd882cda1538285a090f8e7eb7e9bd01ca6e2611c47dcd1f60a/mitogen-0.3.53.tar.gz", hash = "sha256:435036128dd2715945c3c26f390439ecc3ae9d873ea2e69ac1f7982c88a02b87", size = 243913, upload-time = "2026-09-01T23:31:20.693Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8f/b7/1b8de5a654f87634229a29d5b0cdd12b476a9ec2a4fa47749f912d07c4bf/mitogen-0.3.53-py2.py3-none-any.whl", hash = "sha256:8858bbff6b8bd5f8cccac4ef08190fde7113dbc36bc320425aefffd56b052f03", size = 294495, upload-time = "2026-09-01T23:31:19.423Z" },
 ]
 
 [[package]]
