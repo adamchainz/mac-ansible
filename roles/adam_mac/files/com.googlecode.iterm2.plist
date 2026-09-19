@@ -1960,11 +1960,6 @@
 	<integer>10</integer>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Captured Output</string>
-		<string>Command History</string>
-		<string>Jobs</string>
-		<string>Notes</string>
-		<string>Paste History</string>
 		<string>Recent Directories</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
