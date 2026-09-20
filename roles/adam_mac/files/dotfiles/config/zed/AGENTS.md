@@ -15,3 +15,10 @@
 ## Git
 
 - Run all Git commands with `git --no-pager`, including `git stash pop`.
+
+## Writing
+
+- Avoid semicolons.
+- Use few em dashes.
+- Use the Oxford comma and Oxford spelling.
+- Avoid mannered prose.
