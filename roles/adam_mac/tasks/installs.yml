@@ -100,12 +100,7 @@
   - uv
 
 - name: uv upgrade tools
-  command: >
-    uv tool upgrade
-    {{ item.name }}
-    {% if item.with is defined %}
-    {% for w in item.with %} --upgrade-package {{ w }}{% endfor %}
-    {% endif %}
+  command: uv tool upgrade {{ item.name }}
   loop: '{{ uv_tools }}'
   register: uv_upgrade
   changed_when: "'Nothing to upgrade' not in uv_upgrade.stderr"
