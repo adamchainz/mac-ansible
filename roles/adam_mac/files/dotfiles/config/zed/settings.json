@@ -8,6 +8,9 @@
 // from the command palette or from `Zed` application menu.
 {
   "agent": {
+    "threads_sidebar": {
+      "position": "left"
+    },
     "dock": "left",
     "enable_feedback": false,
     "tool_permissions": {
@@ -45,7 +48,6 @@
     },
     "default_profile": "write",
     "model_parameters": [],
-    "sidebar_side": "left",
   },
   "base_keymap": "SublimeText",
   "buffer_font_family": "UbuntuMono Nerd Font Mono",
