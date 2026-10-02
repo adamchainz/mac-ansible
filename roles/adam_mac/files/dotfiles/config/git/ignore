@@ -33,10 +33,6 @@ Temporary Items
 # Mise
 .mise.toml
 
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
 # Python
 *.pyc
 .tox
