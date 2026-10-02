@@ -8,6 +8,17 @@
 // from the command palette or from `Zed` application menu.
 {
   "agent": {
+    "sandbox_permissions": {
+      "network_hosts": [
+        "zed.dev",
+        "sprites.dev",
+        "*.sprites.dev"
+      ],
+      "write_paths": [
+        "/Users/chainz/Library/Caches/uv",
+        "/Users/chainz/.sprites"
+      ]
+    },
     "threads_sidebar": {
       "position": "left"
     },
@@ -27,10 +38,13 @@
         "terminal": {
           "always_allow": [
             {
-              "pattern": "\\b(cat|echo|find|grep|head|ls|pwd|rg|sd|sed|sort|tail|touch|uniq|wc|xargs grep)\\b"
+              "pattern": "\\b(cat|echo|find|grep|head|ls|printf|pwd|rg|sd|sed|sort|tail|touch|uniq|wc|xargs grep)\\b"
             },
             {
-              "pattern": "\\bgit (--no-optional-locks )?(--no-pager )?(branch( -l)?( -vv)?$|diff|log|show|status)\\b"
+              "pattern": "\\bgit (--no-optional-locks )?(--no-pager )?(branch( -l)?( -vv)?$|check-ignore|diff|log|ls-files|show|status)\\b"
+            },
+            {
+              "pattern": "\\bsprite exec\\b"
             },
           ]
         }
