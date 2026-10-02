@@ -107,6 +107,7 @@ uv_tools:
   with:
   - llm-anthropic
   - llm-ollama
+- name: norwegianblue
 - name: pre-commit
   with:
   - pre-commit-uv
