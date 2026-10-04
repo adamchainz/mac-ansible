@@ -17,10 +17,7 @@
       "write_paths": [
         "/Users/chainz/Library/Caches/uv",
         "/Users/chainz/.sprites"
-      ]
-    },
-    "threads_sidebar": {
-      "position": "left"
+      ],
     },
     "dock": "left",
     "enable_feedback": false,
