@@ -16,6 +16,10 @@
 
 - Run all Git commands with `git --no-pager`, including `git stash pop`.
 
+## GitHub
+
+- Run all `gh` commands with `GH_PAGER=cat`.
+
 ## Writing
 
 - Avoid semicolons.
