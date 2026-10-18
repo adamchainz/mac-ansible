@@ -1656,7 +1656,7 @@
 			<key>Name</key>
 			<string>Book Screenshots</string>
 			<key>Non Ascii Font</key>
-			<string>UbuntuMonoNFM 17 {"featureSettings":[{"CTFeatureSelectorIdentifier":2,"CTFeatureTypeIdentifier":35},{"CTFeatureSelectorIdentifier":4,"CTFeatureTypeIdentifier":35}]}</string>
+			<string>UbuntuMonoNFM 17</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
