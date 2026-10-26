@@ -1,3 +1,8 @@
+# Copied, not symlinked, to ~/.config/atuin/config.toml. The Atuin daemon
+# runs under launchd, which macOS blocks from reading ~/Documents, so a
+# symlink into this repo makes it fail with “Operation not permitted”.
+# Re-run the dotfiles tag after editing.
+
 enter_accept = true
 inline_height = 10
 workspaces = true

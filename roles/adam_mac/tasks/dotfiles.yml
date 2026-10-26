@@ -23,7 +23,6 @@
   - config/karabiner
   - config/ripgreprc
   - config/starship.toml
-  - config/atuin/config.toml
   - config/gh/config.yml
   - config/ghostty/config.ghostty
   - config/git/attributes
@@ -41,6 +40,20 @@
   - ssh/config
   - zprofile
   - zshrc
+  tags:
+  - dotfiles
+
+- name: atuin config
+  copy:
+    src: dotfiles/config/atuin/config.toml
+    dest: ~/.config/atuin/config.toml
+  tags:
+  - dotfiles
+
+- name: atuin daemon service
+  command: brew services start atuin
+  register: atuin_service
+  changed_when: "'already started' not in atuin_service.stdout + atuin_service.stderr"
   tags:
   - dotfiles
 
