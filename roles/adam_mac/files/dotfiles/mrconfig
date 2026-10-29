@@ -169,6 +169,9 @@ checkout = git clone 'git@github.com:adamchainz/tprof.git' 'tprof'
 [Documents/Projects/_mine/_open/treepoem]
 checkout = git clone 'git@github.com:adamchainz/treepoem.git' 'treepoem'
 
+[Documents/Projects/_mine/_open/unipatch]
+checkout = git clone 'git@github.com:adamchainz/unipatch.git' 'unipatch'
+
 [Documents/Projects/_mine/_open/unittest-parametrize]
 checkout = git clone 'git@github.com:adamchainz/unittest-parametrize.git' 'unittest-parametrize'
 
