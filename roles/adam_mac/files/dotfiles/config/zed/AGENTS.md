@@ -26,3 +26,7 @@
 - Use few em dashes.
 - Use the Oxford comma and Oxford spelling.
 - Avoid mannered prose.
+
+## Running commands
+
+- Spread across multiple lines using line continuations like `&& \`.
