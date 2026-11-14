@@ -30,3 +30,4 @@
 ## Running commands
 
 - Spread across multiple lines using line continuations like `&& \`.
+- Spread code for `python` etc. across multiple lines too, using a heredoc or similar.
