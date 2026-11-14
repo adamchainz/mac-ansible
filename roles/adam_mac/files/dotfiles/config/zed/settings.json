@@ -10,6 +10,8 @@
   "agent": {
     "sandbox_permissions": {
       "network_hosts": [
+        "api.github.com",
+        "github.com",
         "zed.dev",
         "sprites.dev",
         "*.sprites.dev"
@@ -33,12 +35,19 @@
           "default": "allow"
         },
         "terminal": {
+          "default": "confirm",
           "always_allow": [
             {
               "pattern": "\\b(cat|cut|echo|file|find|grep|head|ls|od|printf|pwd|rg|sd|sed|shasum|sort|tail|test|touch|true|uniq|wc|which|xargs grep)\\b"
             },
             {
-              "pattern": "\\bgit (--no-optional-locks )?(--no-pager )?(branch( -l)?( -vv)?( --show-current)?$|blame|check-ignore|diff|hash-object|log|ls-files|merge-base|rev-list|rev-parse|show|status)\\b"
+              "pattern": "\\bgh (issue (view)|pr (diff|view))\\b"
+            },
+            {
+              "pattern": "\\bgit (--no-optional-locks )?(--no-pager )?(blame|check-ignore|diff|hash-object|log|ls-files|ls-remote|merge-base|remote -v$|rev-list|rev-parse|show|status|worktree (list))\\b"
+            },
+            {
+              "pattern": "^git (--no-optional-locks )?(--no-pager )?branch( -vv)?( --show-current| (-l|--list)( -vv)?( [\\w.][\\w./-]*)*( --format=('[^']*'|\\S+))?)?$"
             },
             {
               "pattern": "\\bsprite exec\\b"
