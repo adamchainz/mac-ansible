@@ -9,7 +9,7 @@
     domain: com.googlecode.iterm2
     key: PrefsCustomFolder
     type: string
-    value: "{{ ansible_env.PWD }}/roles/adam_mac/files"
+    value: "{{ ansible_env.PWD }}/roles/adam_mac/files/iterm2"
   tags:
   - iterm
 
