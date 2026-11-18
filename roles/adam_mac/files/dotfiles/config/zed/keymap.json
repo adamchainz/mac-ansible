@@ -8,8 +8,6 @@
 [
   {
     "bindings": {
-      "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-shift-tab": "pane::ActivatePreviousItem",
       "alt-shift-l": "editor::GoToDiagnostic",
       "alt-shift-u": "editor::GoToPreviousDiagnostic"
     }
@@ -17,15 +15,20 @@
   {
     "context": "Workspace",
     "bindings": {
+      // Switch tabs by their order, not LRU
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "ctrl-tab": "pane::ActivateNextItem",
+      // Jump around by hunks
       "alt-shift-n": "editor::GoToHunk",
       "alt-shift-e": "editor::GoToPreviousHunk",
+      // Copy path, useful for jumping to shell
       "cmd-k cmd-c": "workspace::CopyRelativePath"
     }
   },
   {
     "context": "Editor && mode == full && edit_prediction",
     "bindings": {
-      "alt-tab": "editor::AcceptPartialCopilotSuggestion",
+      "alt-tab": "editor::AcceptNextWordEditPrediction",
     }
   },
   {
