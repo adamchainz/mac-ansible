@@ -7,6 +7,13 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "context_servers": {
+    "vmpal": {
+      "enabled": true,
+      "command": "/Applications/VMPal.app/Contents/Helpers/VMPalMachine.app/Contents/MacOS/VMPalMachine",
+      "args": ["--mcp-library"]
+    },
+  },
   "agent": {
     "sandbox_permissions": {
       "network_hosts": [
@@ -25,6 +32,39 @@
     "enable_feedback": false,
     "tool_permissions": {
       "tools": {
+        "mcp:vmpal:vmpal_act": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_exec": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_exec_result": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_get_vm": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_list_systems": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_list_vms": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_observe": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_screenshot": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_sign_in": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_start_vm": {
+          "default": "allow"
+        },
+        "mcp:vmpal:vmpal_status": {
+          "default": "allow"
+        },
         "skill": {
           "default": "allow"
         },
@@ -54,6 +94,9 @@
             },
             {
               "pattern": "\\bsprite exec\\b"
+            },
+            {
+              "pattern": "vmpal wait \".*?\" --timeout 10m"
             },
           ]
         }
