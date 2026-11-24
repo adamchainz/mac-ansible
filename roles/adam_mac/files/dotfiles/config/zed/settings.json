@@ -78,7 +78,7 @@
           "default": "confirm",
           "always_allow": [
             {
-              "pattern": "\\b(cat|command|cut|echo|exit|file|find|grep|head|ls|nl|od|printf|pwd|rg|sd|sed|shasum|sort|tail|test|touch|true|uniq|wc|which|xargs grep)\\b"
+              "pattern": "\\b(cat|command|cut|echo|exit|file|find|grep|head|ls|nl|od|printf|pwd|rg|sd|sed|shasum|sleep|sort|tail|test|touch|true|uniq|wc|which|xargs grep)\\b"
             },
             {
               "pattern": "\\bgh (issue (view)|pr (diff|view))\\b"
