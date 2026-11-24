@@ -20,12 +20,9 @@
         "api.github.com",
         "github.com",
         "zed.dev",
-        "sprites.dev",
-        "*.sprites.dev"
       ],
       "write_paths": [
         "/Users/chainz/Library/Caches/uv",
-        "/Users/chainz/.sprites"
       ],
     },
     "dock": "left",
@@ -91,9 +88,6 @@
             },
             {
               "pattern": "^git ((--no-optional-locks|--no-pager) )*branch( -vv)?( --show-current| (-l|--list)( -vv)?( [\\w.][\\w./-]*)*( --format=('[^']*'|\\S+))?)?$"
-            },
-            {
-              "pattern": "\\bsprite exec\\b"
             },
             {
               "pattern": "vmpal wait \".*?\" --timeout 10m"
