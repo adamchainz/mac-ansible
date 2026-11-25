@@ -29,6 +29,9 @@
     "enable_feedback": false,
     "tool_permissions": {
       "tools": {
+        "mcp:vmpal:vmpal_send_files": {
+          "default": "allow"
+        },
         "mcp:vmpal:vmpal_act": {
           "default": "allow"
         },
